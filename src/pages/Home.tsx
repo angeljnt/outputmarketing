@@ -97,7 +97,7 @@ const Home = () => {
           <p className="overline text-center mb-6">Brands we've built programs for</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
             <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
-              <span className="text-sm font-semibold text-foreground">Archive</span>
+              <img src={logoArchive} alt="Archive" className="h-8" />
             </div>
             <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
               <img src={logoFireflies} alt="Fireflies.ai" className="h-8" />

@@ -161,7 +161,6 @@ const About = () => {
               <div className="flex items-center gap-4 mb-4">
                 <img src={logoFireflies} alt="Fireflies.ai" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={logoArchive} alt="Archive" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-16 w-auto object-contain" />
                 
               </div>
               <div className="space-y-2 text-body text-muted-foreground">

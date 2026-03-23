@@ -82,6 +82,15 @@ const About = () => {
                 <p>Angel handles strategy, operations, and the technical side of execution. Landing pages, written content, systems that keep things running.</p>
                 <p>He doesn't touch video or paid ads. He doesn't have to. What he builds generates pipeline without burning budget.</p>
               </div>
+              <a
+                href="https://www.linkedin.com/in/angeljnt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Angel on LinkedIn"
+                className="inline-flex items-center gap-2 mt-4 text-[#111111] hover:text-accent transition-colors duration-200"
+              >
+                LinkedIn →
+              </a>
             </div>
           </div>
         </div>

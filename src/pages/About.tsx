@@ -166,7 +166,7 @@ const About = () => {
               <div className="space-y-2 text-body text-muted-foreground">
                 <p>Fireflies.ai: Influencer Marketing Manager</p>
                 <p>Archive: Marketing Manager</p>
-                <p>IE Business School: MBA</p>
+                
                 <p>CDMP: Certified Digital Marketing Professional</p>
               </div>
             </div>

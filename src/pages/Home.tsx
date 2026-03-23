@@ -6,6 +6,12 @@ import FAQItem from "@/components/FAQItem";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import vanessaHero from "@/assets/vanessa-hero.jpeg";
+import logoFireflies from "@/assets/logo-fireflies.svg";
+import logoZeniq from "@/assets/logo-zeniq.jpg";
+import badgeCannes from "@/assets/badge-cannes.png";
+import badgeIE from "@/assets/badge-ie.png";
+import badgeCDMP from "@/assets/badge-cdmp.png";
 
 const caseStudies = [
   {

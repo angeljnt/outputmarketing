@@ -78,12 +78,6 @@ const About = () => {
                 <p>Emmily runs the operational side of every engagement. Before Output Marketing, she was Executive Operations at Archive — coordinating campaigns across designers, content creators, and client stakeholders. She knows how our work gets built because she was part of building it.</p>
                 <p>Law degree from Universidad Rafael Urdaneta. Director of Project Monitoring and Execution at Harvard National Model United Nations 2020. She brings the same legal and operational discipline to client projects that she brought to Archive.</p>
               </div>
-              <div className="flex items-center gap-4 mt-6">
-                <img src={logoArchive} alt="Archive" className="h-6 w-auto object-contain grayscale" />
-                <span className="text-sm text-muted-foreground">Universidad Rafael Urdaneta</span>
-                <span className="text-sm text-muted-foreground">·</span>
-                <span className="text-sm text-muted-foreground">Harvard NMUN 2020</span>
-              </div>
               <a
                 href="https://www.linkedin.com/in/emmilysalazarp/"
                 target="_blank"

@@ -142,13 +142,13 @@ const About = () => {
       <SectionWrapper>
         <div className="container-default">
           <p className="overline text-center mb-8">Recognition and background</p>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
               <h3 className="text-h3 mb-4">Awards</h3>
-              <div className="flex items-start gap-6 mb-4">
+              <div className="flex items-center gap-6 mb-4 h-16">
                 <img src={badgeWebby} alt="Webby Awards" className="h-16 w-auto object-contain" />
-                <div className="h-20 overflow-hidden flex items-start">
-                  <img src={badgeCannes} alt="Cannes Lions" className="h-32 w-auto object-contain scale-125 -mt-6" />
+                <div className="h-16 overflow-hidden flex items-center">
+                  <img src={badgeCannes} alt="Cannes Lions" className="h-28 w-auto object-contain scale-125 -mt-4" />
                 </div>
               </div>
               <div className="space-y-2">
@@ -158,16 +158,13 @@ const About = () => {
             </div>
             <div>
               <h3 className="text-h3 mb-4">Experience</h3>
-              <div className="flex items-center gap-4 mb-4">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <div className="flex items-center gap-4 mb-4 h-16">
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={logoArchive} alt="Archive" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                
               </div>
               <div className="space-y-2 text-body text-muted-foreground">
                 <p>Fireflies.ai: Influencer Marketing Manager</p>
                 <p>Archive: Marketing Manager</p>
-                
-                
               </div>
             </div>
           </div>

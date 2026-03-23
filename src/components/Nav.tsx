@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import GhostButton from "./GhostButton";
+import logo from "@/assets/output-marketing-logo.svg";
 
 const services = [
   { label: "Influencer Marketing", to: "/services/influencer-marketing" },

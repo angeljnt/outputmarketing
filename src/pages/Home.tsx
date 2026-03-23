@@ -99,7 +99,7 @@ const Home = () => {
           <p className="overline text-center mb-6">Brands we've built programs for</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
             <div className="shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-              <img src={logoArchive} alt="Archive" className="h-8" />
+              <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain" />
             </div>
             <div className="shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
               <img src={logoFireflies} alt="Fireflies.ai" className="h-8" />

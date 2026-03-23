@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaHero from "@/assets/vanessa-hero.jpeg";
 import logoFireflies from "@/assets/logo-fireflies.png";
-import logoZeniq from "@/assets/logo-zeniq.jpg";
+import logoZeniq from "@/assets/logo-zeniq.png";
 import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";

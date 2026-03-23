@@ -16,14 +16,14 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Output Marketing — Vanessa Semprun & Angel</title>
-        <meta name="description" content="A handful of people who do things really well. Meet Vanessa Semprun and Angel — the team behind Output Marketing." />
+        <title>About Output Marketing: Vanessa Semprun & Angel</title>
+        <meta name="description" content="A handful of people who do things really well. Meet Vanessa Semprun and Angel, the team behind Output Marketing." />
       </Helmet>
 
       {/* HERO */}
       <SectionWrapper>
         <div className="container-narrow text-center">
-          <h1 className="text-display mb-4">We're a handful of people who do things really well.</h1>
+          <h1 className="text-display mb-4">A handful of people who do things really well.</h1>
           <p className="text-body-lg text-muted-foreground">Not 50 people. Not a project manager between you and the work. Just us.</p>
         </div>
       </SectionWrapper>
@@ -31,7 +31,7 @@ const About = () => {
       {/* VANESSA */}
       <SectionWrapper>
         <div className="container-default">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
+          <div className="grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-start">
             <div>
               <p className="overline mb-4">The founder</p>
               <div className="space-y-4 text-body text-muted-foreground">
@@ -40,21 +40,29 @@ const About = () => {
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-6">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale" />
-                <span className="text-sm font-semibold text-muted-foreground">Archive</span>
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={badgeIE} alt="IE Business School" className="h-10 object-contain" />
                 <img src={badgeCDMP} alt="CDMP Certified" className="h-10 object-contain" />
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-4">
-                <span className="text-xs font-bold bg-surface px-4 py-2">Webby Awards</span>
+                <img src={badgeWebby} alt="Webby Awards" className="h-10 object-contain" />
                 <img src={badgeCannes} alt="Cannes Lions" className="h-10 object-contain" />
               </div>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-foreground hover:opacity-60 transition-opacity mt-4 inline-block">
+              <a
+                href="https://www.linkedin.com/in/vanessasemprun/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Vanessa Semprun on LinkedIn"
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors mt-4 inline-block"
+              >
                 LinkedIn →
               </a>
             </div>
-            <div className="aspect-[3/4] rounded-lg overflow-hidden">
-              <img src={vanessaAbout} alt="Vanessa Semprun" className="w-full h-full object-cover" />
+            <div className="flex justify-center">
+              <div className="w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+                <img src={vanessaAbout} alt="Vanessa Semprun" className="w-full h-full object-cover object-top" />
+              </div>
             </div>
           </div>
         </div>
@@ -72,9 +80,11 @@ const About = () => {
       {/* ANGEL */}
       <SectionWrapper>
         <div className="container-default">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
-            <div className="aspect-square rounded-lg overflow-hidden">
-              <img src={angelPhoto} alt="Angel" className="w-full h-full object-cover" />
+          <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-16 items-start">
+            <div className="flex justify-center">
+              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+                <img src={angelPhoto} alt="Angel" className="w-full h-full object-cover object-top" />
+              </div>
             </div>
             <div>
               <p className="overline mb-4">Strategy and operations</p>
@@ -118,16 +128,16 @@ const About = () => {
             <div>
               <h3 className="text-h3 mb-4">Experience</h3>
               <div className="flex items-center gap-4 mb-4">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 object-contain" />
-                <img src={logoArchive} alt="Archive" className="h-8 object-contain" />
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={badgeIE} alt="IE Business School" className="h-8 object-contain" />
                 <img src={badgeCDMP} alt="CDMP" className="h-8 object-contain" />
               </div>
               <div className="space-y-2 text-body text-muted-foreground">
-                <p>Fireflies.ai — Influencer Marketing Manager</p>
-                <p>Archive — Marketing Manager</p>
-                <p>IE Business School — MBA</p>
-                <p>CDMP — Certified Digital Marketing Professional</p>
+                <p>Fireflies.ai: Influencer Marketing Manager</p>
+                <p>Archive: Marketing Manager</p>
+                <p>IE Business School: MBA</p>
+                <p>CDMP: Certified Digital Marketing Professional</p>
               </div>
             </div>
           </div>

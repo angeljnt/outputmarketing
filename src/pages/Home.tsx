@@ -7,13 +7,13 @@ import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaHero from "@/assets/vanessa-hero.jpeg";
-import logoFireflies from "@/assets/logo-fireflies.png";
+import logoFireflies from "@/assets/logo-fireflies.svg";
 import logoZeniq from "@/assets/logo-zeniq.svg";
 import logoArchive from "@/assets/logo-archive.svg";
-import badgeWebby from "@/assets/badge-webby.png";
-import badgeCannes from "@/assets/badge-cannes.png";
-import badgeIE from "@/assets/badge-ie.png";
-import badgeCDMP from "@/assets/badge-cdmp.png";
+import badgeWebby from "@/assets/badge-webby.svg";
+import badgeCannes from "@/assets/badge-cannes.svg";
+import badgeIE from "@/assets/badge-ie.svg";
+import badgeCDMP from "@/assets/badge-cdmp.svg";
 
 const caseStudies = [
   {
@@ -272,11 +272,11 @@ const Home = () => {
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
                 <p className="text-caption">IE Business School. CDMP certified.</p>
               </div>
-              <div className="flex flex-wrap items-center gap-6">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
-                <img src={badgeCDMP} alt="CDMP Certified" className="h-8 w-auto object-contain" />
+              <div className="flex flex-wrap items-center gap-10">
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={badgeIE} alt="IE Business School" className="h-24 w-auto object-contain" />
+                <img src={badgeCDMP} alt="CDMP Certified" className="h-24 w-auto object-contain" />
               </div>
             </div>
           </div>

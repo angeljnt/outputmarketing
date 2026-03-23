@@ -51,8 +51,8 @@ const About = () => {
                 LinkedIn →
               </a>
             </div>
-            <div className="bg-surface aspect-[3/4] flex items-center justify-center rounded-lg">
-              <span className="text-muted-foreground text-sm">vanessa-about.jpg</span>
+            <div className="aspect-[3/4] rounded-lg overflow-hidden">
+              <img src={vanessaAbout} alt="Vanessa Semprun" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

@@ -105,7 +105,7 @@ const Home = () => {
               <img src={logoFireflies} alt="Fireflies.ai" className="h-40 w-auto object-contain" />
             </div>
             <div className="shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-              <img src={logoZeniq} alt="Zeniq" className="h-8 object-contain" />
+              <img src={logoZeniq} alt="Zeniq" className="h-16 w-auto object-contain" />
             </div>
           </div>
           <div className="mt-6 text-center space-y-1">

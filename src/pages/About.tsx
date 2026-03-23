@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaAbout from "@/assets/vanessa-about.jpg";
 import angelPhoto from "@/assets/angel-photo.jpeg";
+import emmilyPhoto from "@/assets/emmily-photo.jpeg";
 import logoFireflies from "@/assets/logo-fireflies.png";
 import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";

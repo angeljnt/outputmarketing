@@ -5,7 +5,9 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaAbout from "@/assets/vanessa-about.jpg";
 import angelPhoto from "@/assets/angel-photo.jpeg";
-import logoFireflies from "@/assets/logo-fireflies.svg";
+import logoFireflies from "@/assets/logo-fireflies.png";
+import logoArchive from "@/assets/logo-archive.svg";
+import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";
 import badgeIE from "@/assets/badge-ie.png";
 import badgeCDMP from "@/assets/badge-cdmp.png";
@@ -104,6 +106,10 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-h3 mb-4">Awards</h3>
+              <div className="flex items-center gap-6 mb-4">
+                <img src={badgeWebby} alt="Webby Awards" className="w-14 h-14 object-contain" />
+                <img src={badgeCannes} alt="Cannes Lions" className="w-14 h-14 object-contain" />
+              </div>
               <div className="space-y-2">
                 <p className="text-body">Webby Awards / Best B2B Campaign</p>
                 <p className="text-body">Cannes Lions / Shortlist Recognition</p>
@@ -111,6 +117,12 @@ const About = () => {
             </div>
             <div>
               <h3 className="text-h3 mb-4">Experience</h3>
+              <div className="flex items-center gap-4 mb-4">
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 object-contain" />
+                <img src={logoArchive} alt="Archive" className="h-8 object-contain" />
+                <img src={badgeIE} alt="IE Business School" className="h-8 object-contain" />
+                <img src={badgeCDMP} alt="CDMP" className="h-8 object-contain" />
+              </div>
               <div className="space-y-2 text-body text-muted-foreground">
                 <p>Fireflies.ai — Influencer Marketing Manager</p>
                 <p>Archive — Marketing Manager</p>

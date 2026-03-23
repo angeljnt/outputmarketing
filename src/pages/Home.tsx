@@ -7,8 +7,10 @@ import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaHero from "@/assets/vanessa-hero.jpeg";
-import logoFireflies from "@/assets/logo-fireflies.svg";
+import logoFireflies from "@/assets/logo-fireflies.png";
 import logoZeniq from "@/assets/logo-zeniq.jpg";
+import logoArchive from "@/assets/logo-archive.svg";
+import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";
 import badgeIE from "@/assets/badge-ie.png";
 import badgeCDMP from "@/assets/badge-cdmp.png";
@@ -95,7 +97,7 @@ const Home = () => {
           <p className="overline text-center mb-6">Brands we've built programs for</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
             <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
-              <span className="text-sm font-semibold text-foreground">Archive</span>
+              <img src={logoArchive} alt="Archive" className="h-8" />
             </div>
             <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
               <img src={logoFireflies} alt="Fireflies.ai" className="h-8" />
@@ -150,9 +152,7 @@ const Home = () => {
           <p className="overline text-center mb-6">Industry recognition</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="text-center">
-              <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center mx-auto mb-2 overflow-hidden p-2">
-                <span className="text-xs font-bold text-foreground">Webby</span>
-              </div>
+              <img src={badgeWebby} alt="Webby Awards" className="w-16 h-16 object-contain mx-auto mb-2" />
               <p className="text-sm font-medium">Webby Awards</p>
               <p className="text-caption">Best B2B Campaign</p>
             </div>

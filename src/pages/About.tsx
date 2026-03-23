@@ -71,8 +71,8 @@ const About = () => {
       <SectionWrapper>
         <div className="container-default">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
-            <div className="bg-surface aspect-square flex items-center justify-center rounded-lg">
-              <span className="text-muted-foreground text-sm">angel-photo.jpg</span>
+            <div className="aspect-square rounded-lg overflow-hidden">
+              <img src={angelPhoto} alt="Angel" className="w-full h-full object-cover" />
             </div>
             <div>
               <p className="overline mb-4">Strategy and operations</p>

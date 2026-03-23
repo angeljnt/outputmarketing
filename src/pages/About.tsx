@@ -46,8 +46,8 @@ const About = () => {
                 <img src={badgeCDMP} alt="CDMP Certified" className="h-8 w-auto object-contain" />
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-4">
-                <img src={badgeWebby} alt="Webby Awards" className="h-10 object-contain" />
-                <img src={badgeCannes} alt="Cannes Lions" className="h-10 object-contain" />
+                <img src={badgeWebby} alt="Webby Awards" className="h-8 w-auto object-contain" />
+                <img src={badgeCannes} alt="Cannes Lions" className="h-8 w-auto object-contain" />
               </div>
               <a
                 href="https://www.linkedin.com/in/vanessasemprun/"

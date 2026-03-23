@@ -7,13 +7,13 @@ import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaHero from "@/assets/vanessa-hero.jpeg";
-import logoFireflies from "@/assets/logo-fireflies.png";
+import logoFireflies from "@/assets/logo-fireflies.svg";
 import logoZeniq from "@/assets/logo-zeniq.svg";
 import logoArchive from "@/assets/logo-archive.svg";
-import badgeWebby from "@/assets/badge-webby.png";
-import badgeCannes from "@/assets/badge-cannes.png";
-import badgeIE from "@/assets/badge-ie.png";
-import badgeCDMP from "@/assets/badge-cdmp.png";
+import badgeWebby from "@/assets/badge-webby.svg";
+import badgeCannes from "@/assets/badge-cannes.svg";
+import badgeIE from "@/assets/badge-ie.svg";
+import badgeCDMP from "@/assets/badge-cdmp.svg";
 
 const caseStudies = [
   {

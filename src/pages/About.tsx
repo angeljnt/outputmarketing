@@ -145,10 +145,10 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-h3 mb-4">Awards</h3>
-              <div className="flex items-center gap-6 mb-4">
+              <div className="flex items-start gap-6 mb-4">
                 <img src={badgeWebby} alt="Webby Awards" className="h-16 w-auto object-contain" />
-                <div className="h-24 overflow-hidden flex items-start -mt-2">
-                  <img src={badgeCannes} alt="Cannes Lions" className="h-32 w-auto object-contain scale-125 -mt-4" />
+                <div className="h-20 overflow-hidden flex items-start">
+                  <img src={badgeCannes} alt="Cannes Lions" className="h-32 w-auto object-contain scale-125 -mt-6" />
                 </div>
               </div>
               <div className="space-y-2">

@@ -39,16 +39,6 @@ const About = () => {
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, ran the full content machine, and managed product launches. All of it measurable.</p>
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
               </div>
-              <div className="flex flex-wrap items-center gap-4 mt-6">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
-                
-              </div>
-              <div className="flex flex-wrap items-center gap-4 mt-4">
-                <img src={badgeWebby} alt="Webby Awards" className="h-8 w-auto object-contain" />
-                <img src={badgeCannes} alt="Cannes Lions" className="h-8 w-auto object-contain" />
-              </div>
               <a
                 href="https://www.linkedin.com/in/vanessasemprun/"
                 target="_blank"

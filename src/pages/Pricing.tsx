@@ -26,7 +26,7 @@ const tiers = [
     name: "Program",
     price: "$5,000 / month",
     desc: "Your first influencer program. Or the one that actually works this time.",
-    includes: ["5–10 qualified creators/month", "Creator sourcing, briefing, and management", "Full campaign strategy and execution", "ROI measurement and tracking", "Executive-level monthly report"],
+    includes: ["5 to 10 qualified creators/month", "Creator sourcing, briefing, and management", "Full campaign strategy and execution", "ROI measurement and tracking", "Executive-level monthly report"],
     forText: "B2B SaaS and DTC brands ready to build pipeline through creators.",
     badge: null,
   },
@@ -37,7 +37,7 @@ const comparison = [
   { feature: "Social posts", signal: "12/mo", engine: "16/mo", program: "—" },
   { feature: "SEO articles", signal: "—", engine: "4/mo", program: "—" },
   { feature: "Ghostwriting (founder)", signal: "—", engine: "Yes", program: "—" },
-  { feature: "Creator management", signal: "—", engine: "—", program: "5–10/mo" },
+  { feature: "Creator management", signal: "—", engine: "—", program: "5 to 10/mo" },
   { feature: "Content strategy", signal: "—", engine: "Yes", program: "Yes" },
   { feature: "Campaign execution", signal: "—", engine: "—", program: "Yes" },
   { feature: "ROI reporting", signal: "—", engine: "Monthly KPI", program: "Executive monthly" },
@@ -64,8 +64,8 @@ const Pricing = () => {
   return (
     <>
       <Helmet>
-        <title>Pricing — Output Marketing</title>
-        <meta name="description" content="See exactly what you'd get. Every engagement starts with a 30-day pilot. $1,500–$2,000." />
+        <title>Pricing: Output Marketing</title>
+        <meta name="description" content="See exactly what you'd get. Every engagement starts with a 30-day pilot. $1,500 to $2,000." />
       </Helmet>
 
       {/* HERO */}
@@ -84,7 +84,7 @@ const Pricing = () => {
           <p className="text-body-lg text-dark-muted mb-6">Full audit of your current marketing presence. A roadmap for where to go next. Two to three weeks of live execution so you can see exactly what working with us looks like.</p>
           <p className="text-body text-dark-muted mb-6">No retainer. No contract. No commitment beyond the month.</p>
           <div className="text-left max-w-md mx-auto mb-8">
-            <p className="text-sm font-semibold text-dark-text mb-3">What's included:</p>
+            <p className="text-sm font-semibold text-dark-text mb-3">What ships in 30 days:</p>
             <ul className="space-y-2 text-sm text-dark-muted">
               <li>• Current-state audit (LinkedIn, content, creator presence, or all three)</li>
               <li>• Roadmap covering where to put your attention and why</li>
@@ -104,7 +104,7 @@ const Pricing = () => {
           <p className="text-body-lg text-muted-foreground mb-10">If we continue, you pick the program that fits where you are.</p>
           <div className="grid md:grid-cols-3 gap-6">
             {tiers.map((tier) => (
-              <div key={tier.name} className="bg-surface p-6 md:p-8 flex flex-col relative">
+              <div key={tier.name} className="bg-surface p-6 md:p-8 flex flex-col relative border border-transparent hover:border-accent transition-colors duration-300">
                 {tier.badge && <span className="absolute top-4 right-4 bg-foreground text-background text-xs font-semibold px-3 py-1">{tier.badge}</span>}
                 <h3 className="text-h3 mb-1">{tier.name}</h3>
                 <p className="text-body font-semibold mb-3">{tier.price}</p>
@@ -189,7 +189,7 @@ const Pricing = () => {
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-4">No long contracts. Start with 30 days.</h2>
-          <p className="text-body text-dark-muted mb-6">Or reach us at <a href="mailto:vanessa@output-marketing.com" className="underline hover:opacity-75">vanessa@output-marketing.com</a></p>
+          <p className="text-body text-dark-muted mb-6">Or reach us at <a href="mailto:vanessa@output-marketing.com" className="underline hover:text-accent transition-colors">vanessa@output-marketing.com</a></p>
           <CTAButton to="/contact" variant="primary-inverted">Start my 30-day pilot →</CTAButton>
           <p className="text-sm text-dark-muted mt-3">We reply within 24 hours.</p>
         </div>

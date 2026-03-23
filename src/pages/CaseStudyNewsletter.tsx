@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const CaseStudyNewsletter = () => (
   <>
     <Helmet>
-      <title>Archive AI Newsletter — Output Marketing</title>
+      <title>Archive AI Newsletter: Output Marketing</title>
       <meta name="description" content="3-tier customer segmentation, recurring revenue stream. Retention marketing for Archive's B2B customer base." />
     </Helmet>
 
@@ -24,7 +24,7 @@ const CaseStudyNewsletter = () => (
     <SectionWrapper>
       <div className="container-narrow">
         <h2 className="text-h2 mb-4">The challenge</h2>
-        <p className="text-body text-muted-foreground mb-8">B2B SaaS retention runs on perceived value between purchase and renewal. Customers who only hear from you when something breaks or when renewal is due don't renew. Archive needed a content program that gave customers a reason to stay engaged, and that spoke differently to each tier.</p>
+        <p className="text-body text-muted-foreground mb-8">B2B SaaS retention runs on perceived value between purchase and renewal. Customers who only hear from you when something breaks or when renewal is due don't renew. Archive needed a content program that gave customers a reason to stay engaged, one that spoke differently to each tier.</p>
 
         <h2 className="text-h2 mb-4">What we did</h2>
         <ul className="space-y-3 text-body text-muted-foreground mb-8">
@@ -55,7 +55,7 @@ const CaseStudyNewsletter = () => (
         <p className="text-body text-muted-foreground mb-2">If your customers go quiet between purchases, this is where to start.</p>
         <h2 className="text-h2 mb-6">Building a retention program? Start with a pilot.</h2>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">See all case studies →</Link></p>
+        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
       </div>
     </SectionWrapper>
 

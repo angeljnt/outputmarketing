@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const CaseStudyRadar = () => (
   <>
     <Helmet>
-      <title>Archive Radar Launch — Output Marketing</title>
+      <title>Archive Radar Launch: Output Marketing</title>
       <meta name="description" content="2.45% engagement rate. 7 brands to waitlist. Product launch marketing for Archive's Radar feature." />
     </Helmet>
 
@@ -78,7 +78,7 @@ const CaseStudyRadar = () => (
         <h2 className="text-h2 mb-6">Building a product launch? Start with a pilot.</h2>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
         <p className="mt-4">
-          <Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">See all case studies →</Link>
+          <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link>
         </p>
       </div>
     </SectionWrapper>

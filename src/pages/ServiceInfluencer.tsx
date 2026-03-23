@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const faqs = [
   { q: "Do you only work with B2B brands?", a: "No. The creator programs we run work for both B2B SaaS and DTC brands. The creator pool and briefing strategy are different for each. The rigor is the same." },
   { q: "How do you find the right creators?", a: "We start with your ICP. We map who they follow, what content they engage with, and which creators actually influence their buying decisions. Not just the ones with large followings." },
-  { q: "What's the minimum creator budget on top of the retainer?", a: "It depends on your ICP and creator tier. Micro-influencers in most B2B categories can be activated for $200–$800 per post. We'll give you a realistic number in the pilot debrief." },
+  { q: "What's the minimum creator budget on top of the retainer?", a: "It depends on your ICP and creator tier. Micro-influencers in most B2B categories can be activated for $200 to $800 per post. We'll give you a realistic number in the pilot debrief." },
   { q: "How long until we see pipeline results?", a: "Most programs start generating measurable activity in month two. Month one is setup. Month two is when posts go live. Month three is when patterns emerge." },
   { q: "Do we own the creator relationships after we stop working with you?", a: "Yes. Everything we build belongs to you. Creator contacts, briefs, relationships, reporting templates. We don't hold any of it hostage." },
 ];
@@ -16,7 +16,7 @@ const faqs = [
 const ServiceInfluencer = () => (
   <>
     <Helmet>
-      <title>Influencer Marketing — Output Marketing</title>
+      <title>Influencer Marketing: Output Marketing</title>
       <meta name="description" content="Influencer programs that build pipeline, not just awareness. For B2B SaaS and DTC brands." />
     </Helmet>
 
@@ -26,7 +26,7 @@ const ServiceInfluencer = () => (
         <h1 className="text-display mb-4">Influencer programs that build pipeline, not just awareness.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">For B2B SaaS companies and DTC brands that are done paying for impressions with no ROI to show for it.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="text-caption mt-3">No retainer. No long contract. $1,500–$2,000 for 30 days.</p>
+        <p className="text-caption mt-3">No retainer. No long contract. $1,500 to $2,000 for 30 days.</p>
       </div>
     </SectionWrapper>
 
@@ -45,7 +45,7 @@ const ServiceInfluencer = () => (
             </ul>
           </div>
           <div>
-            <h3 className="text-h3 mb-3">DTC Brands ($500K–$5M revenue)</h3>
+            <h3 className="text-h3 mb-3">DTC Brands ($500K to $5M revenue)</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
               <li>• Found product-market fit</li>
               <li>• Burning too much on paid social</li>
@@ -85,15 +85,15 @@ const ServiceInfluencer = () => (
       <div className="container-default">
         <p className="overline mb-6">From the work</p>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-surface p-6">
+          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
             <h3 className="text-h3 mb-2">Archive Radar Feature Launch</h3>
             <p className="text-caption mb-3">7 brands to waitlist · 2.45% engagement rate</p>
-            <Link to="/work/archive-radar-launch" className="text-sm font-medium hover:opacity-60 transition-opacity">Read case study →</Link>
+            <Link to="/work/archive-radar-launch" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
           </div>
-          <div className="bg-surface p-6">
+          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
             <h3 className="text-h3 mb-2">Archive AI Insider Newsletter</h3>
             <p className="text-caption mb-3">Recurring revenue stream · 3-tier segmentation</p>
-            <Link to="/work/archive-ai-newsletter" className="text-sm font-medium hover:opacity-60 transition-opacity">Read case study →</Link>
+            <Link to="/work/archive-ai-newsletter" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
           </div>
         </div>
       </div>
@@ -128,10 +128,10 @@ const ServiceInfluencer = () => (
       <div className="container-narrow text-center">
         <h3 className="text-h3 mb-1">Program tier</h3>
         <p className="text-h2 mb-4">$5,000 / month</p>
-        <p className="text-body text-muted-foreground mb-6">5–10 qualified creators per month, strategy, execution, ROI measurement, executive monthly report.</p>
-        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500–$2,000 for 30 days.</p>
+        <p className="text-body text-muted-foreground mb-6">5 to 10 qualified creators per month, strategy, execution, ROI measurement, executive monthly report.</p>
+        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500 to $2,000 for 30 days.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">See full pricing →</Link></p>
+        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
       </div>
     </SectionWrapper>
 

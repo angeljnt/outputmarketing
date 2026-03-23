@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 const caseStudies = [
   {
-    title: "Archive — Radar Feature Launch",
+    title: "Archive: Radar Feature Launch",
     client: "Archive",
     type: "Product Launch Marketing",
     date: "Feb 2025",
@@ -15,7 +15,7 @@ const caseStudies = [
     link: "/work/archive-radar-launch",
   },
   {
-    title: "Archive — AI Insider Newsletter",
+    title: "Archive: AI Insider Newsletter",
     client: "Archive",
     type: "Product Launch & Customer Retention",
     date: "2025",
@@ -23,7 +23,7 @@ const caseStudies = [
     link: "/work/archive-ai-newsletter",
   },
   {
-    title: "Archive — LinkedIn Content Strategy",
+    title: "Archive: LinkedIn Content Strategy",
     client: "Archive",
     type: "Thought Leadership",
     date: "Ongoing",
@@ -31,7 +31,7 @@ const caseStudies = [
     link: "/work/archive-linkedin-strategy",
   },
   {
-    title: "Archive — Product Marketing Campaign",
+    title: "Archive: Product Marketing Campaign",
     client: "Archive",
     type: "Product Marketing",
     date: "Ongoing",
@@ -44,7 +44,7 @@ const Work = () => {
   return (
     <>
       <Helmet>
-        <title>Work — Output Marketing</title>
+        <title>Work: Output Marketing</title>
         <meta name="description" content="Results, not promises. Four campaigns. One client. One year. Different problems, same standard." />
       </Helmet>
 
@@ -70,7 +70,7 @@ const Work = () => {
 
       <SectionWrapper>
         <div className="container-narrow text-center">
-          <h2 className="text-h2 mb-6">Want results like these for your brand?</h2>
+          <h2 className="text-h2 mb-6">Your brand could have numbers like these.</h2>
           <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
           <p className="text-caption mt-3">No retainer. No contract. We reply within 24 hours.</p>
         </div>

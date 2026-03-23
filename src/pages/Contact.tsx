@@ -32,7 +32,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Output Marketing</title>
-        <meta name="description" content="Let's talk. B2B SaaS or DTC brand. Marketing that ships results. Start your 30-day pilot." />
+        <meta name="description" content="B2B SaaS or DTC brand. Marketing that ships results. Start your 30-day pilot." />
       </Helmet>
 
       <SectionWrapper>
@@ -50,7 +50,7 @@ const Contact = () => {
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring min-h-[44px]"
+                className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
               />
             </div>
             <div>
@@ -62,7 +62,7 @@ const Contact = () => {
                 required
                 value={form.company}
                 onChange={(e) => setForm({ ...form, company: e.target.value })}
-                className="w-full border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring min-h-[44px]"
+                className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
               />
             </div>
             <div>
@@ -76,17 +76,17 @@ const Contact = () => {
                   value={form.email}
                   onChange={(e) => { setForm({ ...form, email: e.target.value }); setEmailValid(null); }}
                   onBlur={handleEmailBlur}
-                  className={`w-full border bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 min-h-[44px] pr-10 ${
-                    emailValid === false ? "border-destructive focus:ring-destructive" :
-                    emailValid === true ? "border-success focus:ring-success" :
-                    "border-border focus:ring-ring"
+                  className={`w-full border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus:outline-none min-h-[44px] pr-10 ${
+                    emailValid === false ? "border-destructive focus-visible:ring-destructive" :
+                    emailValid === true ? "border-success focus-visible:ring-success" :
+                    "border-border focus-visible:ring-accent"
                   }`}
                 />
                 {emailValid === true && <Check className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-success" />}
                 {emailValid === false && <AlertCircle className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-destructive" />}
               </div>
               {emailValid === false && (
-                <p className="text-xs text-destructive mt-1">Please enter a valid email (name@company.com)</p>
+                <p className="text-micro text-destructive mt-1">Please enter a valid email (name@company.com)</p>
               )}
             </div>
             <div>
@@ -98,7 +98,7 @@ const Contact = () => {
                 rows={5}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring min-h-[120px] resize-y"
+                className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[120px] resize-y"
               />
             </div>
             <CTAButton type="submit">Send it →</CTAButton>
@@ -110,7 +110,7 @@ const Contact = () => {
             <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
             <p className="text-caption mt-4">
               Prefer email?{" "}
-              <a href="mailto:vanessa@output-marketing.com" className="text-foreground hover:opacity-60 transition-opacity">vanessa@output-marketing.com</a>
+              <a href="mailto:vanessa@output-marketing.com" className="text-foreground hover:text-accent transition-colors">vanessa@output-marketing.com</a>
             </p>
           </div>
         </div>

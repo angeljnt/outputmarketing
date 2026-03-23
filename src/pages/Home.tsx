@@ -272,11 +272,11 @@ const Home = () => {
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
                 <p className="text-caption">IE Business School. CDMP certified.</p>
               </div>
-              <div className="flex flex-wrap items-center gap-6">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
-                <img src={badgeCDMP} alt="CDMP Certified" className="h-8 w-auto object-contain" />
+              <div className="flex flex-wrap items-center gap-10">
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={badgeIE} alt="IE Business School" className="h-24 w-auto object-contain" />
+                <img src={badgeCDMP} alt="CDMP Certified" className="h-24 w-auto object-contain" />
               </div>
             </div>
           </div>

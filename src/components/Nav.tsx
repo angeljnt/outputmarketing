@@ -42,8 +42,8 @@ const Nav = () => {
     >
       <div className="container-wide flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="text-lg font-bold text-foreground tracking-tight">
-          Output Marketing
+        <Link to="/" className="shrink-0">
+          <img src={logo} alt="Output Marketing" className="h-7" />
         </Link>
 
         {/* Desktop links */}

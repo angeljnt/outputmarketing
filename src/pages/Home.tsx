@@ -267,9 +267,10 @@ const Home = () => {
             <p className="text-caption">IE Business School. CDMP certified.</p>
           </div>
           <div className="flex flex-wrap items-center gap-6">
-            {["Fireflies", "Archive", "IE Business School", "CDMP"].map((name) => (
-              <div key={name} className="bg-surface px-4 py-2 text-xs text-muted-foreground">{name}</div>
-            ))}
+            <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale" />
+            <span className="text-sm font-semibold text-muted-foreground">Archive</span>
+            <img src={badgeIE} alt="IE Business School" className="h-10 object-contain" />
+            <img src={badgeCDMP} alt="CDMP Certified" className="h-10 object-contain" />
           </div>
         </div>
       </SectionWrapper>

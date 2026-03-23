@@ -94,11 +94,15 @@ const Home = () => {
         <div className="container-default">
           <p className="overline text-center mb-6">Brands we've built programs for</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
-            {["Archive", "Fireflies", "Zeniq"].map((name) => (
-              <div key={name} className="shrink-0 bg-surface px-6 py-3 text-sm text-muted-foreground grayscale">
-                {name}
-              </div>
-            ))}
+            <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <span className="text-sm font-semibold text-foreground">Archive</span>
+            </div>
+            <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <img src={logoFireflies} alt="Fireflies.ai" className="h-8" />
+            </div>
+            <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <img src={logoZeniq} alt="Zeniq" className="h-8 object-contain" />
+            </div>
           </div>
           <div className="mt-6 text-center space-y-1">
             <p className="text-[13px] text-muted-foreground">Archive Radar launch: 2.45% engagement rate · 7 brands to waitlist</p>

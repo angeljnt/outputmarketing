@@ -10,7 +10,7 @@ import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";
 import badgeIE from "@/assets/badge-ie.png";
-import badgeCDMP from "@/assets/badge-cdmp.png";
+
 
 const About = () => {
   return (

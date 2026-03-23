@@ -130,18 +130,18 @@ const Home = () => {
       {/* AGITATE */}
       <SectionWrapper>
         <div className="container-default">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-h3 mb-3">Budget spent. No pipeline.</h3>
-              <p className="text-body text-muted-foreground">You've paid for posts, campaigns, and creator fees. The CAC math doesn't work.</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Budget spent. No pipeline.</h3>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">You've paid for posts, campaigns, and creator fees. The CAC math doesn't work.</p>
             </div>
-            <div>
-              <h3 className="text-h3 mb-3">Better product. Less visibility.</h3>
-              <p className="text-body text-muted-foreground">Your roadmap is stronger. Your pricing is tighter. But no one outside your current users knows you exist.</p>
+            <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Better product. Less visibility.</h3>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Your roadmap is stronger. Your pricing is tighter. But no one outside your current users knows you exist.</p>
             </div>
-            <div>
-              <h3 className="text-h3 mb-3">Their name. Not yours.</h3>
-              <p className="text-body text-muted-foreground">Every time your ICP searches, reads, or asks around, your competitor's name is the one that comes up.</p>
+            <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Their name. Not yours.</h3>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Every time your ICP searches, reads, or asks around, your competitor's name is the one that comes up.</p>
             </div>
           </div>
           <p className="text-body text-muted-foreground text-center mt-10">This is a solvable problem. Most agencies just aren't solving it.</p>
@@ -174,27 +174,27 @@ const Home = () => {
           <p className="text-body-lg text-muted-foreground mb-10">All of them start the same way: a 30-day pilot so you can see the work before you commit.</p>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-surface p-6 md:p-8 flex flex-col border border-transparent hover:border-accent transition-colors duration-300">
-              <h3 className="text-h3 mb-1">Signal</h3>
-              <p className="text-body font-semibold mb-3">$2,000/month</p>
-              <p className="text-body text-muted-foreground mb-4">A consistent, human social presence on the channels that matter for your ICP. LinkedIn + one other channel. 12 posts/month. Content calendar. Monthly report.</p>
-              <p className="text-caption mb-4">For: Early-stage SaaS teams with no marketing hire yet.</p>
-              <Link to="/services/social-media" className="text-sm font-medium hover:text-accent transition-colors mt-auto">Learn more →</Link>
+            <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Signal</h3>
+              <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$2,000/month</p>
+              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A consistent, human social presence on the channels that matter for your ICP. LinkedIn + one other channel. 12 posts/month. Content calendar. Monthly report.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Early-stage SaaS teams with no marketing hire yet.</p>
+              <Link to="/services/social-media" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
-            <div className="bg-surface p-6 md:p-8 flex flex-col relative border border-transparent hover:border-accent transition-colors duration-300">
+            <div className="group bg-surface p-6 md:p-8 flex flex-col relative border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <span className="absolute top-4 right-4 bg-foreground text-background text-xs font-semibold px-3 py-1">Most popular</span>
-              <h3 className="text-h3 mb-1">Engine</h3>
-              <p className="text-body font-semibold mb-3">$3,500/month</p>
-              <p className="text-body text-muted-foreground mb-4">A content system that builds organic pipeline. Not just followers. Content strategy, 4 SEO articles/month, 16 social posts, founder LinkedIn ghostwriting, monthly KPI report.</p>
-              <p className="text-caption mb-4">For: SaaS companies that need leads from content, not just presence.</p>
-              <Link to="/services/content-marketing" className="text-sm font-medium hover:text-accent transition-colors mt-auto">Learn more →</Link>
+              <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Engine</h3>
+              <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$3,500/month</p>
+              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A content system that builds organic pipeline. Not just followers. Content strategy, 4 SEO articles/month, 16 social posts, founder LinkedIn ghostwriting, monthly KPI report.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: SaaS companies that need leads from content, not just presence.</p>
+              <Link to="/services/content-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
-            <div className="bg-surface p-6 md:p-8 flex flex-col border border-transparent hover:border-accent transition-colors duration-300">
-              <h3 className="text-h3 mb-1">Program</h3>
-              <p className="text-body font-semibold mb-3">$5,000/month</p>
-              <p className="text-body text-muted-foreground mb-4">Your first influencer program. Or the one that actually works this time. 5 to 10 qualified creators/month, strategy, execution, ROI measurement, executive report.</p>
-              <p className="text-caption mb-4">For: B2B SaaS and DTC brands ready to build pipeline through creators.</p>
-              <Link to="/services/influencer-marketing" className="text-sm font-medium hover:text-accent transition-colors mt-auto">Learn more →</Link>
+            <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Program</h3>
+              <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$5,000/month</p>
+              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">Your first influencer program. Or the one that actually works this time. 5 to 10 qualified creators/month, strategy, execution, ROI measurement, executive report.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: B2B SaaS and DTC brands ready to build pipeline through creators.</p>
+              <Link to="/services/influencer-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
           </div>
 
@@ -221,21 +221,21 @@ const Home = () => {
       <SectionWrapper>
         <div className="container-default">
           <h2 className="text-h2 mb-10">How it works.</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <p className="overline mb-3">Step 1</p>
-              <h3 className="text-h3 mb-3">The Pilot</h3>
-              <p className="text-body text-muted-foreground">We start with 30 days. You see the quality of the work. We learn your product, your ICP, and your voice. $1,500 to $2,000, no strings attached.</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">The Pilot</h3>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We start with 30 days. You see the quality of the work. We learn your product, your ICP, and your voice. $1,500 to $2,000, no strings attached.</p>
             </div>
-            <div>
-              <p className="overline mb-3">Step 2</p>
-              <h3 className="text-h3 mb-3">The Strategy</h3>
-              <p className="text-body text-muted-foreground">If we continue, we build the full program: content calendar, creator roster, or both. Strategy first, execution second. No guessing.</p>
+            <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 2</p>
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">The Strategy</h3>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">If we continue, we build the full program: content calendar, creator roster, or both. Strategy first, execution second. No guessing.</p>
             </div>
-            <div>
-              <p className="overline mb-3">Step 3</p>
-              <h3 className="text-h3 mb-3">The Output</h3>
-              <p className="text-body text-muted-foreground">You get the results. We handle the work. You own everything we produce: content, relationships, playbooks.</p>
+            <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+              <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 3</p>
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">The Output</h3>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">You get the results. We handle the work. You own everything we produce: content, relationships, playbooks.</p>
             </div>
           </div>
           <p className="text-body text-muted-foreground text-center mt-10">Results, not promises.</p>
@@ -260,7 +260,7 @@ const Home = () => {
         <div className="container-default">
           <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-16 items-start">
             <div className="flex justify-center">
-              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden">
                 <img src={vanessaHero} alt="Vanessa Semprun" className="w-full h-full object-cover object-top" />
               </div>
             </div>

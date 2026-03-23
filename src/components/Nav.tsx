@@ -45,13 +45,13 @@ const Nav = () => {
           <img src={logo} alt="Output Marketing" className="h-7" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) =>
             link.dropdown ? (
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                  className="text-sm font-medium text-foreground hover:text-accent transition-colors flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                  className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                 >
                   {link.label}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
@@ -62,7 +62,7 @@ const Nav = () => {
                       <Link
                         key={s.to}
                         to={s.to}
-                        className="block px-4 py-2 text-sm text-foreground hover:text-accent transition-colors"
+                        className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200"
                       >
                         {s.label}
                       </Link>
@@ -74,7 +74,7 @@ const Nav = () => {
               <Link
                 key={link.label}
                 to={link.to}
-                className="text-sm font-medium text-foreground hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
               >
                 {link.label}
               </Link>
@@ -94,21 +94,21 @@ const Nav = () => {
 
       {mobileOpen && (
         <div className="md:hidden bg-background border-t border-border">
-          <div className="container-wide py-4 flex flex-col gap-4">
+          <div className="container-wide py-4 flex flex-col gap-2">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.label}>
                   <button
                     onClick={() => setServicesOpen(!servicesOpen)}
-                    className="text-sm font-medium text-foreground hover:text-accent transition-colors flex items-center gap-1 min-h-[44px]"
+                    className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 min-h-[44px] w-full"
                   >
                     {link.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
                   </button>
                   {servicesOpen && (
-                    <div className="pl-4 flex flex-col gap-2 mt-1">
+                    <div className="pl-4 flex flex-col gap-1 mt-1">
                       {services.map((s) => (
-                        <Link key={s.to} to={s.to} className="text-sm text-muted-foreground hover:text-accent transition-colors min-h-[44px] flex items-center">
+                        <Link key={s.to} to={s.to} className="px-3 py-2 rounded-sm text-sm text-muted-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[44px] flex items-center">
                           {s.label}
                         </Link>
                       ))}
@@ -119,13 +119,13 @@ const Nav = () => {
                 <Link
                   key={link.label}
                   to={link.to}
-                  className="text-sm font-medium text-foreground hover:text-accent transition-colors min-h-[44px] flex items-center"
+                  className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </Link>
               )
             )}
-            <GhostButton to="/contact" className="w-full">Start a pilot →</GhostButton>
+            <GhostButton to="/contact" className="w-full mt-2">Start a pilot →</GhostButton>
           </div>
         </div>
       )}

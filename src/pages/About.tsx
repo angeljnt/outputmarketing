@@ -60,7 +60,7 @@ const About = () => {
               </a>
             </div>
             <div className="flex justify-center">
-              <div className="w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <div className="w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden">
                 <img src={vanessaAbout} alt="Vanessa Semprun" className="w-full h-full object-cover object-top" />
               </div>
             </div>
@@ -82,7 +82,7 @@ const About = () => {
         <div className="container-default">
           <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-16 items-start">
             <div className="flex justify-center">
-              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden">
                 <img src={angelPhoto} alt="Angel" className="w-full h-full object-cover object-top" />
               </div>
             </div>

@@ -152,9 +152,7 @@ const Home = () => {
           <p className="overline text-center mb-6">Industry recognition</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="text-center">
-              <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center mx-auto mb-2 overflow-hidden p-2">
-                <span className="text-xs font-bold text-foreground">Webby</span>
-              </div>
+              <img src={badgeWebby} alt="Webby Awards" className="w-16 h-16 object-contain mx-auto mb-2" />
               <p className="text-sm font-medium">Webby Awards</p>
               <p className="text-caption">Best B2B Campaign</p>
             </div>

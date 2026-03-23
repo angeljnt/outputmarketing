@@ -159,7 +159,7 @@ const About = () => {
             <div>
               <h3 className="text-h3 mb-4">Experience</h3>
               <div className="flex items-center gap-4 mb-4">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={logoArchive} alt="Archive" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 
               </div>

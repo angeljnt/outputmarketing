@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const CaseStudyLinkedIn = () => (
   <>
     <Helmet>
-      <title>Archive LinkedIn Strategy — Output Marketing</title>
+      <title>Archive LinkedIn Strategy: Output Marketing</title>
       <meta name="description" content="1.21% engagement rate maintained. 7,363 impressions. LinkedIn content strategy for Archive." />
     </Helmet>
 
@@ -28,7 +28,7 @@ const CaseStudyLinkedIn = () => (
         <p className="text-body text-muted-foreground mb-8">Archive sells to DTC brands. Its ICP: brand managers, CMOs, and founders at DTC companies. They spend meaningful time on LinkedIn. A credible LinkedIn presence for Archive wasn't nice to have. It was the organic channel with the highest concentration of their buyers.</p>
 
         <h2 className="text-h2 mb-4">The challenge</h2>
-        <p className="text-body text-muted-foreground mb-8">Thought leadership content is easy to produce and easy to ignore. Archive needed content that generated engagement from the right people — real positions, backed with data, in a voice that sounded like someone who knew the space.</p>
+        <p className="text-body text-muted-foreground mb-8">Thought leadership content is easy to produce and easy to ignore. Archive needed content that generated engagement from the right people: real positions, backed with data, in a voice that sounded like someone who knew the space.</p>
 
         <h2 className="text-h2 mb-4">What we did</h2>
         <ul className="space-y-3 text-body text-muted-foreground mb-8">
@@ -66,9 +66,9 @@ const CaseStudyLinkedIn = () => (
     <SectionWrapper>
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-2">If your ICP is on LinkedIn and you're not showing up, this is what consistent looks like.</p>
-        <h2 className="text-h2 mb-6">Want LinkedIn content that actually gets engagement?</h2>
+        <h2 className="text-h2 mb-6">Need LinkedIn content that actually gets engagement?</h2>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">See all case studies →</Link></p>
+        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
       </div>
     </SectionWrapper>
 

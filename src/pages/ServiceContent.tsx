@@ -16,7 +16,7 @@ const faqs = [
 const ServiceContent = () => (
   <>
     <Helmet>
-      <title>Content Marketing — Output Marketing</title>
+      <title>Content Marketing: Output Marketing</title>
       <meta name="description" content="Content that sounds like a person wrote it. SEO articles, LinkedIn ghostwriting, and content strategy for B2B SaaS teams." />
     </Helmet>
 
@@ -25,7 +25,7 @@ const ServiceContent = () => (
         <h1 className="text-display mb-4">Content that sounds like a person wrote it. Because one did.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">SEO articles, LinkedIn ghostwriting, and content strategy for B2B SaaS teams that need organic pipeline, not just word count.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="text-caption mt-3">No retainer. No long contract. $1,500–$2,000 for 30 days.</p>
+        <p className="text-caption mt-3">No retainer. No long contract. $1,500 to $2,000 for 30 days.</p>
       </div>
     </SectionWrapper>
 
@@ -72,15 +72,15 @@ const ServiceContent = () => (
       <div className="container-default">
         <p className="overline mb-6">From the work</p>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-surface p-6">
+          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
             <h3 className="text-h3 mb-2">Archive LinkedIn Content Strategy</h3>
             <p className="text-caption mb-3">7,363 impressions · 114 reactions · 1.21% engagement rate</p>
-            <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium hover:opacity-60 transition-opacity">Read case study →</Link>
+            <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
           </div>
-          <div className="bg-surface p-6">
+          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
             <h3 className="text-h3 mb-2">Archive Product Marketing Campaign</h3>
             <p className="text-caption mb-3">2 campaigns managed simultaneously · Full dashboard built</p>
-            <Link to="/work/archive-product-marketing" className="text-sm font-medium hover:opacity-60 transition-opacity">Read case study →</Link>
+            <Link to="/work/archive-product-marketing" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
           </div>
         </div>
       </div>
@@ -113,9 +113,9 @@ const ServiceContent = () => (
       <div className="container-narrow text-center">
         <h3 className="text-h3 mb-1">Engine tier</h3>
         <p className="text-h2 mb-4">$3,500 / month</p>
-        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500–$2,000 for 30 days.</p>
+        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500 to $2,000 for 30 days.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">See full pricing →</Link></p>
+        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
       </div>
     </SectionWrapper>
 

@@ -16,7 +16,7 @@ const faqs = [
 const ServiceSocial = () => (
   <>
     <Helmet>
-      <title>Social Media — Output Marketing</title>
+      <title>Social Media: Output Marketing</title>
       <meta name="description" content="A social presence that sounds like you. Consistent content for B2B SaaS and DTC brands." />
     </Helmet>
 
@@ -25,7 +25,7 @@ const ServiceSocial = () => (
         <h1 className="text-display mb-4">A social presence that sounds like you. Not a scheduler.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">Consistent content for B2B SaaS and DTC brands that need to show up on social without spending 10 hours a week on it themselves.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="text-caption mt-3">No retainer. No long contract. $1,500–$2,000 for 30 days.</p>
+        <p className="text-caption mt-3">No retainer. No long contract. $1,500 to $2,000 for 30 days.</p>
       </div>
     </SectionWrapper>
 
@@ -85,10 +85,10 @@ const ServiceSocial = () => (
     <SectionWrapper>
       <div className="container-default">
         <p className="overline mb-6">From the work</p>
-        <div className="bg-surface p-6 max-w-md">
+        <div className="bg-surface p-6 max-w-md border border-transparent hover:border-accent transition-colors duration-300">
           <h3 className="text-h3 mb-2">Archive LinkedIn Content Strategy</h3>
           <p className="text-caption mb-3">7,363 impressions · 1.21% engagement rate · 114 reactions on featured post</p>
-          <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium hover:opacity-60 transition-opacity">Read case study →</Link>
+          <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
         </div>
       </div>
     </SectionWrapper>
@@ -120,9 +120,9 @@ const ServiceSocial = () => (
       <div className="container-narrow text-center">
         <h3 className="text-h3 mb-1">Signal tier</h3>
         <p className="text-h2 mb-4">$2,000 / month</p>
-        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500–$2,000 for 30 days.</p>
+        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500 to $2,000 for 30 days.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">See full pricing →</Link></p>
+        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
       </div>
     </SectionWrapper>
 

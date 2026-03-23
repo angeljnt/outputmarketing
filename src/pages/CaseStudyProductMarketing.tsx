@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const CaseStudyProductMarketing = () => (
   <>
     <Helmet>
-      <title>Archive Product Marketing — Output Marketing</title>
+      <title>Archive Product Marketing: Output Marketing</title>
       <meta name="description" content="2 simultaneous product campaigns managed. Full campaign dashboard built. Product marketing for Archive." />
     </Helmet>
 
@@ -42,7 +42,7 @@ const CaseStudyProductMarketing = () => (
           <li>• 2 simultaneous product campaigns managed</li>
           <li>• 1 full campaign dashboard built from scratch</li>
           <li>• End-to-end DTC brand pipeline tracking implemented</li>
-          <li>• 0 dropped balls — both campaigns ran on schedule, on brief, and within budget</li>
+          <li>• 0 dropped balls: both campaigns ran on schedule, on brief, and within budget</li>
         </ul>
 
         <h2 className="text-h2 mb-4">What worked and why</h2>
@@ -58,7 +58,7 @@ const CaseStudyProductMarketing = () => (
         <p className="text-body text-muted-foreground mb-2">Running multiple campaigns and losing track?</p>
         <h2 className="text-h2 mb-6">Need a system that tracks? Start with a pilot.</h2>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">See all case studies →</Link></p>
+        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
       </div>
     </SectionWrapper>
 

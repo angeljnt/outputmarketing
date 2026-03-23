@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaAbout from "@/assets/vanessa-about.jpg";
 import angelPhoto from "@/assets/angel-photo.jpeg";
+import emmilyPhoto from "@/assets/emmily-photo.jpeg";
 import logoFireflies from "@/assets/logo-fireflies.png";
 import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";
@@ -16,8 +17,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Output Marketing: Vanessa Semprun & Angel</title>
-        <meta name="description" content="A handful of people who do things really well. Meet Vanessa Semprun and Angel, the team behind Output Marketing." />
+        <title>About Output Marketing — Vanessa Semprun, Emmily Salazar & Angel</title>
+        <meta name="description" content="A boutique marketing team that does a few things very well. No retainers. You talk directly to the people doing the work." />
       </Helmet>
 
       {/* HERO */}
@@ -64,6 +65,41 @@ const About = () => {
           <p className="text-body-lg mb-4">Seen enough? Start with 30 days.</p>
           <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
           <p className="text-caption mt-3">No retainer. No contract.</p>
+        </div>
+      </SectionWrapper>
+
+      {/* EMMILY */}
+      <SectionWrapper>
+        <div className="container-default">
+          <div className="grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-start">
+            <div>
+              <p className="overline mb-4">Operations</p>
+              <div className="space-y-4 text-body text-muted-foreground">
+                <p>Emmily runs the operational side of every engagement. Before Output Marketing, she was Executive Operations at Archive — coordinating campaigns across designers, content creators, and client stakeholders. She knows how our work gets built because she was part of building it.</p>
+                <p>Law degree from Universidad Rafael Urdaneta. Director of Project Monitoring and Execution at Harvard National Model United Nations 2020. She brings the same legal and operational discipline to client projects that she brought to Archive.</p>
+              </div>
+              <div className="flex items-center gap-4 mt-6">
+                <img src={logoArchive} alt="Archive" className="h-6 w-auto object-contain grayscale" />
+                <span className="text-sm text-muted-foreground">Universidad Rafael Urdaneta</span>
+                <span className="text-sm text-muted-foreground">·</span>
+                <span className="text-sm text-muted-foreground">Harvard NMUN 2020</span>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/emmilysalazarp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Emmily Salazar on LinkedIn"
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors mt-4 inline-block"
+              >
+                LinkedIn →
+              </a>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden">
+                <img src={emmilyPhoto} alt="Emmily Salazar" className="w-full h-full object-cover object-top" />
+              </div>
+            </div>
+          </div>
         </div>
       </SectionWrapper>
 

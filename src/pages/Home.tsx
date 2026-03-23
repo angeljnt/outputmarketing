@@ -110,7 +110,7 @@ const Home = () => {
           </div>
           <div className="mt-6 text-center space-y-1">
             <p className="text-small text-muted-foreground">Archive Radar launch: 2.45% engagement rate · 7 brands to waitlist</p>
-            <p className="text-small text-muted-foreground">B2B fintech funding announcement: 855,000 impressions · 3.40% engagement</p>
+            <p className="text-small text-muted-foreground">B2B AI SaaS product launch: 855,000 impressions · 3.40% engagement</p>
           </div>
         </div>
       </SectionWrapper>

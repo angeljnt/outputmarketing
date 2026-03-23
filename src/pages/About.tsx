@@ -147,7 +147,9 @@ const About = () => {
               <h3 className="text-h3 mb-4">Awards</h3>
               <div className="flex items-center gap-6 mb-4">
                 <img src={badgeWebby} alt="Webby Awards" className="h-16 w-auto object-contain" />
-                <img src={badgeCannes} alt="Cannes Lions" className="h-16 w-auto object-contain" />
+                <div className="h-24 overflow-hidden flex items-center">
+                  <img src={badgeCannes} alt="Cannes Lions" className="h-32 w-auto object-contain scale-125" />
+                </div>
               </div>
               <div className="space-y-2">
                 <p className="text-body">Webby Awards / Best B2B Campaign</p>

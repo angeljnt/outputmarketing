@@ -68,6 +68,41 @@ const About = () => {
         </div>
       </SectionWrapper>
 
+      {/* EMMILY */}
+      <SectionWrapper>
+        <div className="container-default">
+          <div className="grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-start">
+            <div>
+              <p className="overline mb-4">Operations</p>
+              <div className="space-y-4 text-body text-muted-foreground">
+                <p>Emmily runs the operational side of every engagement. Before Output Marketing, she was Executive Operations at Archive — coordinating campaigns across designers, content creators, and client stakeholders. She knows how our work gets built because she was part of building it.</p>
+                <p>Law degree from Universidad Rafael Urdaneta. Director of Project Monitoring and Execution at Harvard National Model United Nations 2020. She brings the same legal and operational discipline to client projects that she brought to Archive.</p>
+              </div>
+              <div className="flex items-center gap-4 mt-6">
+                <img src={logoArchive} alt="Archive" className="h-6 w-auto object-contain grayscale" />
+                <span className="text-sm text-muted-foreground">Universidad Rafael Urdaneta</span>
+                <span className="text-sm text-muted-foreground">·</span>
+                <span className="text-sm text-muted-foreground">Harvard NMUN 2020</span>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/emmilysalazarp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Emmily Salazar on LinkedIn"
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors mt-4 inline-block"
+              >
+                LinkedIn →
+              </a>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden">
+                <img src={emmilyPhoto} alt="Emmily Salazar" className="w-full h-full object-cover object-top" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* ANGEL */}
       <SectionWrapper>
         <div className="container-default">

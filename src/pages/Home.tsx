@@ -82,8 +82,8 @@ const Home = () => {
               <CTAButton to="/contact" className="mb-3">Start my 30-day pilot →</CTAButton>
               <p className="text-caption">No retainer commitment. No long contracts. $1,500–$2,000 for 30 days.</p>
             </div>
-            <div className="bg-surface aspect-[4/5] md:aspect-[3/4] flex items-center justify-center rounded-lg">
-              <span className="text-muted-foreground text-sm">vanessa-hero.jpg</span>
+            <div className="aspect-[4/5] md:aspect-[3/4] rounded-lg overflow-hidden">
+              <img src={vanessaHero} alt="Vanessa Semprun, founder of Output Marketing" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.svg";
 import badgeCannes from "@/assets/badge-cannes.svg";
 import badgeIE from "@/assets/badge-ie.svg";
-import badgeCDMP from "@/assets/badge-cdmp.svg";
+
 
 const caseStudies = [
   {

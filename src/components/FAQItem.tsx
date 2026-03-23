@@ -11,14 +11,14 @@ const FAQItem = ({ question, answer }: FAQItemProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-border">
+    <div className="group border-b border-border hover:bg-accent-tint transition-colors duration-200 px-4">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-5 text-left min-h-[44px]"
       >
-        <span className="text-h3 pr-4">{question}</span>
+        <span className="text-h3 pr-4 group-hover:text-[#111111] transition-colors duration-200">{question}</span>
         <ChevronDown
-          className={`w-5 h-5 shrink-0 text-muted-foreground transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          className={`w-5 h-5 shrink-0 text-muted-foreground group-hover:text-[#111111] transition-all duration-200 ${open ? "rotate-180" : ""}`}
         />
       </button>
       <AnimatePresence>

@@ -45,6 +45,7 @@ export default {
         accent: {
           DEFAULT: '#D4A853',
           dark: '#B8893A',
+          tint: '#FBF3E0',
           foreground: "hsl(var(--accent-foreground))",
         },
         primary: {

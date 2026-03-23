@@ -17,8 +17,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Output Marketing: Vanessa Semprun & Angel</title>
-        <meta name="description" content="A handful of people who do things really well. Meet Vanessa Semprun and Angel, the team behind Output Marketing." />
+        <title>About Output Marketing — Vanessa Semprun, Emmily Salazar & Angel</title>
+        <meta name="description" content="A boutique marketing team that does a few things very well. No retainers. You talk directly to the people doing the work." />
       </Helmet>
 
       {/* HERO */}

@@ -40,10 +40,10 @@ const About = () => {
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-6">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={logoArchive} alt="Archive" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-10 object-contain" />
-                <img src={badgeCDMP} alt="CDMP Certified" className="h-10 object-contain" />
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
+                <img src={badgeCDMP} alt="CDMP Certified" className="h-8 w-auto object-contain" />
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-4">
                 <img src={badgeWebby} alt="Webby Awards" className="h-10 object-contain" />

@@ -110,7 +110,7 @@ const Home = () => {
           </div>
           <div className="mt-6 text-center space-y-1">
             <p className="text-small text-muted-foreground">Archive Radar launch: 2.45% engagement rate · 7 brands to waitlist</p>
-            <p className="text-small text-muted-foreground">B2B fintech funding announcement: 855,000 impressions · 3.40% engagement</p>
+            <p className="text-small text-muted-foreground">B2B AI SaaS product launch: 855,000 impressions · 3.40% engagement</p>
           </div>
         </div>
       </SectionWrapper>
@@ -267,7 +267,7 @@ const Home = () => {
             <div>
               <h2 className="text-h2 mb-6">Why Vanessa.</h2>
               <div className="space-y-4 text-body text-muted-foreground mb-8">
-                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B fintech Series G campaign: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
+                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, managed creator rosters, launched products, and ran the full content machine.</p>
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
                 <p className="text-caption">IE Business School. CDMP certified.</p>

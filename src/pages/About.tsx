@@ -36,7 +36,7 @@ const About = () => {
             <div>
               <p className="overline mb-4">The founder</p>
               <div className="space-y-4 text-body text-muted-foreground">
-                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B fintech Series G campaign: 39 creators, 855,000 impressions, 3.40% engagement on a B2B funding announcement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
+                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, ran the full content machine, and managed product launches. All of it measurable.</p>
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
               </div>

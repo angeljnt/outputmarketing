@@ -159,7 +159,7 @@ const Home = () => {
               <p className="text-caption">Best B2B Campaign</p>
             </div>
             <div className="text-center">
-              <img src={badgeCannes} alt="Cannes Lions" className="h-8 w-auto object-contain mx-auto mb-2" />
+              <img src={badgeCannes} alt="Cannes Lions" className="h-24 w-auto object-contain mx-auto mb-2" />
               <p className="text-sm font-medium">Cannes Lions</p>
               <p className="text-caption">Shortlist Recognition</p>
             </div>

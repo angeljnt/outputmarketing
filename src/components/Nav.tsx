@@ -41,19 +41,17 @@ const Nav = () => {
       }`}
     >
       <div className="container-wide flex items-center justify-between h-16">
-        {/* Logo */}
-        <Link to="/" className="shrink-0">
+        <Link to="/" className="shrink-0 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
           <img src={logo} alt="Output Marketing" className="h-7" />
         </Link>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) =>
             link.dropdown ? (
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                  className="text-sm font-medium text-foreground hover:opacity-60 transition-opacity flex items-center gap-1"
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                 >
                   {link.label}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
@@ -64,7 +62,7 @@ const Nav = () => {
                       <Link
                         key={s.to}
                         to={s.to}
-                        className="block px-4 py-2 text-sm text-foreground hover:bg-surface transition-colors"
+                        className="block px-4 py-2 text-sm text-foreground hover:text-accent transition-colors"
                       >
                         {s.label}
                       </Link>
@@ -76,7 +74,7 @@ const Nav = () => {
               <Link
                 key={link.label}
                 to={link.to}
-                className="text-sm font-medium text-foreground hover:opacity-60 transition-opacity"
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
               >
                 {link.label}
               </Link>
@@ -85,17 +83,15 @@ const Nav = () => {
           <GhostButton to="/contact">Start a pilot →</GhostButton>
         </div>
 
-        {/* Mobile hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+          className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
-      {/* Mobile drawer */}
       {mobileOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <div className="container-wide py-4 flex flex-col gap-4">
@@ -104,7 +100,7 @@ const Nav = () => {
                 <div key={link.label}>
                   <button
                     onClick={() => setServicesOpen(!servicesOpen)}
-                    className="text-sm font-medium text-foreground flex items-center gap-1 min-h-[44px]"
+                    className="text-sm font-medium text-foreground hover:text-accent transition-colors flex items-center gap-1 min-h-[44px]"
                   >
                     {link.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
@@ -112,7 +108,7 @@ const Nav = () => {
                   {servicesOpen && (
                     <div className="pl-4 flex flex-col gap-2 mt-1">
                       {services.map((s) => (
-                        <Link key={s.to} to={s.to} className="text-sm text-muted-foreground min-h-[44px] flex items-center">
+                        <Link key={s.to} to={s.to} className="text-sm text-muted-foreground hover:text-accent transition-colors min-h-[44px] flex items-center">
                           {s.label}
                         </Link>
                       ))}
@@ -123,7 +119,7 @@ const Nav = () => {
                 <Link
                   key={link.label}
                   to={link.to}
-                  className="text-sm font-medium text-foreground min-h-[44px] flex items-center"
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </Link>

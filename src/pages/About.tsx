@@ -3,6 +3,12 @@ import SectionWrapper from "@/components/SectionWrapper";
 import CTAButton from "@/components/CTAButton";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import vanessaAbout from "@/assets/vanessa-about.jpg";
+import angelPhoto from "@/assets/angel-photo.jpeg";
+import logoFireflies from "@/assets/logo-fireflies.svg";
+import badgeCannes from "@/assets/badge-cannes.png";
+import badgeIE from "@/assets/badge-ie.png";
+import badgeCDMP from "@/assets/badge-cdmp.png";
 
 const About = () => {
   return (

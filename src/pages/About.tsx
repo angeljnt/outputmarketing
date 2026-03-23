@@ -37,15 +37,15 @@ const About = () => {
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, ran the full content machine, and managed product launches. All of it measurable.</p>
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
               </div>
-              <div className="flex flex-wrap gap-4 mt-6">
-                {["Fireflies", "Archive", "IE Business School", "CDMP"].map((n) => (
-                  <div key={n} className="bg-surface px-4 py-2 text-xs text-muted-foreground">{n}</div>
-                ))}
+              <div className="flex flex-wrap items-center gap-4 mt-6">
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale" />
+                <span className="text-sm font-semibold text-muted-foreground">Archive</span>
+                <img src={badgeIE} alt="IE Business School" className="h-10 object-contain" />
+                <img src={badgeCDMP} alt="CDMP Certified" className="h-10 object-contain" />
               </div>
-              <div className="flex flex-wrap gap-4 mt-4">
-                {["Webby Awards", "Cannes Lions"].map((n) => (
-                  <div key={n} className="bg-surface px-4 py-2 text-xs text-muted-foreground">{n}</div>
-                ))}
+              <div className="flex flex-wrap items-center gap-4 mt-4">
+                <span className="text-xs font-bold bg-surface px-4 py-2">Webby Awards</span>
+                <img src={badgeCannes} alt="Cannes Lions" className="h-10 object-contain" />
               </div>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-foreground hover:opacity-60 transition-opacity mt-4 inline-block">
                 LinkedIn →

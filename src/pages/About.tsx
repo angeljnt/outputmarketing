@@ -167,7 +167,7 @@ const About = () => {
                 <p>Fireflies.ai: Influencer Marketing Manager</p>
                 <p>Archive: Marketing Manager</p>
                 
-                <p>CDMP: Certified Digital Marketing Professional</p>
+                
               </div>
             </div>
           </div>

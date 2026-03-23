@@ -76,7 +76,7 @@ const ServiceInfluencer = () => (
     <SectionWrapper>
       <div className="container-narrow">
         <h2 className="text-h2 mb-4">We've done this at scale.</h2>
-        <p className="text-body text-muted-foreground">Before Output Marketing, Vanessa ran influencer programs at Fireflies.ai. She managed a B2B fintech Series G announcement: 39 creators, 855,958 impressions, 3.40% engagement on a B2B campaign. The four Archive campaigns that followed were built on the same playbook.</p>
+        <p className="text-body text-muted-foreground">Before Output Marketing, Vanessa ran influencer programs at Fireflies.ai. She managed a B2B influencer campaign for Fireflies.ai's Series A product push: 39 creators, 855,958 impressions, 3.40% engagement. The four Archive campaigns that followed were built on the same playbook.</p>
       </div>
     </SectionWrapper>
 

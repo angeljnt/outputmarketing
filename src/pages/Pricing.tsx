@@ -104,15 +104,15 @@ const Pricing = () => {
           <p className="text-body-lg text-muted-foreground mb-10">If we continue, you pick the program that fits where you are.</p>
           <div className="grid md:grid-cols-3 gap-6">
             {tiers.map((tier) => (
-              <div key={tier.name} className="bg-surface p-6 md:p-8 flex flex-col relative border border-transparent hover:border-accent transition-colors duration-300">
+              <div key={tier.name} className="group bg-surface p-6 md:p-8 flex flex-col relative border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
                 {tier.badge && <span className="absolute top-4 right-4 bg-foreground text-background text-xs font-semibold px-3 py-1">{tier.badge}</span>}
-                <h3 className="text-h3 mb-1">{tier.name}</h3>
-                <p className="text-body font-semibold mb-3">{tier.price}</p>
-                <p className="text-body text-muted-foreground mb-4">{tier.desc}</p>
+                <h3 className="text-h3 mb-1 group-hover:text-[#111111]">{tier.name}</h3>
+                <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">{tier.price}</p>
+                <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">{tier.desc}</p>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-4 flex-1">
-                  {tier.includes.map((item, i) => <li key={i}>• {item}</li>)}
+                  {tier.includes.map((item, i) => <li key={i} className="group-hover:text-[#111111] transition-colors duration-300">• {item}</li>)}
                 </ul>
-                <p className="text-caption mb-4">For: {tier.forText}</p>
+                <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: {tier.forText}</p>
                 <CTAButton to="/contact" className="w-full">Start my pilot →</CTAButton>
               </div>
             ))}
@@ -136,11 +136,11 @@ const Pricing = () => {
               </thead>
               <tbody>
                 {comparison.map((row, i) => (
-                  <tr key={i} className="border-b border-border">
-                    <td className="py-3 pr-4 font-medium">{row.feature}</td>
-                    <td className="py-3 px-4 text-muted-foreground">{row.signal}</td>
-                    <td className="py-3 px-4 text-muted-foreground">{row.engine}</td>
-                    <td className="py-3 px-4 text-muted-foreground">{row.program}</td>
+                  <tr key={i} className="group border-b border-border hover:bg-accent-tint transition-colors duration-200">
+                    <td className="py-3 pr-4 font-medium group-hover:text-[#111111]">{row.feature}</td>
+                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.signal}</td>
+                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.engine}</td>
+                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.program}</td>
                   </tr>
                 ))}
               </tbody>
@@ -163,9 +163,9 @@ const Pricing = () => {
               </thead>
               <tbody>
                 {addons.map((addon, i) => (
-                  <tr key={i} className="border-b border-border">
-                    <td className="py-3 pr-4">{addon.name}</td>
-                    <td className="py-3 px-4 text-muted-foreground">{addon.price}</td>
+                  <tr key={i} className="group border-b border-border hover:bg-accent-tint transition-colors duration-200">
+                    <td className="py-3 pr-4 group-hover:text-[#111111] transition-colors duration-200">{addon.name}</td>
+                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{addon.price}</td>
                   </tr>
                 ))}
               </tbody>

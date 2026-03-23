@@ -32,23 +32,23 @@ const ServiceSocial = () => (
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">Is this for you?</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-h3 mb-3">SaaS startups with no social strategy</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">SaaS startups with no social strategy</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
-              <li>• You post when you have time, which is never</li>
-              <li>• Your LinkedIn looks abandoned</li>
-              <li>• Your ICP is on social but your company isn't showing up</li>
-              <li>• You need someone to build the habit and the voice</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You post when you have time, which is never</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your LinkedIn looks abandoned</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your ICP is on social but your company isn't showing up</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You need someone to build the habit and the voice</li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-h3 mb-3">DTC brands with an inconsistent presence</h3>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">DTC brands with an inconsistent presence</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
-              <li>• Product photos and promotions but no personality</li>
-              <li>• Followers aren't growing</li>
-              <li>• You don't have a point of view in the content</li>
-              <li>• You want social that builds brand, not just broadcasts products</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Product photos and promotions but no personality</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Followers aren't growing</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You don't have a point of view in the content</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You want social that builds brand, not just broadcasts products</li>
             </ul>
           </div>
         </div>
@@ -85,10 +85,10 @@ const ServiceSocial = () => (
     <SectionWrapper>
       <div className="container-default">
         <p className="overline mb-6">From the work</p>
-        <div className="bg-surface p-6 max-w-md border border-transparent hover:border-accent transition-colors duration-300">
-          <h3 className="text-h3 mb-2">Archive LinkedIn Content Strategy</h3>
-          <p className="text-caption mb-3">7,363 impressions · 1.21% engagement rate · 114 reactions on featured post</p>
-          <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
+        <div className="group bg-surface p-6 max-w-md border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+          <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive LinkedIn Content Strategy</h3>
+          <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">7,363 impressions · 1.21% engagement rate · 114 reactions on featured post</p>
+          <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
         </div>
       </div>
     </SectionWrapper>
@@ -96,21 +96,21 @@ const ServiceSocial = () => (
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">How it works.</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div>
-            <p className="overline mb-3">Step 1</p>
-            <h3 className="text-h3 mb-3">Voice and Calendar</h3>
-            <p className="text-body text-muted-foreground">Brand voice + ICP alignment. First month's calendar. You approve direction before we write a post.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Voice and Calendar</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Brand voice + ICP alignment. First month's calendar. You approve direction before we write a post.</p>
           </div>
-          <div>
-            <p className="overline mb-3">Step 2</p>
-            <h3 className="text-h3 mb-3">Write and Review</h3>
-            <p className="text-body text-muted-foreground">Full month of posts in one batch. One revision round, usually.</p>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 2</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Write and Review</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Full month of posts in one batch. One revision round, usually.</p>
           </div>
-          <div>
-            <p className="overline mb-3">Step 3</p>
-            <h3 className="text-h3 mb-3">Post and Report</h3>
-            <p className="text-body text-muted-foreground">Post on schedule. Monthly report on what performed and what we're adjusting.</p>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 3</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Post and Report</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Post on schedule. Monthly report on what performed and what we're adjusting.</p>
           </div>
         </div>
       </div>

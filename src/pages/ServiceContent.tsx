@@ -32,22 +32,22 @@ const ServiceContent = () => (
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">Is this for you?</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-h3 mb-3">SaaS founders without a content team</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">SaaS founders without a content team</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
-              <li>• Seed to Series A</li>
-              <li>• You know content matters but haven't prioritized it</li>
-              <li>• Your LinkedIn is inconsistent. Your blog is empty or outdated.</li>
-              <li>• You want a system that runs without you writing everything yourself</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Seed to Series A</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You know content matters but haven't prioritized it</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your LinkedIn is inconsistent. Your blog is empty or outdated.</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You want a system that runs without you writing everything yourself</li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-h3 mb-3">DTC brands strong on product, silent online</h3>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">DTC brands strong on product, silent online</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
-              <li>• You've found PMF</li>
-              <li>• Your paid social is expensive and the CAC math is getting worse</li>
-              <li>• You need content that brings buyers to you</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You've found PMF</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your paid social is expensive and the CAC math is getting worse</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You need content that brings buyers to you</li>
             </ul>
           </div>
         </div>
@@ -72,15 +72,15 @@ const ServiceContent = () => (
       <div className="container-default">
         <p className="overline mb-6">From the work</p>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-2">Archive LinkedIn Content Strategy</h3>
-            <p className="text-caption mb-3">7,363 impressions · 114 reactions · 1.21% engagement rate</p>
-            <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
+          <div className="group bg-surface p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive LinkedIn Content Strategy</h3>
+            <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">7,363 impressions · 114 reactions · 1.21% engagement rate</p>
+            <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
           </div>
-          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-2">Archive Product Marketing Campaign</h3>
-            <p className="text-caption mb-3">2 campaigns managed simultaneously · Full dashboard built</p>
-            <Link to="/work/archive-product-marketing" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
+          <div className="group bg-surface p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive Product Marketing Campaign</h3>
+            <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">2 campaigns managed simultaneously · Full dashboard built</p>
+            <Link to="/work/archive-product-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
           </div>
         </div>
       </div>
@@ -89,21 +89,21 @@ const ServiceContent = () => (
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">How it works.</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div>
-            <p className="overline mb-3">Step 1</p>
-            <h3 className="text-h3 mb-3">Audit</h3>
-            <p className="text-body text-muted-foreground">We look at what you have, find the gaps, and identify the openings.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Audit</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We look at what you have, find the gaps, and identify the openings.</p>
           </div>
-          <div>
-            <p className="overline mb-3">Step 2</p>
-            <h3 className="text-h3 mb-3">Strategy</h3>
-            <p className="text-body text-muted-foreground">Content calendar, keyword targets, topic clusters, voice guide. You approve. Then we execute.</p>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 2</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Strategy</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Content calendar, keyword targets, topic clusters, voice guide. You approve. Then we execute.</p>
           </div>
-          <div>
-            <p className="overline mb-3">Step 3</p>
-            <h3 className="text-h3 mb-3">Publish and Measure</h3>
-            <p className="text-body text-muted-foreground">Monthly report on what moved: rankings, traffic, engagement, leads.</p>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 3</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Publish and Measure</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Monthly report on what moved: rankings, traffic, engagement, leads.</p>
           </div>
         </div>
       </div>

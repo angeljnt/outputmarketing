@@ -34,23 +34,23 @@ const ServiceInfluencer = () => (
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">Is this for you?</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-h3 mb-3">B2B SaaS (Seed to Series A)</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">B2B SaaS (Seed to Series A)</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
-              <li>• ARR between $300K and $5M</li>
-              <li>• No influencer program yet, or one that didn't produce pipeline</li>
-              <li>• ICP is on LinkedIn and follows creators in your category</li>
-              <li>• You want creator-driven pipeline, not just brand lift</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• ARR between $300K and $5M</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• No influencer program yet, or one that didn't produce pipeline</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• ICP is on LinkedIn and follows creators in your category</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You want creator-driven pipeline, not just brand lift</li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-h3 mb-3">DTC Brands ($500K to $5M revenue)</h3>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">DTC Brands ($500K to $5M revenue)</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
-              <li>• Found product-market fit</li>
-              <li>• Burning too much on paid social</li>
-              <li>• Need organic and creator-led growth to reduce CAC</li>
-              <li>• Your buyers follow creators but you haven't activated that channel</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Found product-market fit</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Burning too much on paid social</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Need organic and creator-led growth to reduce CAC</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your buyers follow creators but you haven't activated that channel</li>
             </ul>
           </div>
         </div>
@@ -85,15 +85,15 @@ const ServiceInfluencer = () => (
       <div className="container-default">
         <p className="overline mb-6">From the work</p>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-2">Archive Radar Feature Launch</h3>
-            <p className="text-caption mb-3">7 brands to waitlist · 2.45% engagement rate</p>
-            <Link to="/work/archive-radar-launch" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
+          <div className="group bg-surface p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive Radar Feature Launch</h3>
+            <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">7 brands to waitlist · 2.45% engagement rate</p>
+            <Link to="/work/archive-radar-launch" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
           </div>
-          <div className="bg-surface p-6 border border-transparent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-2">Archive AI Insider Newsletter</h3>
-            <p className="text-caption mb-3">Recurring revenue stream · 3-tier segmentation</p>
-            <Link to="/work/archive-ai-newsletter" className="text-sm font-medium hover:text-accent transition-colors">Read case study →</Link>
+          <div className="group bg-surface p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive AI Insider Newsletter</h3>
+            <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">Recurring revenue stream · 3-tier segmentation</p>
+            <Link to="/work/archive-ai-newsletter" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
           </div>
         </div>
       </div>
@@ -103,21 +103,21 @@ const ServiceInfluencer = () => (
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">How it works.</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div>
-            <p className="overline mb-3">Step 1</p>
-            <h3 className="text-h3 mb-3">Pilot (30 days)</h3>
-            <p className="text-body text-muted-foreground">We audit your current presence, map which creators your ICP actually follows, and run a small-scale test.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Pilot (30 days)</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We audit your current presence, map which creators your ICP actually follows, and run a small-scale test.</p>
           </div>
-          <div>
-            <p className="overline mb-3">Step 2</p>
-            <h3 className="text-h3 mb-3">Program Build</h3>
-            <p className="text-body text-muted-foreground">We build the creator roster, brief strategy, and campaign calendar. You approve everything before it goes live.</p>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 2</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Program Build</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We build the creator roster, brief strategy, and campaign calendar. You approve everything before it goes live.</p>
           </div>
-          <div>
-            <p className="overline mb-3">Step 3</p>
-            <h3 className="text-h3 mb-3">Execution and Measurement</h3>
-            <p className="text-body text-muted-foreground">We run the program, track the pipeline, and report monthly. You own all the creator relationships and content.</p>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 3</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Execution and Measurement</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We run the program, track the pipeline, and report monthly. You own all the creator relationships and content.</p>
           </div>
         </div>
       </div>

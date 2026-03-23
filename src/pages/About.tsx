@@ -40,14 +40,14 @@ const About = () => {
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-6">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={logoArchive} alt="Archive" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-10 object-contain" />
-                <img src={badgeCDMP} alt="CDMP Certified" className="h-10 object-contain" />
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
+                <img src={badgeCDMP} alt="CDMP Certified" className="h-8 w-auto object-contain" />
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-4">
-                <img src={badgeWebby} alt="Webby Awards" className="h-10 object-contain" />
-                <img src={badgeCannes} alt="Cannes Lions" className="h-10 object-contain" />
+                <img src={badgeWebby} alt="Webby Awards" className="h-8 w-auto object-contain" />
+                <img src={badgeCannes} alt="Cannes Lions" className="h-8 w-auto object-contain" />
               </div>
               <a
                 href="https://www.linkedin.com/in/vanessasemprun/"
@@ -117,8 +117,8 @@ const About = () => {
             <div>
               <h3 className="text-h3 mb-4">Awards</h3>
               <div className="flex items-center gap-6 mb-4">
-                <img src={badgeWebby} alt="Webby Awards" className="w-14 h-14 object-contain" />
-                <img src={badgeCannes} alt="Cannes Lions" className="w-14 h-14 object-contain" />
+                <img src={badgeWebby} alt="Webby Awards" className="h-8 w-auto object-contain" />
+                <img src={badgeCannes} alt="Cannes Lions" className="h-8 w-auto object-contain" />
               </div>
               <div className="space-y-2">
                 <p className="text-body">Webby Awards / Best B2B Campaign</p>
@@ -128,10 +128,10 @@ const About = () => {
             <div>
               <h3 className="text-h3 mb-4">Experience</h3>
               <div className="flex items-center gap-4 mb-4">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={logoArchive} alt="Archive" className="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-8 object-contain" />
-                <img src={badgeCDMP} alt="CDMP" className="h-8 object-contain" />
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
+                <img src={badgeCDMP} alt="CDMP" className="h-8 w-auto object-contain" />
               </div>
               <div className="space-y-2 text-body text-muted-foreground">
                 <p>Fireflies.ai: Influencer Marketing Manager</p>

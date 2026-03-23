@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import vanessaHero from "@/assets/vanessa-hero.jpeg";
 import logoFireflies from "@/assets/logo-fireflies.png";
-import logoZeniq from "@/assets/logo-zeniq.png";
+import logoZeniq from "@/assets/logo-zeniq.svg";
 import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";
@@ -99,10 +99,10 @@ const Home = () => {
           <p className="overline text-center mb-6">Brands we've built programs for</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
             <div className="shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-              <img src={logoArchive} alt="Archive" className="h-8" />
+              <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain" />
             </div>
             <div className="shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-              <img src={logoFireflies} alt="Fireflies.ai" className="h-8" />
+              <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain" />
             </div>
             <div className="shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
               <img src={logoZeniq} alt="Zeniq" className="h-8 object-contain" />
@@ -154,12 +154,12 @@ const Home = () => {
           <p className="overline text-center mb-6">Industry recognition</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="text-center">
-              <img src={badgeWebby} alt="Webby Awards" className="w-16 h-16 object-contain mx-auto mb-2" />
+              <img src={badgeWebby} alt="Webby Awards" className="h-8 w-auto object-contain mx-auto mb-2" />
               <p className="text-sm font-medium">Webby Awards</p>
               <p className="text-caption">Best B2B Campaign</p>
             </div>
             <div className="text-center">
-              <img src={badgeCannes} alt="Cannes Lions" className="w-16 h-16 object-contain mx-auto mb-2" />
+              <img src={badgeCannes} alt="Cannes Lions" className="h-8 w-auto object-contain mx-auto mb-2" />
               <p className="text-sm font-medium">Cannes Lions</p>
               <p className="text-caption">Shortlist Recognition</p>
             </div>
@@ -273,10 +273,10 @@ const Home = () => {
                 <p className="text-caption">IE Business School. CDMP certified.</p>
               </div>
               <div className="flex flex-wrap items-center gap-6">
-                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={logoArchive} alt="Archive" className="h-8 grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src={badgeIE} alt="IE Business School" className="h-10 object-contain" />
-                <img src={badgeCDMP} alt="CDMP Certified" className="h-10 object-contain" />
+                <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
+                <img src={badgeCDMP} alt="CDMP Certified" className="h-8 w-auto object-contain" />
               </div>
             </div>
           </div>

@@ -6,6 +6,12 @@ import FAQItem from "@/components/FAQItem";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import vanessaHero from "@/assets/vanessa-hero.jpeg";
+import logoFireflies from "@/assets/logo-fireflies.svg";
+import logoZeniq from "@/assets/logo-zeniq.jpg";
+import badgeCannes from "@/assets/badge-cannes.png";
+import badgeIE from "@/assets/badge-ie.png";
+import badgeCDMP from "@/assets/badge-cdmp.png";
 
 const caseStudies = [
   {
@@ -76,8 +82,8 @@ const Home = () => {
               <CTAButton to="/contact" className="mb-3">Start my 30-day pilot →</CTAButton>
               <p className="text-caption">No retainer commitment. No long contracts. $1,500–$2,000 for 30 days.</p>
             </div>
-            <div className="bg-surface aspect-[4/5] md:aspect-[3/4] flex items-center justify-center rounded-lg">
-              <span className="text-muted-foreground text-sm">vanessa-hero.jpg</span>
+            <div className="aspect-[4/5] md:aspect-[3/4] rounded-lg overflow-hidden">
+              <img src={vanessaHero} alt="Vanessa Semprun, founder of Output Marketing" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -88,11 +94,15 @@ const Home = () => {
         <div className="container-default">
           <p className="overline text-center mb-6">Brands we've built programs for</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
-            {["Archive", "Fireflies", "Zeniq"].map((name) => (
-              <div key={name} className="shrink-0 bg-surface px-6 py-3 text-sm text-muted-foreground grayscale">
-                {name}
-              </div>
-            ))}
+            <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <span className="text-sm font-semibold text-foreground">Archive</span>
+            </div>
+            <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <img src={logoFireflies} alt="Fireflies.ai" className="h-8" />
+            </div>
+            <div className="shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <img src={logoZeniq} alt="Zeniq" className="h-8 object-contain" />
+            </div>
           </div>
           <div className="mt-6 text-center space-y-1">
             <p className="text-[13px] text-muted-foreground">Archive Radar launch: 2.45% engagement rate · 7 brands to waitlist</p>
@@ -140,16 +150,14 @@ const Home = () => {
           <p className="overline text-center mb-6">Industry recognition</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="text-center">
-              <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center mx-auto mb-2">
-                <span className="text-xs text-muted-foreground">Webby</span>
+              <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center mx-auto mb-2 overflow-hidden p-2">
+                <span className="text-xs font-bold text-foreground">Webby</span>
               </div>
               <p className="text-sm font-medium">Webby Awards</p>
               <p className="text-caption">Best B2B Campaign</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center mx-auto mb-2">
-                <span className="text-xs text-muted-foreground">Cannes</span>
-              </div>
+              <img src={badgeCannes} alt="Cannes Lions" className="w-16 h-16 object-contain mx-auto mb-2" />
               <p className="text-sm font-medium">Cannes Lions</p>
               <p className="text-caption">Shortlist Recognition</p>
             </div>
@@ -259,9 +267,10 @@ const Home = () => {
             <p className="text-caption">IE Business School. CDMP certified.</p>
           </div>
           <div className="flex flex-wrap items-center gap-6">
-            {["Fireflies", "Archive", "IE Business School", "CDMP"].map((name) => (
-              <div key={name} className="bg-surface px-4 py-2 text-xs text-muted-foreground">{name}</div>
-            ))}
+            <img src={logoFireflies} alt="Fireflies.ai" className="h-8 grayscale" />
+            <span className="text-sm font-semibold text-muted-foreground">Archive</span>
+            <img src={badgeIE} alt="IE Business School" className="h-10 object-contain" />
+            <img src={badgeCDMP} alt="CDMP Certified" className="h-10 object-contain" />
           </div>
         </div>
       </SectionWrapper>

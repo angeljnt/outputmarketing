@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import GhostButton from "./GhostButton";
+import logo from "@/assets/output-marketing-logo.svg";
 
 const services = [
   { label: "Influencer Marketing", to: "/services/influencer-marketing" },
@@ -41,8 +42,8 @@ const Nav = () => {
     >
       <div className="container-wide flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="text-lg font-bold text-foreground tracking-tight">
-          Output Marketing
+        <Link to="/" className="shrink-0">
+          <img src={logo} alt="Output Marketing" className="h-7" />
         </Link>
 
         {/* Desktop links */}

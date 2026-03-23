@@ -10,7 +10,7 @@ import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";
 import badgeIE from "@/assets/badge-ie.png";
-import badgeCDMP from "@/assets/badge-cdmp.png";
+
 
 const About = () => {
   return (
@@ -43,7 +43,7 @@ const About = () => {
                 <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
-                <img src={badgeCDMP} alt="CDMP Certified" className="h-8 w-auto object-contain" />
+                
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-4">
                 <img src={badgeWebby} alt="Webby Awards" className="h-8 w-auto object-contain" />
@@ -131,7 +131,7 @@ const About = () => {
                 <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
-                <img src={badgeCDMP} alt="CDMP" className="h-8 w-auto object-contain" />
+                
               </div>
               <div className="space-y-2 text-body text-muted-foreground">
                 <p>Fireflies.ai: Influencer Marketing Manager</p>

@@ -131,7 +131,7 @@ const About = () => {
                 <img src={logoFireflies} alt="Fireflies.ai" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={badgeIE} alt="IE Business School" className="h-8 w-auto object-contain" />
-                <img src={badgeCDMP} alt="CDMP" className="h-8 w-auto object-contain" />
+                
               </div>
               <div className="space-y-2 text-body text-muted-foreground">
                 <p>Fireflies.ai: Influencer Marketing Manager</p>

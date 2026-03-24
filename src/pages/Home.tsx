@@ -81,7 +81,7 @@ const Home = () => {
               <p className="text-body-lg text-muted-foreground mb-6">
                 Founder LinkedIn ghostwriting, content marketing, and SEO. No paid ads. No retainer.
               </p>
-              <CTAButton to="/contact" className="mb-3">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
+              <CTAButton to="/contact" className="mb-3">Start my <strong>30-day pilot</strong> →</CTAButton>
               <p className="text-caption"><strong>No retainer commitment. No long contracts.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
               <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors mt-2 inline-block">
                 See what the output looks like →
@@ -308,7 +308,7 @@ const Home = () => {
           <h2 className="text-h2 mb-6">Start with <strong>30 days</strong>.</h2>
           <p className="text-body-lg text-dark-muted mb-8"><strong>$1,500 to $2,000</strong>. Full audit of your current presence. A strategic roadmap. Two to three weeks of live execution so you can see exactly what working with us looks like.</p>
           <p className="text-body text-dark-muted mb-8"><strong>No retainer. No contract.</strong> No commitment beyond the month.</p>
-          <CTAButton to="/contact" variant="primary-inverted" className="mb-4">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact" variant="primary-inverted" className="mb-4">Start my <strong>30-day pilot</strong> →</CTAButton>
           <p className="text-sm text-dark-muted mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
           <Link to="/pricing" className="text-sm text-dark-muted hover:text-accent transition-colors mt-2 inline-block">See full pricing →</Link>
         </div>

@@ -24,7 +24,7 @@ const ServiceContent = () => (
       <div className="container-default">
         <h1 className="text-display mb-4">Content that sounds like a person wrote it. Because one did.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">SEO articles, LinkedIn ghostwriting, and content strategy for B2B SaaS teams that need organic pipeline, not just word count.</p>
-        <CTAButton to="/contact">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
         <p className="text-caption mt-3"><strong>No retainer. No long contract.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
       </div>
     </SectionWrapper>
@@ -115,7 +115,7 @@ const ServiceContent = () => (
         <h3 className="text-h3 mb-1">Engine tier</h3>
         <p className="text-h2 mb-4">$3,500 to $5,000 / month</p>
         <p className="text-body text-muted-foreground mb-6">Or start with the pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
-        <CTAButton to="/contact">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
       </div>
     </SectionWrapper>

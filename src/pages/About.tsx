@@ -69,7 +69,7 @@ const About = () => {
       <SectionWrapper className="bg-surface-alt">
         <div className="container-narrow text-center">
           <p className="text-body-lg mb-4">Ready to start? <strong>30-day pilot</strong>, no retainer.</p>
-          <CTAButton to="/contact">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
           <p className="text-caption mt-3"><strong>No retainer. No contract.</strong></p>
         </div>
       </SectionWrapper>
@@ -183,7 +183,7 @@ const About = () => {
       <SectionWrapper>
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-6">Work with people who have done this before.</h2>
-          <CTAButton to="/contact">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
           <p className="text-caption mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
         </div>
       </SectionWrapper>

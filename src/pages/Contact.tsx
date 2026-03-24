@@ -107,7 +107,7 @@ const Contact = () => {
 
           <div className="mt-12 pt-8 border-t border-border">
             <p className="text-body text-muted-foreground mb-4">Not sure which plan? Start with the pilot.</p>
-            <CTAButton to="/contact">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
+            <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
             <p className="text-caption mt-4">
               <strong>No retainer. No contract.</strong>{" "}
               <strong>We reply within 24 hours.</strong>

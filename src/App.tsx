@@ -42,9 +42,9 @@ const App = () => (
               <Route path="/work/archive-ai-newsletter" element={<CaseStudyNewsletter />} />
               <Route path="/work/archive-linkedin-strategy" element={<CaseStudyLinkedIn />} />
               <Route path="/work/archive-product-marketing" element={<CaseStudyProductMarketing />} />
-              <Route path="/services/influencer-marketing" element={<ServiceInfluencer />} />
+              <Route path="/services/founder-linkedin" element={<ServiceInfluencer />} />
               <Route path="/services/content-marketing" element={<ServiceContent />} />
-              <Route path="/services/social-media" element={<ServiceSocial />} />
+              <Route path="/services/organic-seo" element={<ServiceSocial />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

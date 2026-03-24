@@ -52,12 +52,12 @@ const caseStudies = [
 
 const faqs = [
   { q: "Do you work with early-stage startups?", a: "Yes. Most of our clients are Seed to Series A, with ARR between $300K and $5M. That's exactly the stage where getting the marketing right compounds the most." },
-  { q: "We've never done influencer marketing before. Is that a problem?", a: "That's actually where we do our best work. Building a program from scratch is cleaner than fixing one that went sideways. We've done both." },
-  { q: "Do you run paid social or Google ads?", a: "No. We don't run paid. If that's what you need, we'll tell you who does it well. What we do: influencer programs, content, LinkedIn, SEO. We do it without the waste that comes from spreading across everything." },
+  { q: "We've never done LinkedIn ghostwriting before. Where do we start?", a: "We start with a conversation. We listen to how you talk about your work, your product, and your buyers. We read your existing content, your emails, your Slack messages if you'll share them. Then we write three posts. You tell us what sounds like you and what doesn't. That's the voice capture process. Most clients feel comfortable with the output by week two." },
+  { q: "Do you run paid social or Google ads?", a: "No. We don't run paid. If that's what you need, we'll tell you who does it well. What we do: LinkedIn ghostwriting, content, SEO. We do it without the waste that comes from spreading across everything." },
   { q: "What happens if the pilot doesn't work out?", a: "We part ways. No pressure, no awkward conversation. The pilot exists precisely so neither of us has to make a long-term commitment before we know it's the right fit." },
   { q: "How fast can we start?", a: "Usually within a week of the first call. We don't have an onboarding queue." },
   { q: "Who actually does the work?", a: "Vanessa and Angel. Not a team of juniors supervised by someone you met once. You'll have both of our contact info from day one." },
-  { q: "Do you work with DTC eCommerce brands too?", a: "Yes. The influencer and content work maps cleanly to DTC, especially brands that have found their product-market fit but are burning too much on paid social and need organic and creator growth." },
+  { q: "Do you only work with SaaS companies?", a: "Yes. B2B SaaS is the whole focus. Every piece of copy we write, every SEO keyword we target, every LinkedIn post we ghost assumes a B2B SaaS buyer. That specificity is the reason it works." },
   { q: "All your case studies are from Archive. Should I be concerned?", a: "No. We chose to go deep with one client rather than shallow with ten. Four different campaigns, different channels, different goals, all from the same relationship. That's what it looks like when an agency actually commits to a client's growth. You'll get the same." },
 ];
 
@@ -65,8 +65,8 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Output Marketing: B2B Marketing Agency for SaaS and DTC</title>
-        <meta name="description" content="Human-first B2B marketing for SaaS and DTC brands. Influencer programs, content strategy, LinkedIn, and SEO. Start with a 30-day pilot." />
+        <title>Output Marketing — B2B Marketing Agency for SaaS Companies</title>
+        <meta name="description" content="Founder LinkedIn ghostwriting, content marketing, and SEO for B2B SaaS startups. 30-day pilot, no retainer." />
       </Helmet>
 
       {/* HERO */}
@@ -76,7 +76,7 @@ const Home = () => {
             <div>
               <h1 className="text-display mb-4">
                 Marketing that actually moves the needle.{" "}
-                <span className="block">Built for B2B SaaS and DTC brands.</span>
+                <span className="block">Built for B2B SaaS companies.</span>
               </h1>
               <p className="text-body-lg text-muted-foreground mb-6">
                 Human-first. No AI slop. Marketing with ROI.
@@ -110,7 +110,7 @@ const Home = () => {
           </div>
           <div className="mt-6 text-center space-y-1">
             <p className="text-small text-muted-foreground">Archive Radar launch: 2.45% engagement rate · 7 brands to waitlist</p>
-            <p className="text-small text-muted-foreground">B2B AI SaaS product launch: 855,000 impressions · 3.40% engagement</p>
+            <p className="text-small text-muted-foreground">B2B SaaS influencer campaign: 855,000 impressions · 3.40% engagement</p>
           </div>
         </div>
       </SectionWrapper>
@@ -175,31 +175,31 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-              <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Signal</h3>
-              <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$2,000/month</p>
-              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A consistent, human social presence on the channels that matter for your ICP. LinkedIn + one other channel. 12 posts/month. Content calendar. Monthly report.</p>
-              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Early-stage SaaS teams with no marketing hire yet.</p>
-              <Link to="/services/social-media" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
+              <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Foundation</h3>
+              <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$1,800/month</p>
+              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A founder LinkedIn presence and content foundation, built for the stage where you don't have a marketing team yet. 12 ghostwritten LinkedIn posts/month. 2 SEO articles/month. Content calendar. Monthly performance report.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Seed-stage B2B SaaS founders with no marketing hire.</p>
+              <Link to="/services/founder-linkedin" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
             <div className="group bg-surface p-6 md:p-8 flex flex-col relative border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <span className="absolute top-4 right-4 bg-foreground text-background text-xs font-semibold px-3 py-1">Most popular</span>
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Engine</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$3,500/month</p>
-              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A content system that builds organic pipeline. Not just followers. Content strategy, 4 SEO articles/month, 16 social posts, founder LinkedIn ghostwriting, monthly KPI report.</p>
-              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: SaaS companies that need leads from content, not just presence.</p>
+              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A content system that builds organic pipeline. Founder brand plus company SEO, working together. Founder LinkedIn ghostwriting (3x/week + 2 carousels/month). Brand page management. 4 to 6 SEO articles/month. Monthly KPI report. Quarterly strategy session.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A B2B SaaS companies that need leads from content, not just presence.</p>
               <Link to="/services/content-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
             <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-              <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Program</h3>
-              <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$5,000/month</p>
-              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">Your first influencer program. Or the one that actually works this time. 5 to 10 qualified creators/month, strategy, execution, ROI measurement, executive report.</p>
-              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: B2B SaaS and DTC brands ready to build pipeline through creators.</p>
-              <Link to="/services/influencer-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
+              <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Full Stack</h3>
+              <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$6,000/month</p>
+              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">The complete content machine. Founder brand, company SEO, distribution, and attribution so you can prove what's working. Everything in Engine plus technical SEO, distribution layer (email + carousel repurposing), attribution setup, and one original research asset per quarter.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A/B companies ready to treat content as a growth engine, not a line item.</p>
+              <Link to="/services/organic-seo" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
           </div>
 
           <p className="text-body text-muted-foreground text-center mt-8">
-            Need a landing page, an AEO audit, or CEO ghostwriting? We do those too.{" "}
+            Need a content audit, a technical SEO review, or pSEO for your product? We do those too.{" "}
             <Link to="/pricing" className="font-medium text-foreground hover:text-accent transition-colors">See pricing →</Link>
           </p>
         </div>
@@ -211,7 +211,7 @@ const Home = () => {
           <h2 className="text-h2 mb-6">Here's what we won't do.</h2>
           <div className="space-y-6 text-body-lg text-muted-foreground">
             <p>We don't run paid ads. We don't produce video. We don't have a floor of junior coordinators managing your account while the senior team stays busy winning new clients.</p>
-            <p>What we do: influencer programs, content strategy, LinkedIn, SEO. We do it at a level most agencies can't match precisely because we're not spread thin.</p>
+            <p>What we do: founder LinkedIn ghostwriting, content strategy, SEO. We do it at a level most agencies can't match precisely because we're not spread thin.</p>
             <p>We're a handful of people who do things really well. You talk directly to whoever is doing the work. Every time.</p>
           </div>
         </div>
@@ -267,7 +267,7 @@ const Home = () => {
             <div>
               <h2 className="text-h2 mb-6">Why Vanessa.</h2>
               <div className="space-y-4 text-body text-muted-foreground mb-8">
-                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
+                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B SaaS influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, managed creator rosters, launched products, and ran the full content machine.</p>
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
                 <p className="text-caption">IE Business School. CDMP certified.</p>

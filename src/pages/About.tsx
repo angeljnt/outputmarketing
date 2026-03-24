@@ -36,7 +36,7 @@ const About = () => {
             <div>
               <p className="overline mb-4">The founder</p>
               <div className="space-y-4 text-body text-muted-foreground">
-                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
+                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B SaaS influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, ran the full content machine, and managed product launches. All of it measurable.</p>
                 <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
               </div>
@@ -75,7 +75,7 @@ const About = () => {
             <div>
               <p className="overline mb-4">Operations</p>
               <div className="space-y-4 text-body text-muted-foreground">
-                <p>Emmily runs the operational side of every engagement. Before Output Marketing, she was Executive Operations at Archive — coordinating campaigns across designers, content creators, and client stakeholders. She knows how our work gets built because she was part of building it.</p>
+                <p>Emmily runs the operational side of every engagement. Before Output Marketing, she was Executive Operations at Archive, coordinating campaigns across designers, content creators, and client stakeholders. She knows how our work gets built because she was part of building it.</p>
                 <p>Law degree from Universidad Rafael Urdaneta. Director of Project Monitoring and Execution at Harvard National Model United Nations 2020. She brings the same legal and operational discipline to client projects that she brought to Archive.</p>
               </div>
               <a
@@ -132,7 +132,7 @@ const About = () => {
           <h2 className="text-h2 mb-6">How we think about marketing.</h2>
           <div className="space-y-6 text-body-lg text-dark-muted">
             <p>Most agencies spread thin. They take every client, every channel, every ask. The work suffers. The client notices. The relationship ends.</p>
-            <p>We do influencer programs, content strategy, LinkedIn, and SEO. We do those things at a level most agencies can't match because we're not also doing paid ads, video, PR, and event marketing at the same time.</p>
+            <p>We do founder LinkedIn ghostwriting, content marketing, and SEO. We do those things at a level most agencies can't match because we're not also doing paid ads, video, PR, and event marketing at the same time.</p>
             <p>You talk directly to whoever is doing the work. Every time. No account managers. No weekly updates from someone who wasn't in the meeting.</p>
           </div>
         </div>

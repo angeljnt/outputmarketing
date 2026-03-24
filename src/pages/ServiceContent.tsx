@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const faqs = [
   { q: "Who writes the content?", a: "We write it. You review and approve before anything goes live. Most clients do a light edit pass." },
   { q: "How long until content starts ranking?", a: "Realistically, 3 to 6 months for new content to rank in competitive categories. We'll set expectations on your specific targets in the strategy phase." },
-  { q: "Is LinkedIn ghostwriting included?", a: "The Engine tier includes founder LinkedIn ghostwriting. The add-on (+$800/month) is for Signal-tier clients who want personal LinkedIn on top." },
+  { q: "Is LinkedIn ghostwriting included?", a: "The Engine tier includes founder LinkedIn ghostwriting. Foundation-tier clients can add it as a standalone service at +$1,500/month." },
   { q: "Do we own the content?", a: "Yes. Every article, post, strategy doc, and content calendar belongs to you." },
   { q: "Can we use you alongside an internal team?", a: "Yes. Some clients use us to add capacity to an existing team. Others use us to build the system their team works from." },
 ];
@@ -17,7 +17,7 @@ const ServiceContent = () => (
   <>
     <Helmet>
       <title>Content Marketing: Output Marketing</title>
-      <meta name="description" content="Content that sounds like a person wrote it. SEO articles, LinkedIn ghostwriting, and content strategy for B2B SaaS teams." />
+      <meta name="description" content="SEO articles, content strategy, and LinkedIn ghostwriting for B2B SaaS companies that need organic pipeline, not just word count." />
     </Helmet>
 
     <SectionWrapper>
@@ -43,11 +43,12 @@ const ServiceContent = () => (
             </ul>
           </div>
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">DTC brands strong on product, silent online</h3>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">SaaS companies with content but no pipeline</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• You've found PMF</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your paid social is expensive and the CAC math is getting worse</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• You need content that brings buyers to you</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You have a blog. You post on LinkedIn. Nothing is converting.</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You're ranking for informational keywords but not for the terms buyers use the day before they book a demo.</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your content sounds like everyone else's. No point of view. No original data.</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You need content that earns trust before a sales call, not content that fills a calendar.</li>
             </ul>
           </div>
         </div>
@@ -112,7 +113,7 @@ const ServiceContent = () => (
     <SectionWrapper className="bg-surface-alt">
       <div className="container-narrow text-center">
         <h3 className="text-h3 mb-1">Engine tier</h3>
-        <p className="text-h2 mb-4">$3,500 / month</p>
+        <p className="text-h2 mb-4">$3,500 to $5,000 / month</p>
         <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500 to $2,000 for 30 days.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
         <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>

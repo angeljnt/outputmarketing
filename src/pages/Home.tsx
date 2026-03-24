@@ -190,7 +190,7 @@ const Home = () => {
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Engine</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$3,500/month</p>
               <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A content system that builds organic pipeline. Founder brand plus company SEO, working together. Founder LinkedIn ghostwriting (3x/week + 2 carousels/month). Brand page management. 4 to 6 SEO articles/month. Monthly KPI report. Quarterly strategy session.</p>
-              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A B2B SaaS companies that need leads from content, not just presence.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A B2B SaaS founders and their teams that need leads from content, not just presence.</p>
               <Link to="/services/content-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
             <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">

@@ -174,6 +174,7 @@ const Home = () => {
       <SectionWrapper>
         <div className="container-default">
           <h2 className="text-h2 mb-3">Three ways we work with you.</h2>
+          <p className="text-body-lg text-muted-foreground text-center max-w-2xl mx-auto mb-4">We build the founder's personal brand and the company's content machine. At Seed to Series A, you need both.</p>
           <p className="text-body-lg text-muted-foreground mb-10">All of them start the same way: a <strong>30-day pilot</strong> so you can see the work before you commit.</p>
 
           <div className="grid md:grid-cols-3 gap-6">

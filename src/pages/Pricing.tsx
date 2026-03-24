@@ -56,10 +56,10 @@ const addons = [
   { name: "Positioning + messaging audit", price: "$2,000 to $4,000 one-time" },
 ];
 
-const faqs = [
-  { q: "Is there a minimum commitment after the pilot?", a: "No. The pilot is the commitment. After that, we move month-to-month. No annual contracts, no lock-ins." },
-  { q: "Can I cancel anytime?", a: "Yes. We ask for 30 days notice so we can wrap ongoing work cleanly. That's it." },
-  { q: "Do prices change after we start?", a: "No. The rate you start at holds for as long as we work together. We don't sneak in price increases." },
+const faqs: { q: string; a: React.ReactNode }[] = [
+  { q: "Is there a minimum commitment after the pilot?", a: <>No. The pilot is the commitment. After that, we move <strong>month-to-month</strong>. <strong>No annual contracts, no lock-ins.</strong></> },
+  { q: "Can I cancel anytime?", a: <>Yes. We ask for <strong>30 days notice</strong> so we can wrap ongoing work cleanly. That's it.</> },
+  { q: "Do prices change after we start?", a: <>No. <strong>The rate you start at holds for as long as we work together.</strong> We don't sneak in price increases.</> },
   { q: "What if I want more than one service?", a: "We've run Foundation and Engine simultaneously for the same client, or Engine with a pSEO project running in parallel. If the scope makes sense, we build a custom structure. Start with the pilot." },
   { q: "Can I start with the pilot and move to a different tier than I expected?", a: "Yes. That's the point of the pilot. We both learn what's actually needed. The tier recommendation at the end is based on what we saw in the work, not what we hoped to sell." },
   { q: "Do you offer discounts for early-stage startups?", a: "The pilot is already priced to be accessible. For pre-revenue companies, we sometimes structure the pilot differently. Reach out and we'll be straight with you about whether we're the right fit." },
@@ -76,20 +76,20 @@ const Pricing = () => {
       {/* HERO */}
       <SectionWrapper>
         <div className="container-narrow text-center">
-          <h1 className="text-display mb-4">See exactly what you'd get. Before you commit to anything.</h1>
-          <p className="text-body-lg text-muted-foreground">Every engagement starts with a 30-day pilot. You see the quality. We learn your business. Then you decide.</p>
+          <h1 className="text-display mb-4">See exactly what you'd get.</h1>
+          <p className="text-body-lg text-muted-foreground">Every engagement starts with a <strong>30-day pilot</strong>. <strong>$1,500 to $2,000</strong>. You see the quality. We learn your business. Then you decide.</p>
         </div>
       </SectionWrapper>
 
       {/* PILOT BLOCK */}
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow text-center">
-          <p className="overline text-dark-muted mb-4">The 30-Day Pilot</p>
-          <p className="text-h2 mb-4">$1,500 to $2,000</p>
-          <p className="text-body-lg text-dark-muted mb-6">Full audit of your current marketing presence. A roadmap for where to go next. Two to three weeks of live execution so you can see exactly what working with us looks like.</p>
-          <p className="text-body text-dark-muted mb-6">No retainer. No contract. No commitment beyond the month.</p>
+          <p className="overline text-dark-muted mb-4">The <strong>30-Day Pilot</strong></p>
+          <p className="text-h2 mb-4"><strong>$1,500 to $2,000</strong></p>
+          <p className="text-body-lg text-dark-muted mb-6"><strong>Full audit</strong> of your current marketing presence. A roadmap for where to go next. Two to three weeks of live execution so you can see exactly what working with us looks like.</p>
+          <p className="text-body text-dark-muted mb-6"><strong>No retainer. No contract. No commitment beyond the month.</strong></p>
           <div className="text-left max-w-md mx-auto mb-8">
-            <p className="text-sm font-semibold text-dark-text mb-3">What ships in 30 days:</p>
+            <p className="text-sm font-semibold text-dark-text mb-3">What ships in <strong>30 days</strong>:</p>
             <ul className="space-y-2 text-sm text-dark-muted">
               <li>• Current-state audit (LinkedIn, content, creator presence, or all three)</li>
               <li>• Roadmap covering where to put your attention and why</li>
@@ -98,7 +98,7 @@ const Pricing = () => {
             </ul>
           </div>
           <CTAButton to="/contact" variant="primary-inverted">Start my pilot →</CTAButton>
-          <p className="text-sm text-dark-muted mt-3">No retainer. No contract. We reply within 24 hours.</p>
+          <p className="text-sm text-dark-muted mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
         </div>
       </section>
 
@@ -183,20 +183,20 @@ const Pricing = () => {
       {/* FAQ */}
       <SectionWrapper>
         <div className="container-default">
-          <h2 className="text-h2 mb-10">Questions you probably have.</h2>
+          <h2 className="text-h2 mb-10">Common questions.</h2>
           <div className="max-w-3xl">
             {faqs.map((faq, i) => <FAQItem key={i} question={faq.q} answer={faq.a} />)}
           </div>
         </div>
       </SectionWrapper>
 
-      {/* FOOTER CTA */}
-      <section className="bg-dark text-dark-text section-padding">
+      {/* FOOTER CTA — converted to light section */}
+      <section className="bg-surface border-t border-b border-border section-padding">
         <div className="container-narrow text-center">
-          <h2 className="text-h2 mb-4">No long contracts. Start with 30 days.</h2>
-          <p className="text-body text-dark-muted mb-6">Or reach us at <a href="mailto:vanessa@output-marketing.com" className="underline hover:text-accent transition-colors">vanessa@output-marketing.com</a></p>
-          <CTAButton to="/contact" variant="primary-inverted">Start my 30-day pilot →</CTAButton>
-          <p className="text-sm text-dark-muted mt-3">We reply within 24 hours.</p>
+          <h2 className="text-h2 mb-4"><strong>No long contracts.</strong> Start with <strong>30 days</strong>.</h2>
+          <p className="text-body text-muted-foreground mb-6">Or reach us at <a href="mailto:vanessa@output-marketing.com" className="underline hover:text-accent transition-colors">vanessa@output-marketing.com</a></p>
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+          <p className="text-sm text-muted-foreground mt-3"><strong>We reply within 24 hours.</strong></p>
         </div>
       </section>
 

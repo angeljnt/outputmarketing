@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 interface FAQItemProps {
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 }
 
 const FAQItem = ({ question, answer }: FAQItemProps) => {

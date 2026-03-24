@@ -4,7 +4,7 @@ interface CaseStudyCardProps {
   title: string;
   type: string;
   date: string;
-  metrics: string[];
+  metrics: React.ReactNode[];
   link: string;
   client?: string;
 }

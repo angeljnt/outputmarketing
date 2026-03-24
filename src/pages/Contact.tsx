@@ -38,7 +38,7 @@ const Contact = () => {
       <SectionWrapper>
         <div className="container-narrow">
           <h1 className="text-display mb-4">Let's talk.</h1>
-          <p className="text-body-lg text-muted-foreground mb-10">B2B SaaS company. Marketing that ships results. You're in the right place.</p>
+          <p className="text-body-lg text-muted-foreground mb-10">You're a B2B SaaS company. Marketing that ships results. <strong>We reply within 24 hours.</strong></p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -102,14 +102,18 @@ const Contact = () => {
               />
             </div>
             <CTAButton type="submit">Send it →</CTAButton>
-            <p className="text-caption">We reply within 24 hours. No pitch, no pressure.</p>
+            <p className="text-caption"><strong>We reply within 24 hours.</strong> <strong>No pitch, no pressure.</strong></p>
           </form>
 
           <div className="mt-12 pt-8 border-t border-border">
             <p className="text-body text-muted-foreground mb-4">Not sure which plan? Start with the pilot.</p>
-            <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
+            <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
             <p className="text-caption mt-4">
-              Prefer email?{" "}
+              <strong>No retainer. No contract.</strong>{" "}
+              <strong>We reply within 24 hours.</strong>
+            </p>
+            <p className="text-caption mt-2">
+              Prefer direct email:{" "}
               <a href="mailto:vanessa@output-marketing.com" className="text-foreground hover:text-accent transition-colors">vanessa@output-marketing.com</a>
             </p>
           </div>

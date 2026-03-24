@@ -25,7 +25,7 @@ const ServiceOrganicSEO = () => (
       <div className="container-default">
         <h1 className="text-display mb-4">Traffic is not the goal. Pipeline is.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">We target the keywords your buyers use when they're ready to buy, not when they're just looking around. B2B SaaS SEO built for lead quality.</p>
-        <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+        <CTAButton to="/contact">Start my &nbsp;<strong>30-day pilot</strong> →</CTAButton>
         <p className="text-caption mt-3"><strong>No retainer. No long contract.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
       </div>
     </SectionWrapper>
@@ -146,7 +146,7 @@ const ServiceOrganicSEO = () => (
         <p className="text-body text-muted-foreground mb-4">Organic SEO pairs with content marketing in the Engine and Full Stack tiers. Start with the pilot to see what the opportunity looks like for your specific domain.</p>
         <p className="text-body text-muted-foreground mb-2">Pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
         <p className="text-body text-muted-foreground mb-6">Full Stack tier (includes technical SEO + GEO): $6,000/month.</p>
-        <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+        <CTAButton to="/contact">Start my &nbsp;<strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
       </div>
     </SectionWrapper>

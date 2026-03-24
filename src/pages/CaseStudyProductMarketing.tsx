@@ -57,7 +57,7 @@ const CaseStudyProductMarketing = () => (
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-2">Running multiple campaigns and losing track?</p>
         <h2 className="text-h2 mb-6">Need a system that tracks? Start with a pilot.</h2>
-        <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+        <CTAButton to="/contact">Start my &nbsp;<strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
       </div>
     </SectionWrapper>

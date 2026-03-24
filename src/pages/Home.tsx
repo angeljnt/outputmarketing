@@ -76,7 +76,7 @@ const Home = () => {
             <div>
               <h1 className="text-display mb-4">
                 Pipeline from content.{" "}
-                <span className="block">Built for B2B SaaS founders.</span>
+                <span className="block">Built for B2B SaaS founders and their teams.</span>
               </h1>
               <p className="text-body-lg text-muted-foreground mb-6">
                 Founder LinkedIn ghostwriting, content marketing, and SEO. No paid ads. No retainer.

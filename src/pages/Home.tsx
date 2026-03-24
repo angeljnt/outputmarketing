@@ -197,7 +197,7 @@ const Home = () => {
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Full Stack</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$6,000/month</p>
               <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">The complete content machine. Founder brand, company SEO, distribution, and attribution so you can prove what's working. Everything in Engine plus technical SEO, distribution layer (email + carousel repurposing), attribution setup, and one original research asset per quarter.</p>
-              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A/B companies ready to treat content as a growth engine, not a line item.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A/B founders and their teams ready to treat content as a growth engine, not a line item.</p>
               <Link to="/services/organic-seo" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
           </div>

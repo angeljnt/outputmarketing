@@ -44,7 +44,7 @@ const CaseStudyNewsletter = () => (
 
         <h2 className="text-h2 mb-4">What worked and why</h2>
         <div className="space-y-4 text-body text-muted-foreground">
-          <p>The segmentation model was the most important decision. A single newsletter to all tiers would have underperformed for everyone.</p>
+          <p><strong>The segmentation model was the most important decision.</strong> A single newsletter to all tiers would have underperformed for everyone.</p>
           <p>No single channel reaches the whole customer base reliably. Email has the highest intent. LinkedIn has the highest visibility. Slack has the highest trust. Running them in coordination is what made the program work.</p>
         </div>
       </div>
@@ -54,7 +54,7 @@ const CaseStudyNewsletter = () => (
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-2">If your customers go quiet between purchases, this is where to start.</p>
         <h2 className="text-h2 mb-6">Building a retention program? Start with a pilot.</h2>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
       </div>
     </SectionWrapper>

@@ -66,8 +66,8 @@ const CaseStudyRadar = () => (
       <div className="container-narrow">
         <h2 className="text-h2 mb-4">What worked and why</h2>
         <div className="space-y-4 text-body text-muted-foreground">
-          <p>The 2.45% engagement rate on a product launch post is strong. The industry average for B2B LinkedIn content sits around 0.5 to 1%. That gap came from specificity.</p>
-          <p>The Slack community activation drove the first wave of waitlist signups. Identifying Midori Bikinis as a potential upsell came from tracking engagement quality, not just volume.</p>
+          <p>The <strong>2.45%</strong> engagement rate on a product launch post is strong. The industry average for B2B LinkedIn content sits around <strong>0.5 to 1%</strong>. That gap came from specificity.</p>
+          <p>The <strong>Slack community activation</strong> drove the first wave of waitlist signups. Identifying Midori Bikinis as a potential upsell came from tracking <strong>engagement quality, not just volume</strong>.</p>
         </div>
       </div>
     </SectionWrapper>
@@ -76,7 +76,8 @@ const CaseStudyRadar = () => (
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-2">If your next product launch matters, this is the playbook.</p>
         <h2 className="text-h2 mb-6">Building a product launch? Start with a pilot.</h2>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+        <p className="text-caption mt-3"><strong>No retainer.</strong></p>
         <p className="mt-4">
           <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link>
         </p>

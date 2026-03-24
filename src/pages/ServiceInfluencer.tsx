@@ -9,8 +9,8 @@ import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";
 
-const faqs = [
-  { q: "Will it actually sound like me?", a: "Yes. That's the whole job. If it doesn't sound like you, you don't post it. The first month is the calibration period. Most clients say month two is when it clicks." },
+const faqs: { q: string; a: React.ReactNode }[] = [
+  { q: "Will it actually sound like me?", a: <>Yes. That's the whole job. If it doesn't sound like you, you don't post it. <strong>The first month is the calibration period.</strong> Most clients say <strong>month two is when it clicks</strong>.</> },
   { q: "Do I have to write anything?", a: "No. You do the voice capture conversations. After that, we handle everything. You review and approve. That's it." },
   { q: "What if I want to write some posts myself?", a: "That's fine. Most clients do a mix. We fill the calendar. You swap in something you wrote when you have it. The calendar doesn't stall because you had a busy week." },
   { q: "How long until LinkedIn starts working?", a: "LinkedIn is a long-term play. Most clients see meaningful engagement improvement in month two. Inbound attribution usually shows up in month four or five. We'll tell you this before you sign, not after." },
@@ -29,19 +29,19 @@ const ServiceFounderLinkedIn = () => (
       <div className="container-default">
         <h1 className="text-display mb-4">Your buyers are on LinkedIn. You're not showing up.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">We write in your voice. Three posts a week. Carousels that get read. LinkedIn that builds pipeline, not just followers.</p>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="text-caption mt-3">No retainer. No long contract. $1,500 to $2,000 for 30 days.</p>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+        <p className="text-caption mt-3"><strong>No retainer. No long contract.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
       </div>
     </SectionWrapper>
 
     {/* THE PROBLEM */}
     <section className="bg-dark text-dark-text section-padding">
       <div className="container-narrow">
-        <h2 className="text-h2 mb-8">90% of SaaS companies post only from their company page.</h2>
+        <h2 className="text-h2 mb-8"><strong>90%</strong> of SaaS companies post only from their company page.</h2>
         <div className="space-y-6 text-body-lg text-dark-muted">
-          <p>LinkedIn's own data says personal profiles get 8 times more engagement than company pages. Yet most B2B SaaS companies treat their founder's LinkedIn as an afterthought, a place to share company announcements and the occasional thought that felt worth posting.</p>
+          <p>LinkedIn's own data says personal profiles get <strong>8 times more engagement</strong> than company pages. Yet most B2B SaaS companies treat their founder's LinkedIn as an afterthought, a place to share company announcements and the occasional thought that felt worth posting.</p>
           <p>Meanwhile, the founders who show up consistently, take real positions, and write in a voice that sounds like a person rather than a press release are generating inbound. Not because they got lucky. Because LinkedIn rewards personal content from people, not brands.</p>
-          <p>The gap between what most companies do and what works is where we operate.</p>
+          <p>The gap between <strong>what most companies do and what works</strong> is where we operate.</p>
         </div>
       </div>
     </section>
@@ -105,7 +105,7 @@ const ServiceFounderLinkedIn = () => (
     <SectionWrapper>
       <div className="container-narrow">
         <p className="overline mb-4">We've done this before.</p>
-        <p className="text-body text-muted-foreground mb-8">Before Output Marketing, Vanessa ran influencer programs at Fireflies.ai. She managed a B2B SaaS campaign for their Series A product push: 39 creators, 855,958 impressions, 3.40% engagement. The four Archive campaigns that followed were built on the same playbook.</p>
+        <p className="text-body text-muted-foreground mb-8">Before Output Marketing, Vanessa ran influencer programs at Fireflies.ai. She managed a B2B SaaS campaign for their Series A product push: <strong>39 creators</strong>, <strong>855,958 impressions</strong>, <strong>3.40% engagement</strong>. The four Archive campaigns that followed were built on the same playbook.</p>
         <div className="flex items-center gap-6 flex-wrap">
           <img src={logoFireflies} alt="Fireflies.ai" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
           <img src={logoArchive} alt="Archive" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
@@ -141,7 +141,7 @@ const ServiceFounderLinkedIn = () => (
         <div className="grid md:grid-cols-3 gap-6">
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
             <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
-            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Pilot (30 days)</h3>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Pilot (<strong>30 days</strong>)</h3>
             <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We have the voice capture conversations, build the first month's content calendar, write the first batch of posts. You see the quality before committing to anything.</p>
           </div>
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
@@ -163,8 +163,8 @@ const ServiceFounderLinkedIn = () => (
       <div className="container-narrow text-center">
         <h3 className="text-h3 mb-1">Foundation tier</h3>
         <p className="text-h2 mb-4">$1,800 / month</p>
-        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500 to $2,000 for 30 days.</p>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
+        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
       </div>
     </SectionWrapper>

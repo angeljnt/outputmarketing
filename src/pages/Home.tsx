@@ -21,7 +21,7 @@ const caseStudies = [
     client: "Archive",
     type: "Product Launch Marketing",
     date: "Feb 2025",
-    metrics: ["7 brands added to waitlist", "2.45% engagement rate", "1 upsell opportunity identified"],
+    metrics: [<><strong>7 brands</strong> added to waitlist</>, <><strong>2.45%</strong> engagement rate</>, <><strong>1</strong> upsell opportunity identified</>],
     link: "/work/archive-radar-launch",
   },
   {
@@ -29,7 +29,7 @@ const caseStudies = [
     client: "Archive",
     type: "Product Launch & Customer Retention",
     date: "2025",
-    metrics: ["Recurring revenue stream established", "3-tier customer segmentation executed", "Retention improved through value-driven content"],
+    metrics: [<>Recurring revenue stream established</>, <><strong>3</strong>-tier customer segmentation executed</>, <>Retention improved through value-driven content</>],
     link: "/work/archive-ai-newsletter",
   },
   {
@@ -37,7 +37,7 @@ const caseStudies = [
     client: "Archive",
     type: "Thought Leadership",
     date: "Ongoing",
-    metrics: ["114 reactions + 68 comments on featured post", "7,363 impressions", "1.21% engagement rate maintained"],
+    metrics: [<><strong>114</strong> reactions + <strong>68</strong> comments on featured post</>, <><strong>7,363</strong> impressions</>, <><strong>1.21%</strong> engagement rate maintained</>],
     link: "/work/archive-linkedin-strategy",
   },
   {
@@ -45,19 +45,19 @@ const caseStudies = [
     client: "Archive",
     type: "Product Marketing",
     date: "Ongoing",
-    metrics: ["Full campaign dashboard built", "AI Assistant + Gifting campaigns managed", "DTC brand pipeline tracked"],
+    metrics: [<>Full campaign dashboard built</>, <>AI Assistant + Gifting campaigns managed</>, <>DTC brand pipeline tracked</>],
     link: "/work/archive-product-marketing",
   },
 ];
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   { q: "Do you work with early-stage startups?", a: "Yes. Most of our clients are Seed to Series A, with ARR between $300K and $5M. That's exactly the stage where getting the marketing right compounds the most." },
   { q: "We've never done LinkedIn ghostwriting before. Where do we start?", a: "We start with a conversation. We listen to how you talk about your work, your product, and your buyers. We read your existing content, your emails, your Slack messages if you'll share them. Then we write three posts. You tell us what sounds like you and what doesn't. That's the voice capture process. Most clients feel comfortable with the output by week two." },
   { q: "Do you run paid social or Google ads?", a: "No. We don't run paid. If that's what you need, we'll tell you who does it well. What we do: LinkedIn ghostwriting, content, SEO. We do it without the waste that comes from spreading across everything." },
-  { q: "What happens if the pilot doesn't work out?", a: "We part ways. No pressure, no awkward conversation. The pilot exists precisely so neither of us has to make a long-term commitment before we know it's the right fit." },
+  { q: "What happens if the pilot doesn't work out?", a: <>We part ways. <strong>No pressure, no awkward conversation.</strong> The pilot exists precisely so neither of us has to make a long-term commitment before we know it's the right fit.</> },
   { q: "How fast can we start?", a: "Usually within a week of the first call. We don't have an onboarding queue." },
-  { q: "Who actually does the work?", a: "Vanessa and Angel. Not a team of juniors supervised by someone you met once. You'll have both of our contact info from day one." },
-  { q: "Do you only work with SaaS companies?", a: "Yes. B2B SaaS is the whole focus. Every piece of copy we write, every SEO keyword we target, every LinkedIn post we ghost assumes a B2B SaaS buyer. That specificity is the reason it works." },
+  { q: "Who actually does the work?", a: <>Vanessa and Angel. <strong>Not a team of juniors supervised by someone you met once.</strong> <strong>You'll have both of our contact info from day one.</strong></> },
+  { q: "Do you only work with SaaS companies?", a: <>Yes. <strong>B2B SaaS is the whole focus.</strong> Every piece of copy we write, every SEO keyword we target, every LinkedIn post we ghost assumes a B2B SaaS buyer. That specificity is the reason it works.</> },
   { q: "All your case studies are from Archive. Should I be concerned?", a: "No. We chose to go deep with one client rather than shallow with ten. Four different campaigns, different channels, different goals, all from the same relationship. That's what it looks like when an agency actually commits to a client's growth. You'll get the same." },
 ];
 
@@ -65,8 +65,8 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Output Marketing — B2B Marketing Agency for SaaS Companies</title>
-        <meta name="description" content="Founder LinkedIn ghostwriting, content marketing, and SEO for B2B SaaS startups. 30-day pilot, no retainer." />
+        <title>Output Marketing — B2B SaaS Marketing Agency</title>
+        <meta name="description" content="Pipeline from content. Founder LinkedIn ghostwriting, content marketing, and SEO for B2B SaaS companies. 30-day pilot, no retainer." />
       </Helmet>
 
       {/* HERO */}
@@ -75,14 +75,17 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div>
               <h1 className="text-display mb-4">
-                Marketing that actually moves the needle.{" "}
-                <span className="block">Built for B2B SaaS companies.</span>
+                Pipeline from content.{" "}
+                <span className="block">Built for B2B SaaS founders.</span>
               </h1>
               <p className="text-body-lg text-muted-foreground mb-6">
-                Human-first. No AI slop. Marketing with ROI.
+                Founder LinkedIn ghostwriting, content marketing, and SEO. No paid ads. No retainer.
               </p>
-              <CTAButton to="/contact" className="mb-3">Start my 30-day pilot →</CTAButton>
-              <p className="text-caption">No retainer commitment. No long contracts. $1,500 to $2,000 for 30 days.</p>
+              <CTAButton to="/contact" className="mb-3">Start my <strong>30-day pilot</strong> →</CTAButton>
+              <p className="text-caption"><strong>No retainer commitment. No long contracts.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
+              <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors mt-2 inline-block">
+                See what the output looks like →
+              </Link>
             </div>
             <div className="flex justify-center md:justify-end">
               <div className="w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden">
@@ -96,7 +99,7 @@ const Home = () => {
       {/* LOGO BAR */}
       <SectionWrapper className="!py-8 border-y border-border">
         <div className="container-default">
-          <p className="overline text-center mb-6">Brands we've built programs for</p>
+          <p className="overline text-center mb-6">B2B SaaS companies we've worked with</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
             <div className="shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
               <img src={logoArchive} alt="Archive" className="h-8 w-auto object-contain" />
@@ -109,8 +112,8 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-6 text-center space-y-1">
-            <p className="text-small text-muted-foreground">Archive Radar launch: 2.45% engagement rate · 7 brands to waitlist</p>
-            <p className="text-small text-muted-foreground">B2B SaaS influencer campaign: 855,000 impressions · 3.40% engagement</p>
+            <p className="text-small text-muted-foreground">Archive Radar launch: <strong>2.45%</strong> engagement rate · <strong>7 brands</strong> to waitlist</p>
+            <p className="text-small text-muted-foreground">B2B SaaS influencer campaign: <strong>855,000 impressions</strong> · <strong>3.40%</strong> engagement</p>
           </div>
         </div>
       </SectionWrapper>
@@ -118,7 +121,7 @@ const Home = () => {
       {/* PROBLEM */}
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow">
-          <h2 className="text-h2 mb-8">Here's what's actually happening.</h2>
+          <h2 className="text-h2 mb-8">The real problem isn't your product.</h2>
           <div className="space-y-6 text-body-lg text-dark-muted">
             <p>You're spending on content. You're spending on influencers. But when you pull the metrics, the investment doesn't justify the return. If there's even any return.</p>
             <p>Meanwhile your competitor, the one with the worse product and half your budget, is getting all the engagement. Their content is everywhere. Their name comes up in every conversation.</p>
@@ -132,19 +135,19 @@ const Home = () => {
         <div className="container-default">
           <div className="grid md:grid-cols-3 gap-6">
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Budget spent. No pipeline.</h3>
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Budget spent. <strong>No pipeline.</strong></h3>
               <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">You've paid for posts, campaigns, and creator fees. The CAC math doesn't work.</p>
             </div>
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Better product. Less visibility.</h3>
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Better product. <strong>Less visibility.</strong></h3>
               <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Your roadmap is stronger. Your pricing is tighter. But no one outside your current users knows you exist.</p>
             </div>
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-              <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Their name. Not yours.</h3>
+              <h3 className="text-h3 mb-3 group-hover:text-[#111111]"><strong>Their name. Not yours.</strong></h3>
               <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Every time your ICP searches, reads, or asks around, your competitor's name is the one that comes up.</p>
             </div>
           </div>
-          <p className="text-body text-muted-foreground text-center mt-10">This is a solvable problem. Most agencies just aren't solving it.</p>
+          <p className="text-h3 font-semibold text-foreground text-center mt-10">This is a solvable problem. Most agencies just aren't solving it.</p>
         </div>
       </SectionWrapper>
 
@@ -171,7 +174,7 @@ const Home = () => {
       <SectionWrapper>
         <div className="container-default">
           <h2 className="text-h2 mb-3">Three ways we work with you.</h2>
-          <p className="text-body-lg text-muted-foreground mb-10">All of them start the same way: a 30-day pilot so you can see the work before you commit.</p>
+          <p className="text-body-lg text-muted-foreground mb-10">All of them start the same way: a <strong>30-day pilot</strong> so you can see the work before you commit.</p>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
@@ -198,7 +201,7 @@ const Home = () => {
             </div>
           </div>
 
-          <p className="text-body text-muted-foreground text-center mt-8">
+          <p className="text-body text-muted-foreground text-left mt-8">
             Need a content audit, a technical SEO review, or pSEO for your product? We do those too.{" "}
             <Link to="/pricing" className="font-medium text-foreground hover:text-accent transition-colors">See pricing →</Link>
           </p>
@@ -208,11 +211,11 @@ const Home = () => {
       {/* DAMAGING ADMISSION */}
       <SectionWrapper className="bg-surface-alt">
         <div className="container-narrow">
-          <h2 className="text-h2 mb-6">Here's what we won't do.</h2>
+          <h2 className="text-h2 mb-6">No paid ads. No video. No junior teams.</h2>
           <div className="space-y-6 text-body-lg text-muted-foreground">
             <p>We don't run paid ads. We don't produce video. We don't have a floor of junior coordinators managing your account while the senior team stays busy winning new clients.</p>
-            <p>What we do: founder LinkedIn ghostwriting, content strategy, SEO. We do it at a level most agencies can't match precisely because we're not spread thin.</p>
-            <p>We're a handful of people who do things really well. You talk directly to whoever is doing the work. Every time.</p>
+            <p>What we do: <strong>founder LinkedIn ghostwriting, content strategy, SEO</strong>. We do it at a level most agencies can't match precisely because we're not spread thin.</p>
+            <p>We're a handful of people who do things really well. <strong>You talk directly to whoever is doing the work. Every time.</strong></p>
           </div>
         </div>
       </SectionWrapper>
@@ -225,7 +228,7 @@ const Home = () => {
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
               <h3 className="text-h3 mb-3 group-hover:text-[#111111]">The Pilot</h3>
-              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We start with 30 days. You see the quality of the work. We learn your product, your ICP, and your voice. $1,500 to $2,000, no strings attached.</p>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We start with <strong>30 days</strong>. You see the quality of the work. We learn your product, your ICP, and your voice. <strong>$1,500 to $2,000</strong>, <strong>no strings attached</strong>.</p>
             </div>
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 2</p>
@@ -246,7 +249,9 @@ const Home = () => {
       <SectionWrapper>
         <div className="container-default">
           <p className="text-body text-muted-foreground mb-2">Most of our client relationships start with the pilot. Most of them don't stop there.</p>
-          <h2 className="text-h2 mb-10">All from one client. One year. Four different programs.</h2>
+          <div className="border-t border-border mt-8 pt-6">
+            <h2 className="text-h2 font-semibold text-foreground mb-10">All from one client. One year. Four different programs.</h2>
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
             {caseStudies.map((cs) => (
               <CaseStudyCard key={cs.link} {...cs} />
@@ -269,28 +274,41 @@ const Home = () => {
               <div className="space-y-4 text-body text-muted-foreground mb-8">
                 <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B SaaS influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, managed creator rosters, launched products, and ran the full content machine.</p>
-                <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
+                <p>The <strong>Webby Award</strong> and the <strong>Cannes Lions shortlist</strong> came from that work.</p>
                 <p className="text-caption">IE Business School. CDMP certified.</p>
               </div>
               <div className="flex items-center gap-8">
                 <img src={logoFireflies} alt="Fireflies.ai" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={logoArchive} alt="Archive" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
                 <img src={badgeIE} alt="IE Business School" className="h-10 w-auto object-contain" />
-                
               </div>
             </div>
           </div>
         </div>
       </SectionWrapper>
 
+      {/* TESTIMONIAL */}
+      <SectionWrapper>
+        <div className="container-default">
+          <p className="overline text-center mb-6">From the client</p>
+          <blockquote className="text-h3 font-normal italic max-w-2xl mx-auto text-center">
+            "We went from a silent LinkedIn presence to 7 brands on the Radar waitlist in the first campaign. The engagement numbers weren't vanity — they came from the right people."
+          </blockquote>
+          <p className="text-caption text-muted-foreground text-center mt-4">
+            — Archive team, on the Radar Feature Launch campaign
+          </p>
+          <div className="border-t border-border max-w-xs mx-auto mt-8 mb-2" />
+        </div>
+      </SectionWrapper>
+
       {/* PILOT OFFER */}
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow text-center">
-          <h2 className="text-h2 mb-6">Start with 30 days.</h2>
-          <p className="text-body-lg text-dark-muted mb-8">$1,500 to $2,000. Full audit of your current presence. A strategic roadmap. Two to three weeks of live execution so you can see exactly what working with us looks like.</p>
-          <p className="text-body text-dark-muted mb-8">No retainer. No contract. No commitment beyond the month.</p>
-          <CTAButton to="/contact" variant="primary-inverted" className="mb-4">Start my 30-day pilot →</CTAButton>
-          <p className="text-sm text-dark-muted mt-3">No retainer. No contract. We reply within 24 hours.</p>
+          <h2 className="text-h2 mb-6">Start with <strong>30 days</strong>.</h2>
+          <p className="text-body-lg text-dark-muted mb-8"><strong>$1,500 to $2,000</strong>. Full audit of your current presence. A strategic roadmap. Two to three weeks of live execution so you can see exactly what working with us looks like.</p>
+          <p className="text-body text-dark-muted mb-8"><strong>No retainer. No contract.</strong> No commitment beyond the month.</p>
+          <CTAButton to="/contact" variant="primary-inverted" className="mb-4">Start my <strong>30-day pilot</strong> →</CTAButton>
+          <p className="text-sm text-dark-muted mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
           <Link to="/pricing" className="text-sm text-dark-muted hover:text-accent transition-colors mt-2 inline-block">See full pricing →</Link>
         </div>
       </section>
@@ -298,7 +316,7 @@ const Home = () => {
       {/* FAQ */}
       <SectionWrapper>
         <div className="container-default">
-          <h2 className="text-h2 mb-10">Questions you probably have.</h2>
+          <h2 className="text-h2 mb-10">Common questions.</h2>
           <div className="max-w-3xl">
             {faqs.map((faq, i) => (
               <FAQItem key={i} question={faq.q} answer={faq.a} />

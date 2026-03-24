@@ -28,7 +28,7 @@ const CaseStudyLinkedIn = () => (
         <p className="text-body text-muted-foreground mb-8">Archive sells to DTC brands. Its ICP: brand managers, CMOs, and founders at DTC companies. They spend meaningful time on LinkedIn. A credible LinkedIn presence for Archive wasn't nice to have. It was the organic channel with the highest concentration of their buyers.</p>
 
         <h2 className="text-h2 mb-4">The challenge</h2>
-        <p className="text-body text-muted-foreground mb-8">Thought leadership content is easy to produce and easy to ignore. Archive needed content that generated engagement from the right people: real positions, backed with data, in a voice that sounded like someone who knew the space.</p>
+        <p className="text-body text-muted-foreground mb-8">Thought leadership content is <strong>easy to produce and easy to ignore</strong>. Archive needed content that generated engagement from the right people: <strong>real positions, backed with data</strong>, in a voice that sounded like someone who knew the space.</p>
 
         <h2 className="text-h2 mb-4">What we did</h2>
         <ul className="space-y-3 text-body text-muted-foreground mb-8">
@@ -57,7 +57,7 @@ const CaseStudyLinkedIn = () => (
       <div className="container-narrow">
         <h2 className="text-h2 mb-4">What worked and why</h2>
         <div className="space-y-4 text-body text-muted-foreground">
-          <p>The posts that drove the most engagement weren't trend reports or product features. They were contrarian takes. "What's actually dying in influencer marketing" outperforms "5 influencer marketing trends to watch" every time.</p>
+          <p>The posts that drove the most engagement weren't trend reports or product features. They were contrarian takes. "<strong>What's actually dying</strong> in influencer marketing" outperforms "5 influencer marketing trends to watch" every time.</p>
           <p>1.21% on B2B LinkedIn content is above benchmark. The industry average sits around 0.5%. The difference comes from posting less often but making each post worth reading.</p>
         </div>
       </div>
@@ -67,7 +67,7 @@ const CaseStudyLinkedIn = () => (
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-2">If your ICP is on LinkedIn and you're not showing up, this is what consistent looks like.</p>
         <h2 className="text-h2 mb-6">Need LinkedIn content that actually gets engagement?</h2>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
       </div>
     </SectionWrapper>

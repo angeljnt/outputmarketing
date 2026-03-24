@@ -18,16 +18,22 @@ const About = () => {
     <>
       <Helmet>
         <title>About Output Marketing — Vanessa Semprun, Emmily Salazar & Angel</title>
-        <meta name="description" content="A boutique marketing team that does a few things very well. No retainers. You talk directly to the people doing the work." />
+        <meta name="description" content="A boutique B2B SaaS marketing team. We do founder LinkedIn ghostwriting, content, and SEO. You talk directly to whoever is doing the work." />
       </Helmet>
 
       {/* HERO */}
       <SectionWrapper>
         <div className="container-narrow text-center">
           <h1 className="text-display mb-4">A handful of people who do things really well.</h1>
-          <p className="text-body-lg text-muted-foreground">Not 50 people. Not a project manager between you and the work. Just us.</p>
         </div>
       </SectionWrapper>
+
+      {/* STANDALONE STATEMENT */}
+      <div className="my-10">
+        <h2 className="text-h2 font-semibold text-foreground text-center max-w-2xl mx-auto px-6">
+          Not 50 people. Not a project manager between you and the work. Just us.
+        </h2>
+      </div>
 
       {/* VANESSA */}
       <SectionWrapper>
@@ -36,9 +42,9 @@ const About = () => {
             <div>
               <p className="overline mb-4">The founder</p>
               <div className="space-y-4 text-body text-muted-foreground">
-                <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B SaaS influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
+                <p><strong>39 creators.</strong> <strong>855,000 impressions.</strong> <strong>3.40% engagement.</strong> That was the Fireflies.ai campaign Vanessa ran as Influencer Marketing Manager before starting Output Marketing. Before that, Marketing Manager at Archive — a B2B SaaS platform for DTC brands — where the four case studies on the Work page were built.</p>
                 <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, ran the full content machine, and managed product launches. All of it measurable.</p>
-                <p>The Webby Award and the Cannes Lions shortlist came from that work.</p>
+                <p>The <strong>Webby Award</strong> and the <strong>Cannes Lions shortlist</strong> came from that work.</p>
               </div>
               <a
                 href="https://www.linkedin.com/in/vanessasemprun/"
@@ -62,9 +68,9 @@ const About = () => {
       {/* MINI CTA */}
       <SectionWrapper className="bg-surface-alt">
         <div className="container-narrow text-center">
-          <p className="text-body-lg mb-4">Seen enough? Start with 30 days.</p>
-          <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-          <p className="text-caption mt-3">No retainer. No contract.</p>
+          <p className="text-body-lg mb-4">Ready to start? <strong>30-day pilot</strong>, no retainer.</p>
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+          <p className="text-caption mt-3"><strong>No retainer. No contract.</strong></p>
         </div>
       </SectionWrapper>
 
@@ -129,11 +135,11 @@ const About = () => {
       {/* PHILOSOPHY */}
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow">
-          <h2 className="text-h2 mb-6">How we think about marketing.</h2>
+          <h2 className="text-h2 mb-6">Why we stay narrow.</h2>
           <div className="space-y-6 text-body-lg text-dark-muted">
             <p>Most agencies spread thin. They take every client, every channel, every ask. The work suffers. The client notices. The relationship ends.</p>
-            <p>We do founder LinkedIn ghostwriting, content marketing, and SEO. We do those things at a level most agencies can't match because we're not also doing paid ads, video, PR, and event marketing at the same time.</p>
-            <p>You talk directly to whoever is doing the work. Every time. No account managers. No weekly updates from someone who wasn't in the meeting.</p>
+            <p>We do <strong>founder LinkedIn ghostwriting, content marketing, and SEO</strong>. We do those things at a level most agencies can't match because we're not also doing paid ads, video, PR, and event marketing at the same time.</p>
+            <p><strong>You talk directly to whoever is doing the work. Every time.</strong> No account managers. No weekly updates from someone who wasn't in the meeting.</p>
           </div>
         </div>
       </section>
@@ -152,8 +158,8 @@ const About = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <p className="text-body">Webby Awards / Best B2B Campaign</p>
-                <p className="text-body">Cannes Lions / Shortlist Recognition</p>
+                <p className="text-body"><strong>Webby Award</strong> / Best B2B Campaign</p>
+                <p className="text-body"><strong>Cannes Lions shortlist</strong> / Recognition</p>
               </div>
             </div>
             <div>
@@ -177,8 +183,8 @@ const About = () => {
       <SectionWrapper>
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-6">Work with people who have done this before.</h2>
-          <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-          <p className="text-caption mt-3">No retainer. No contract. We reply within 24 hours.</p>
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+          <p className="text-caption mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
         </div>
       </SectionWrapper>
 

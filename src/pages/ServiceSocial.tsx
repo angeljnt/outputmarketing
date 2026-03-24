@@ -5,7 +5,7 @@ import FAQItem from "@/components/FAQItem";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   { q: "How long until we see results?", a: "New content typically takes 3 to 6 months to rank in competitive categories. Technical fixes and optimizing existing content can show movement faster. We set expectations on your specific targets in the strategy phase." },
   { q: "Do you write the content too?", a: "Yes. SEO at Output Marketing is never separated from content. The research, writing, and optimization are one process, not two separate services." },
   { q: "What's GEO and why does it matter?", a: "GEO is structuring your content to get cited by AI tools. When your buyer asks ChatGPT \"what's the best tool for X,\" the results include citations from sources the AI deems authoritative. Getting into those citations is the new first-page ranking. We build original research assets and structured content specifically for this." },
@@ -25,19 +25,19 @@ const ServiceOrganicSEO = () => (
       <div className="container-default">
         <h1 className="text-display mb-4">Traffic is not the goal. Pipeline is.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">We target the keywords your buyers use when they're ready to buy, not when they're just looking around. B2B SaaS SEO built for lead quality.</p>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
-        <p className="text-caption mt-3">No retainer. No long contract. $1,500 to $2,000 for 30 days.</p>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+        <p className="text-caption mt-3"><strong>No retainer. No long contract.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
       </div>
     </SectionWrapper>
 
     {/* THE PROBLEM */}
     <section className="bg-dark text-dark-text section-padding">
       <div className="container-narrow">
-        <h2 className="text-h2 mb-8">Most B2B SaaS SEO is optimized for rankings, not revenue.</h2>
+        <h2 className="text-h2 mb-8">Most B2B SaaS SEO is optimized for <strong>rankings, not revenue</strong>.</h2>
         <div className="space-y-6 text-body-lg text-dark-muted">
-          <p>The agency publishes 8 articles a month. Traffic goes up. Demo requests don't. The client renews anyway because the traffic chart looks good.</p>
-          <p>The problem is the keyword strategy. Top-of-funnel informational content ranks easily and converts almost nothing. Bottom-of-funnel content, the posts buyers find when they're actively evaluating options, converts 10 to 25 times more. Most agencies avoid it because it's harder to rank and harder to measure.</p>
-          <p>That's what we focus on.</p>
+          <p>The agency publishes 8 articles a month. Traffic goes up. <strong>Demo requests don't.</strong> The client renews anyway because the traffic chart looks good.</p>
+          <p>The problem is the keyword strategy. Top-of-funnel informational content ranks easily and converts almost nothing. Bottom-of-funnel content, the posts buyers find when they're actively evaluating options, <strong>converts 10 to 25 times more</strong>. Most agencies avoid it because it's harder to rank and harder to measure.</p>
+          <p><strong>That's what we focus on.</strong></p>
         </div>
       </div>
     </section>
@@ -89,8 +89,8 @@ const ServiceOrganicSEO = () => (
             <p className="text-caption group-hover:text-[#111111] transition-colors duration-300">&nbsp;</p>
           </div>
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300 text-center">
-            <p className="text-display mb-2 group-hover:text-[#111111]">$290</p>
-            <p className="text-body font-semibold mb-1 group-hover:text-[#111111]">Long-term organic CAC as content compounds vs $802 for paid search</p>
+            <p className="text-display mb-2 group-hover:text-[#111111]"><strong>$290</strong></p>
+            <p className="text-body font-semibold mb-1 group-hover:text-[#111111]">Long-term organic CAC as content compounds vs <strong>$802</strong> for paid search</p>
             <p className="text-caption group-hover:text-[#111111] transition-colors duration-300">&nbsp;</p>
           </div>
         </div>
@@ -123,7 +123,7 @@ const ServiceOrganicSEO = () => (
         <div className="grid md:grid-cols-3 gap-6">
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
             <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
-            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Pilot (30 days)</h3>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Pilot (<strong>30 days</strong>)</h3>
             <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Technical audit. Keyword gap analysis. We identify the 3 to 5 highest-priority opportunities and begin execution.</p>
           </div>
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
@@ -144,9 +144,9 @@ const ServiceOrganicSEO = () => (
     <SectionWrapper className="bg-surface-alt">
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-4">Organic SEO pairs with content marketing in the Engine and Full Stack tiers. Start with the pilot to see what the opportunity looks like for your specific domain.</p>
-        <p className="text-body text-muted-foreground mb-2">Pilot: $1,500 to $2,000 for 30 days.</p>
+        <p className="text-body text-muted-foreground mb-2">Pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
         <p className="text-body text-muted-foreground mb-6">Full Stack tier (includes technical SEO + GEO): $6,000/month.</p>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
       </div>
     </SectionWrapper>

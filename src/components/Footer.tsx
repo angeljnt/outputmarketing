@@ -10,7 +10,7 @@ const Footer = () => {
           Start your 30-day pilot →
         </CTAButton>
         <p className="text-dark-muted text-sm mt-4">
-          Or reach us directly:{" "}
+          Prefer direct email:{" "}
           <a href="mailto:vanessa@output-marketing.com" className="underline hover:text-accent transition-colors">
             vanessa@output-marketing.com
           </a>
@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm text-dark-muted mb-4">
             <Link to="/work" className="hover:text-accent transition-colors">Work</Link>
             <span>·</span>
-            <Link to="/services/influencer-marketing" className="hover:text-accent transition-colors">Services</Link>
+            <Link to="/services/founder-linkedin" className="hover:text-accent transition-colors">Services</Link>
             <span>·</span>
             <Link to="/pricing" className="hover:text-accent transition-colors">Pricing</Link>
             <span>·</span>

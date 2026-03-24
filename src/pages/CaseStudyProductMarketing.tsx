@@ -47,7 +47,7 @@ const CaseStudyProductMarketing = () => (
 
         <h2 className="text-h2 mb-4">What worked and why</h2>
         <div className="space-y-4 text-body text-muted-foreground">
-          <p>The most valuable output wasn't the content. It was the dashboard. Archive's team went from running campaigns by feel to having one place where everything tracked.</p>
+          <p><strong>The most valuable output wasn't the content. It was the dashboard.</strong> Archive's team went <strong>from running campaigns by feel to having one place where everything tracked</strong>.</p>
           <p>Running two product campaigns simultaneously with distinct messaging required strict content separation at the brief level. The AI Assistant audience and the Gifting audience overlap but aren't the same people.</p>
         </div>
       </div>
@@ -57,7 +57,7 @@ const CaseStudyProductMarketing = () => (
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-2">Running multiple campaigns and losing track?</p>
         <h2 className="text-h2 mb-6">Need a system that tracks? Start with a pilot.</h2>
-        <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
         <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
       </div>
     </SectionWrapper>

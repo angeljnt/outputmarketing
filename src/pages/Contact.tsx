@@ -32,13 +32,13 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Output Marketing</title>
-        <meta name="description" content="B2B SaaS or DTC brand. Marketing that ships results. Start your 30-day pilot." />
+        <meta name="description" content="B2B SaaS company. Marketing that ships results. We reply within 24 hours." />
       </Helmet>
 
       <SectionWrapper>
         <div className="container-narrow">
           <h1 className="text-display mb-4">Let's talk.</h1>
-          <p className="text-body-lg text-muted-foreground mb-10">B2B SaaS or DTC brand. Marketing that ships results. You're in the right place.</p>
+          <p className="text-body-lg text-muted-foreground mb-10">B2B SaaS company. Marketing that ships results. You're in the right place.</p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>

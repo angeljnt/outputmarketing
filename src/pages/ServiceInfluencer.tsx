@@ -4,79 +4,114 @@ import CTAButton from "@/components/CTAButton";
 import FAQItem from "@/components/FAQItem";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import logoFireflies from "@/assets/logo-fireflies.png";
+import logoArchive from "@/assets/logo-archive.svg";
+import badgeWebby from "@/assets/badge-webby.png";
+import badgeCannes from "@/assets/badge-cannes.png";
 
 const faqs = [
-  { q: "Do you only work with B2B brands?", a: "No. The creator programs we run work for both B2B SaaS and DTC brands. The creator pool and briefing strategy are different for each. The rigor is the same." },
-  { q: "How do you find the right creators?", a: "We start with your ICP. We map who they follow, what content they engage with, and which creators actually influence their buying decisions. Not just the ones with large followings." },
-  { q: "What's the minimum creator budget on top of the retainer?", a: "It depends on your ICP and creator tier. Micro-influencers in most B2B categories can be activated for $200 to $800 per post. We'll give you a realistic number in the pilot debrief." },
-  { q: "How long until we see pipeline results?", a: "Most programs start generating measurable activity in month two. Month one is setup. Month two is when posts go live. Month three is when patterns emerge." },
-  { q: "Do we own the creator relationships after we stop working with you?", a: "Yes. Everything we build belongs to you. Creator contacts, briefs, relationships, reporting templates. We don't hold any of it hostage." },
+  { q: "Will it actually sound like me?", a: "Yes. That's the whole job. If it doesn't sound like you, you don't post it. The first month is the calibration period. Most clients say month two is when it clicks." },
+  { q: "Do I have to write anything?", a: "No. You do the voice capture conversations. After that, we handle everything. You review and approve. That's it." },
+  { q: "What if I want to write some posts myself?", a: "That's fine. Most clients do a mix. We fill the calendar. You swap in something you wrote when you have it. The calendar doesn't stall because you had a busy week." },
+  { q: "How long until LinkedIn starts working?", a: "LinkedIn is a long-term play. Most clients see meaningful engagement improvement in month two. Inbound attribution usually shows up in month four or five. We'll tell you this before you sign, not after." },
+  { q: "Do you post on my behalf or do I post myself?", a: "Either. Most clients prefer to post themselves so it feels personal. We prepare the post, you hit publish. We can also manage posting if you'd rather hand it off entirely." },
 ];
 
-const ServiceInfluencer = () => (
+const ServiceFounderLinkedIn = () => (
   <>
     <Helmet>
-      <title>Influencer Marketing: Output Marketing</title>
-      <meta name="description" content="Influencer programs that build pipeline, not just awareness. For B2B SaaS and DTC brands." />
+      <title>Founder LinkedIn Ghostwriting — Output Marketing</title>
+      <meta name="description" content="LinkedIn ghostwriting for B2B SaaS founders. We write in your voice. You post. Your buyers find you before they find your competitor." />
     </Helmet>
 
     {/* HERO */}
     <SectionWrapper>
       <div className="container-default">
-        <h1 className="text-display mb-4">Influencer programs that build pipeline, not just awareness.</h1>
-        <p className="text-body-lg text-muted-foreground mb-6">For B2B SaaS companies and DTC brands that are done paying for impressions with no ROI to show for it.</p>
+        <h1 className="text-display mb-4">Your buyers are on LinkedIn. You're not showing up.</h1>
+        <p className="text-body-lg text-muted-foreground mb-6">We write in your voice. Three posts a week. Carousels that get read. LinkedIn that builds pipeline, not just followers.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
         <p className="text-caption mt-3">No retainer. No long contract. $1,500 to $2,000 for 30 days.</p>
       </div>
     </SectionWrapper>
 
+    {/* THE PROBLEM */}
+    <section className="bg-dark text-dark-text section-padding">
+      <div className="container-narrow">
+        <h2 className="text-h2 mb-8">90% of SaaS companies post only from their company page.</h2>
+        <div className="space-y-6 text-body-lg text-dark-muted">
+          <p>LinkedIn's own data says personal profiles get 8 times more engagement than company pages. Yet most B2B SaaS companies treat their founder's LinkedIn as an afterthought, a place to share company announcements and the occasional thought that felt worth posting.</p>
+          <p>Meanwhile, the founders who show up consistently, take real positions, and write in a voice that sounds like a person rather than a press release are generating inbound. Not because they got lucky. Because LinkedIn rewards personal content from people, not brands.</p>
+          <p>The gap between what most companies do and what works is where we operate.</p>
+        </div>
+      </div>
+    </section>
+
     {/* WHO IT'S FOR */}
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">Is this for you?</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">B2B SaaS (Seed to Series A)</h3>
-            <ul className="space-y-2 text-body text-muted-foreground">
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• ARR between $300K and $5M</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• No influencer program yet, or one that didn't produce pipeline</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• ICP is on LinkedIn and follows creators in your category</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• You want creator-driven pipeline, not just brand lift</li>
-            </ul>
-          </div>
-          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">DTC Brands ($500K to $5M revenue)</h3>
-            <ul className="space-y-2 text-body text-muted-foreground">
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• Found product-market fit</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• Burning too much on paid social</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• Need organic and creator-led growth to reduce CAC</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your buyers follow creators but you haven't activated that channel</li>
-            </ul>
-          </div>
+        <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300 max-w-2xl">
+          <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Founder, Seed to Series B</h3>
+          <ul className="space-y-2 text-body text-muted-foreground">
+            <li className="group-hover:text-[#111111] transition-colors duration-300">• Your LinkedIn is inconsistent. Or empty. Or you post when something big happens and go quiet for three weeks.</li>
+            <li className="group-hover:text-[#111111] transition-colors duration-300">• Your ICP is on LinkedIn. You know it. You see your competitors showing up there.</li>
+            <li className="group-hover:text-[#111111] transition-colors duration-300">• You have opinions about your space. You just don't have time to write.</li>
+            <li className="group-hover:text-[#111111] transition-colors duration-300">• You've thought about ghostwriting but weren't sure if the voice would sound like you.</li>
+          </ul>
         </div>
-        <p className="text-body text-muted-foreground mt-8">Sound like you? That's who we built this for.</p>
+        <p className="text-body text-muted-foreground mt-8">Sound familiar? That's who we built this for.</p>
       </div>
     </SectionWrapper>
 
     {/* WHAT WE DO */}
     <SectionWrapper className="bg-surface-alt">
       <div className="container-default">
-        <h2 className="text-h2 mb-8">What the program looks like.</h2>
+        <h2 className="text-h2 mb-8">What the engagement looks like.</h2>
         <ul className="space-y-4 text-body text-muted-foreground">
-          <li><strong className="text-foreground">Creator sourcing:</strong> We find creators your ICP actually follows. Not the biggest names. The right ones.</li>
-          <li><strong className="text-foreground">Strategy and briefing:</strong> Every creator gets a clear brief. No guessing on messaging.</li>
-          <li><strong className="text-foreground">Campaign execution:</strong> We manage the timeline, deliverables, approval process. You review.</li>
-          <li><strong className="text-foreground">ROI measurement:</strong> We track from content impression to pipeline. Pipeline is the deliverable.</li>
-          <li><strong className="text-foreground">Monthly reporting:</strong> An executive-level report. Numbers, analysis, and next steps.</li>
+          <li><strong className="text-foreground">Voice capture:</strong> Two to three conversations. We listen to how you talk about your work, your product, and your industry. We read your existing writing. We find your voice before we write a word.</li>
+          <li><strong className="text-foreground">Content calendar:</strong> A full month of planned posts, mapped to your ICP and what they care about. You approve direction before we write anything.</li>
+          <li><strong className="text-foreground">Ghostwriting:</strong> Three posts a week. Two carousels a month. Written in your voice. You review. Nothing goes live without your approval.</li>
+          <li><strong className="text-foreground">Performance tracking:</strong> Monthly report covering reach, engagement rate, profile views, and inbound attributed to LinkedIn activity.</li>
+          <li><strong className="text-foreground">Iteration:</strong> We track what lands and adjust. A strong voice improves over time. Month three performs better than month one.</li>
         </ul>
+      </div>
+    </SectionWrapper>
+
+    {/* EVIDENCE */}
+    <SectionWrapper>
+      <div className="container-default">
+        <h2 className="text-h2 mb-10">What it produces.</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300 text-center">
+            <p className="text-display mb-2 group-hover:text-[#111111]">8x</p>
+            <p className="text-body font-semibold mb-1 group-hover:text-[#111111]">Engagement: personal profile vs company page</p>
+            <p className="text-caption group-hover:text-[#111111] transition-colors duration-300">LinkedIn 2025 B2B Benchmark Report</p>
+          </div>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300 text-center">
+            <p className="text-display mb-2 group-hover:text-[#111111]">1/3</p>
+            <p className="text-body font-semibold mb-1 group-hover:text-[#111111]">Of Pylon's total pipeline came from founder LinkedIn in 2024</p>
+            <p className="text-caption group-hover:text-[#111111] transition-colors duration-300">&nbsp;</p>
+          </div>
+          <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300 text-center">
+            <p className="text-display mb-2 group-hover:text-[#111111]">277%</p>
+            <p className="text-body font-semibold mb-1 group-hover:text-[#111111]">More B2B leads from LinkedIn than any other social platform</p>
+            <p className="text-caption group-hover:text-[#111111] transition-colors duration-300">&nbsp;</p>
+          </div>
+        </div>
       </div>
     </SectionWrapper>
 
     {/* CREDENTIALS */}
     <SectionWrapper>
       <div className="container-narrow">
-        <h2 className="text-h2 mb-4">We've done this at scale.</h2>
-        <p className="text-body text-muted-foreground">Before Output Marketing, Vanessa ran influencer programs at Fireflies.ai. She managed a B2B influencer campaign for Fireflies.ai's Series A product push: 39 creators, 855,958 impressions, 3.40% engagement. The four Archive campaigns that followed were built on the same playbook.</p>
+        <p className="overline mb-4">We've done this before.</p>
+        <p className="text-body text-muted-foreground mb-8">Before Output Marketing, Vanessa ran influencer programs at Fireflies.ai. She managed a B2B SaaS campaign for their Series A product push: 39 creators, 855,958 impressions, 3.40% engagement. The four Archive campaigns that followed were built on the same playbook.</p>
+        <div className="flex items-center gap-6 flex-wrap">
+          <img src={logoFireflies} alt="Fireflies.ai" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+          <img src={logoArchive} alt="Archive" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+          <img src={badgeWebby} alt="Webby Awards" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+          <img src={badgeCannes} alt="Cannes Lions" className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+        </div>
       </div>
     </SectionWrapper>
 
@@ -86,14 +121,14 @@ const ServiceInfluencer = () => (
         <p className="overline mb-6">From the work</p>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="group bg-surface p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+            <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive LinkedIn Content Strategy</h3>
+            <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">7,363 impressions · 114 reactions · 1.21% engagement rate</p>
+            <Link to="/work/archive-linkedin-strategy" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
+          </div>
+          <div className="group bg-surface p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
             <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive Radar Feature Launch</h3>
             <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">7 brands to waitlist · 2.45% engagement rate</p>
             <Link to="/work/archive-radar-launch" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
-          </div>
-          <div className="group bg-surface p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
-            <h3 className="text-h3 mb-2 group-hover:text-[#111111]">Archive AI Insider Newsletter</h3>
-            <p className="text-caption mb-3 group-hover:text-[#111111] transition-colors duration-300">Recurring revenue stream · 3-tier segmentation</p>
-            <Link to="/work/archive-ai-newsletter" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
           </div>
         </div>
       </div>
@@ -107,17 +142,17 @@ const ServiceInfluencer = () => (
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
             <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 1</p>
             <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Pilot (30 days)</h3>
-            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We audit your current presence, map which creators your ICP actually follows, and run a small-scale test.</p>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We have the voice capture conversations, build the first month's content calendar, write the first batch of posts. You see the quality before committing to anything.</p>
           </div>
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
             <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 2</p>
-            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Program Build</h3>
-            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We build the creator roster, brief strategy, and campaign calendar. You approve everything before it goes live.</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Monthly cadence</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Content calendar approved. Posts written. You review. We publish. Monthly report delivered.</p>
           </div>
           <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
             <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 3</p>
-            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Execution and Measurement</h3>
-            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">We run the program, track the pipeline, and report monthly. You own all the creator relationships and content.</p>
+            <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Compound</h3>
+            <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">The first month is the hardest. By month three, the voice is locked. By month six, the inbound is real.</p>
           </div>
         </div>
       </div>
@@ -126,9 +161,8 @@ const ServiceInfluencer = () => (
     {/* PRICING */}
     <SectionWrapper className="bg-surface-alt">
       <div className="container-narrow text-center">
-        <h3 className="text-h3 mb-1">Program tier</h3>
-        <p className="text-h2 mb-4">$5,000 / month</p>
-        <p className="text-body text-muted-foreground mb-6">5 to 10 qualified creators per month, strategy, execution, ROI measurement, executive monthly report.</p>
+        <h3 className="text-h3 mb-1">Foundation tier</h3>
+        <p className="text-h2 mb-4">$1,800 / month</p>
         <p className="text-body text-muted-foreground mb-6">Or start with the pilot: $1,500 to $2,000 for 30 days.</p>
         <CTAButton to="/contact">Start my 30-day pilot →</CTAButton>
         <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
@@ -149,4 +183,4 @@ const ServiceInfluencer = () => (
   </>
 );
 
-export default ServiceInfluencer;
+export default ServiceFounderLinkedIn;

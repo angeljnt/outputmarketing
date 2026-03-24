@@ -5,9 +5,9 @@ import GhostButton from "./GhostButton";
 import logo from "@/assets/output-marketing-logo.svg";
 
 const services = [
-  { label: "Influencer Marketing", to: "/services/influencer-marketing" },
+  { label: "Founder LinkedIn", to: "/services/founder-linkedin" },
   { label: "Content Marketing", to: "/services/content-marketing" },
-  { label: "Social Media", to: "/services/social-media" },
+  { label: "Organic SEO", to: "/services/organic-seo" },
 ];
 
 const navLinks = [

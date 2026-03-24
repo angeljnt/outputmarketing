@@ -7,55 +7,60 @@ import { Link } from "react-router-dom";
 
 const tiers = [
   {
-    name: "Signal",
-    price: "$2,000 / month",
-    desc: "A consistent, human social presence on the channels that matter for your ICP.",
-    includes: ["LinkedIn + one additional channel", "12 posts/month", "Content calendar", "Monthly report", "1 strategy call/month"],
-    forText: "Early-stage SaaS teams with no marketing hire yet.",
+    name: "Foundation",
+    price: "$1,800 / month",
+    desc: "A founder LinkedIn presence and content foundation. Built for the stage where you don't have a marketing team yet.",
+    includes: ["12 ghostwritten LinkedIn posts/month", "2 SEO articles/month", "Content calendar", "Monthly performance report", "1 strategy call/month"],
+    forText: "Seed-stage B2B SaaS founders with no marketing hire.",
     badge: null,
   },
   {
     name: "Engine",
     price: "$3,500 / month",
-    desc: "A content system that builds organic pipeline. Not just followers.",
-    includes: ["Full content strategy", "4 SEO articles/month", "16 social posts", "Founder LinkedIn ghostwriting", "Monthly KPI report"],
-    forText: "SaaS companies that need leads from content, not just presence.",
+    desc: "A content system that builds organic pipeline. Founder brand plus company SEO, working together.",
+    includes: ["Founder LinkedIn ghostwriting (3x/week + 2 carousels/month)", "Brand page management (3x/week)", "4 to 6 SEO articles/month", "Monthly KPI report", "Quarterly strategy session"],
+    forText: "Series A B2B SaaS companies that need leads from content, not just presence.",
     badge: "Most popular",
   },
   {
-    name: "Program",
-    price: "$5,000 / month",
-    desc: "Your first influencer program. Or the one that actually works this time.",
-    includes: ["5 to 10 qualified creators/month", "Creator sourcing, briefing, and management", "Full campaign strategy and execution", "ROI measurement and tracking", "Executive-level monthly report"],
-    forText: "B2B SaaS and DTC brands ready to build pipeline through creators.",
+    name: "Full Stack",
+    price: "$6,000 / month",
+    desc: "The complete content machine. Founder brand, SEO, distribution, and attribution.",
+    includes: ["Everything in Engine", "8 articles/month", "Technical SEO audit + ongoing optimization", "Distribution layer (email repurposing + carousel adaptation)", "Attribution setup (GA4 + CRM)", "1 original research asset/quarter"],
+    forText: "Series A/B companies ready to treat content as a growth engine.",
     badge: null,
   },
 ];
 
 const comparison = [
-  { feature: "Price", signal: "$2,000/mo", engine: "$3,500/mo", program: "$5,000/mo" },
-  { feature: "Social posts", signal: "12/mo", engine: "16/mo", program: "—" },
-  { feature: "SEO articles", signal: "—", engine: "4/mo", program: "—" },
-  { feature: "Ghostwriting (founder)", signal: "—", engine: "Yes", program: "—" },
-  { feature: "Creator management", signal: "—", engine: "—", program: "5 to 10/mo" },
-  { feature: "Content strategy", signal: "—", engine: "Yes", program: "Yes" },
-  { feature: "Campaign execution", signal: "—", engine: "—", program: "Yes" },
-  { feature: "ROI reporting", signal: "—", engine: "Monthly KPI", program: "Executive monthly" },
-  { feature: "Monthly strategy call", signal: "Yes", engine: "Yes", program: "Yes" },
+  { feature: "Price", foundation: "$1,800/mo", engine: "$3,500/mo", fullStack: "$6,000/mo" },
+  { feature: "Founder LinkedIn posts", foundation: "12/mo", engine: "3x/week + 2 carousels", fullStack: "3x/week + 2 carousels" },
+  { feature: "Brand page posts", foundation: "—", engine: "3x/week", fullStack: "3x/week" },
+  { feature: "SEO articles", foundation: "2/mo", engine: "4–6/mo", fullStack: "8/mo" },
+  { feature: "Original research asset", foundation: "—", engine: "—", fullStack: "1/quarter" },
+  { feature: "Technical SEO", foundation: "—", engine: "—", fullStack: "Yes" },
+  { feature: "Distribution layer", foundation: "—", engine: "—", fullStack: "Yes" },
+  { feature: "Attribution setup", foundation: "—", engine: "—", fullStack: "Yes" },
+  { feature: "Monthly KPI report", foundation: "Yes", engine: "Yes", fullStack: "Yes" },
+  { feature: "Quarterly strategy session", foundation: "—", engine: "Yes", fullStack: "Yes" },
+  { feature: "Strategy call", foundation: "Monthly", engine: "Quarterly", fullStack: "Quarterly" },
 ];
 
 const addons = [
-  { name: "CEO / Founder LinkedIn ghostwriting", price: "+$800 / month" },
-  { name: "AEO (Answer Engine Optimization) audit", price: "$1,500 one-time" },
-  { name: "Campaign landing page", price: "$1,500 to $2,500 one-time" },
-  { name: "Influencer campaign measurement report", price: "$500 to $1,000 / month" },
+  { name: "Second founder LinkedIn ghostwriting", price: "+$1,500/month" },
+  { name: "pSEO setup (programmatic SEO build)", price: "$4,000 to $12,000 one-time" },
+  { name: "pSEO monthly maintenance", price: "$1,500 to $3,000/month" },
+  { name: "GEO (get cited in ChatGPT, Perplexity, AI Overviews)", price: "+$800/month" },
+  { name: "Content audit", price: "$1,500 to $2,500 one-time" },
+  { name: "SEO technical audit", price: "$1,500 to $3,000 one-time" },
+  { name: "Positioning + messaging audit", price: "$2,000 to $4,000 one-time" },
 ];
 
 const faqs = [
   { q: "Is there a minimum commitment after the pilot?", a: "No. The pilot is the commitment. After that, we move month-to-month. No annual contracts, no lock-ins." },
   { q: "Can I cancel anytime?", a: "Yes. We ask for 30 days notice so we can wrap ongoing work cleanly. That's it." },
   { q: "Do prices change after we start?", a: "No. The rate you start at holds for as long as we work together. We don't sneak in price increases." },
-  { q: "What if I want more than one service?", a: "We've run Engine and Program simultaneously for the same client. If the budget and scope makes sense, we can build a custom package. Start with the pilot and we'll figure out the right structure." },
+  { q: "What if I want more than one service?", a: "We've run Foundation and Engine simultaneously for the same client, or Engine with a pSEO project running in parallel. If the scope makes sense, we build a custom structure. Start with the pilot." },
   { q: "Can I start with the pilot and move to a different tier than I expected?", a: "Yes. That's the point of the pilot. We both learn what's actually needed. The tier recommendation at the end is based on what we saw in the work, not what we hoped to sell." },
   { q: "Do you offer discounts for early-stage startups?", a: "The pilot is already priced to be accessible. For pre-revenue companies, we sometimes structure the pilot differently. Reach out and we'll be straight with you about whether we're the right fit." },
 ];
@@ -129,18 +134,18 @@ const Pricing = () => {
               <thead>
                 <tr className="border-b border-border">
                   <th className="text-left py-3 pr-4 font-medium"></th>
-                  <th className="text-left py-3 px-4 font-semibold">Signal</th>
+                  <th className="text-left py-3 px-4 font-semibold">Foundation</th>
                   <th className="text-left py-3 px-4 font-semibold">Engine</th>
-                  <th className="text-left py-3 px-4 font-semibold">Program</th>
+                  <th className="text-left py-3 px-4 font-semibold">Full Stack</th>
                 </tr>
               </thead>
               <tbody>
                 {comparison.map((row, i) => (
                   <tr key={i} className="group border-b border-border hover:bg-accent-tint transition-colors duration-200">
                     <td className="py-3 pr-4 font-medium group-hover:text-[#111111]">{row.feature}</td>
-                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.signal}</td>
+                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.foundation}</td>
                     <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.engine}</td>
-                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.program}</td>
+                    <td className="py-3 px-4 text-muted-foreground group-hover:text-[#111111] transition-colors duration-200">{row.fullStack}</td>
                   </tr>
                 ))}
               </tbody>
@@ -171,7 +176,7 @@ const Pricing = () => {
               </tbody>
             </table>
           </div>
-          <p className="text-caption mt-4">Add-ons bolt onto any tier. Ask during the pilot debrief and we'll tell you if it makes sense for your stage.</p>
+          <p className="text-caption mt-4">Add-ons bolt onto any tier. We'll tell you in the pilot debrief whether the add-on makes sense for your stage.</p>
         </div>
       </SectionWrapper>
 

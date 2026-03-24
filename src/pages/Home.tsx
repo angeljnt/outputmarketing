@@ -76,7 +76,7 @@ const Home = () => {
             <div>
               <h1 className="text-display mb-4">
                 Pipeline from content.{" "}
-                <span className="block">Built for B2B SaaS founders.</span>
+                <span className="block">Built for B2B SaaS founders and their teams.</span>
               </h1>
               <p className="text-body-lg text-muted-foreground mb-6">
                 Founder LinkedIn ghostwriting, content marketing, and SEO. No paid ads. No retainer.
@@ -174,6 +174,7 @@ const Home = () => {
       <SectionWrapper>
         <div className="container-default">
           <h2 className="text-h2 mb-3">Three ways we work with you.</h2>
+          <p className="text-body-lg text-muted-foreground text-center max-w-2xl mx-auto mb-4">We build the founder's personal brand and the company's content machine. At Seed to Series A, you need both.</p>
           <p className="text-body-lg text-muted-foreground mb-10">All of them start the same way: a <strong>30-day pilot</strong> so you can see the work before you commit.</p>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -189,14 +190,14 @@ const Home = () => {
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Engine</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$3,500/month</p>
               <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A content system that builds organic pipeline. Founder brand plus company SEO, working together. Founder LinkedIn ghostwriting (3x/week + 2 carousels/month). Brand page management. 4 to 6 SEO articles/month. Monthly KPI report. Quarterly strategy session.</p>
-              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A B2B SaaS companies that need leads from content, not just presence.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A B2B SaaS founders and their teams that need leads from content, not just presence.</p>
               <Link to="/services/content-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
             <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Full Stack</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$6,000/month</p>
               <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">The complete content machine. Founder brand, company SEO, distribution, and attribution so you can prove what's working. Everything in Engine plus technical SEO, distribution layer (email + carousel repurposing), attribution setup, and one original research asset per quarter.</p>
-              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A/B companies ready to treat content as a growth engine, not a line item.</p>
+              <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A/B founders and their teams ready to treat content as a growth engine, not a line item.</p>
               <Link to="/services/organic-seo" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
           </div>

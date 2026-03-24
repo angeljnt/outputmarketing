@@ -195,7 +195,7 @@ const Pricing = () => {
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-4"><strong>No long contracts.</strong> Start with <strong>30 days</strong>.</h2>
           <p className="text-body text-muted-foreground mb-6">Or reach us at <a href="mailto:vanessa@output-marketing.com" className="underline hover:text-accent transition-colors">vanessa@output-marketing.com</a></p>
-          <CTAButton to="/contact">Start my &nbsp;<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact">Start my {"00A0"}<strong>30-day pilot</strong> →</CTAButton>
           <p className="text-sm text-muted-foreground mt-3"><strong>We reply within 24 hours.</strong></p>
         </div>
       </section>

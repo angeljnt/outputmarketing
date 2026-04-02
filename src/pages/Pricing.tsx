@@ -97,7 +97,7 @@ const Pricing = () => {
               <li>• End-of-pilot debrief with recommendations</li>
             </ul>
           </div>
-          <CTAButton to="/contact" variant="primary-inverted">Start my pilot →</CTAButton>
+          <CTAButton to="/contact" variant="primary-inverted">Start my <strong>30-day pilot</strong> →</CTAButton>
           <p className="text-sm text-dark-muted mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
         </div>
       </section>
@@ -118,7 +118,7 @@ const Pricing = () => {
                   {tier.includes.map((item, i) => <li key={i} className="group-hover:text-[#111111] transition-colors duration-300">• {item}</li>)}
                 </ul>
                 <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: {tier.forText}</p>
-                <CTAButton to="/contact" className="w-full">Start my pilot →</CTAButton>
+                <CTAButton to="/contact" className="w-full">Start my <strong>30-day pilot</strong> →</CTAButton>
               </div>
             ))}
           </div>
@@ -177,6 +177,28 @@ const Pricing = () => {
             </table>
           </div>
           <p className="text-caption mt-4">Add-ons bolt onto any tier. We'll tell you in the pilot debrief whether the add-on makes sense for your stage.</p>
+        </div>
+      </SectionWrapper>
+
+      {/* DECISION HELPER */}
+      <SectionWrapper className="bg-surface-alt">
+        <div className="container-narrow">
+          <h2 className="text-h2 mb-6">Not sure which tier fits?</h2>
+          <div className="space-y-6">
+            <div className="p-5 border border-border bg-background">
+              <p className="text-body font-semibold mb-1">Are you pre-Series A with no marketing hire?</p>
+              <p className="text-body text-muted-foreground">Start with <strong>Foundation</strong>. You get a founder LinkedIn presence and SEO base without overbuilding.</p>
+            </div>
+            <div className="p-5 border border-border bg-background">
+              <p className="text-body font-semibold mb-1">Do you have product-market fit and need leads from content?</p>
+              <p className="text-body text-muted-foreground"><strong>Engine</strong> is built for this. Founder brand plus company SEO, working together to generate pipeline.</p>
+            </div>
+            <div className="p-5 border border-border bg-background">
+              <p className="text-body font-semibold mb-1">Do you need to prove to your board that content drives demos?</p>
+              <p className="text-body text-muted-foreground"><strong>Full Stack</strong> adds attribution, distribution, and original research so you can tie content to revenue.</p>
+            </div>
+          </div>
+          <p className="text-body text-muted-foreground mt-6">Still not sure? Start with the pilot. We'll recommend the right tier in the debrief.</p>
         </div>
       </SectionWrapper>
 

@@ -158,9 +158,10 @@ const ServiceFounderLinkedIn = () => (
       </div>
     </SectionWrapper>
 
-    {/* PRICING */}
+    {/* TRANSFERABILITY + PRICING */}
     <SectionWrapper className="bg-surface-alt">
       <div className="container-narrow text-center">
+        <p className="text-body text-muted-foreground mb-6">Most detailed public examples are from Archive. The operating system behind them is what we apply to every engagement.</p>
         <h3 className="text-h3 mb-1">Foundation tier</h3>
         <p className="text-h2 mb-4">$1,800 / month</p>
         <p className="text-body text-muted-foreground mb-6">Or start with the pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>

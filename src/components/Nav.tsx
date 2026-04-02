@@ -34,6 +34,15 @@ const Nav = () => {
     setServicesOpen(false);
   }, [location.pathname]);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
@@ -80,7 +89,7 @@ const Nav = () => {
               </Link>
             )
           )}
-          <GhostButton to="/contact">Start a pilot →</GhostButton>
+          <GhostButton to="/contact">Start my <strong>30-day pilot</strong> →</GhostButton>
         </div>
 
         <button
@@ -93,7 +102,7 @@ const Nav = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className="md:hidden bg-background border-t border-border fixed inset-x-0 top-16 bottom-0 overflow-y-auto z-50">
           <div className="container-wide py-4 flex flex-col gap-2">
             {navLinks.map((link) =>
               link.dropdown ? (
@@ -125,7 +134,7 @@ const Nav = () => {
                 </Link>
               )
             )}
-            <GhostButton to="/contact" className="w-full mt-2">Start a pilot →</GhostButton>
+            <GhostButton to="/contact" className="w-full mt-2">Start my <strong>30-day pilot</strong> →</GhostButton>
           </div>
         </div>
       )}

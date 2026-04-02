@@ -132,6 +132,19 @@ const About = () => {
         </div>
       </SectionWrapper>
 
+      {/* BEST FIT */}
+      <SectionWrapper className="bg-surface-alt">
+        <div className="container-narrow">
+          <h2 className="text-h2 mb-6">Best fit.</h2>
+          <ul className="space-y-3 text-body text-muted-foreground">
+            <li>• <strong>B2B SaaS</strong>, Seed to Series B</li>
+            <li>• Founders who want their personal brand and company content working together</li>
+            <li>• Teams that value depth over breadth: fewer channels, better execution</li>
+            <li>• Companies ready to start with a <strong>30-day pilot</strong> instead of a 6-month contract</li>
+          </ul>
+        </div>
+      </SectionWrapper>
+
       {/* PHILOSOPHY */}
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow">

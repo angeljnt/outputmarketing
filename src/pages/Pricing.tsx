@@ -180,6 +180,28 @@ const Pricing = () => {
         </div>
       </SectionWrapper>
 
+      {/* DECISION HELPER */}
+      <SectionWrapper className="bg-surface-alt">
+        <div className="container-narrow">
+          <h2 className="text-h2 mb-6">Not sure which tier fits?</h2>
+          <div className="space-y-6">
+            <div className="p-5 border border-border bg-background">
+              <p className="text-body font-semibold mb-1">Are you pre-Series A with no marketing hire?</p>
+              <p className="text-body text-muted-foreground">Start with <strong>Foundation</strong>. You get a founder LinkedIn presence and SEO base without overbuilding.</p>
+            </div>
+            <div className="p-5 border border-border bg-background">
+              <p className="text-body font-semibold mb-1">Do you have product-market fit and need leads from content?</p>
+              <p className="text-body text-muted-foreground"><strong>Engine</strong> is built for this. Founder brand plus company SEO, working together to generate pipeline.</p>
+            </div>
+            <div className="p-5 border border-border bg-background">
+              <p className="text-body font-semibold mb-1">Do you need to prove to your board that content drives demos?</p>
+              <p className="text-body text-muted-foreground"><strong>Full Stack</strong> adds attribution, distribution, and original research so you can tie content to revenue.</p>
+            </div>
+          </div>
+          <p className="text-body text-muted-foreground mt-6">Still not sure? Start with the pilot. We'll recommend the right tier in the debrief.</p>
+        </div>
+      </SectionWrapper>
+
       {/* FAQ */}
       <SectionWrapper>
         <div className="container-default">

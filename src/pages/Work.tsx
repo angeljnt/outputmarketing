@@ -2,8 +2,11 @@ import { Helmet } from "react-helmet-async";
 import SectionWrapper from "@/components/SectionWrapper";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import CTAButton from "@/components/CTAButton";
-import GhostButton from "@/components/GhostButton";
 import Footer from "@/components/Footer";
+import TrustMicroRow from "@/components/TrustMicroRow";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
+import { Link } from "react-router-dom";
+import { trackEvent } from "@/lib/analytics";
 
 const caseStudies = [
   {
@@ -48,14 +51,13 @@ const Work = () => {
         <meta name="description" content="Results, not promises. Four campaigns. One client. One year. Different problems, same standard." />
       </Helmet>
 
+      <StickyMobileCTA />
+
       <SectionWrapper>
-        <div className="container-default">
+        <div className="container-default" id="hero-section">
           <h1 className="text-display mb-4">Results, not promises.</h1>
+          <p className="text-body-lg text-muted-foreground mb-2">These are public examples. The system behind them is what we apply to every engagement.</p>
           <p className="text-body-lg text-muted-foreground mb-2"><strong>Four campaigns.</strong> <strong>One client.</strong> <strong>One year.</strong> Different problems, same standard.</p>
-          <div className="flex flex-wrap gap-4 mb-6">
-            <GhostButton to="/contact">Start my <strong>30-day pilot</strong> →</GhostButton>
-            <p className="text-caption self-center"><strong>No retainer.</strong> See what we'd do for you first.</p>
-          </div>
         </div>
       </SectionWrapper>
 
@@ -81,8 +83,15 @@ const Work = () => {
       <SectionWrapper>
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-6">Your brand could have numbers like these.</h2>
-          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
-          <p className="text-caption mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
+          <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/work", location: "bottom_cta" })}>
+            Start my{"\u00A0"}<strong>30-day pilot</strong> →
+          </CTAButton>
+          <p className="mt-3">
+            <Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors" onClick={() => trackEvent("cta_secondary_click", { label: "See full pricing" })}>
+              See full pricing →
+            </Link>
+          </p>
+          <TrustMicroRow className="mt-4" />
         </div>
       </SectionWrapper>
 

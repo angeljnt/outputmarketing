@@ -97,7 +97,7 @@ const Pricing = () => {
               <li>• End-of-pilot debrief with recommendations</li>
             </ul>
           </div>
-          <CTAButton to="/contact" variant="primary-inverted">Start my pilot →</CTAButton>
+          <CTAButton to="/contact" variant="primary-inverted">Start my <strong>30-day pilot</strong> →</CTAButton>
           <p className="text-sm text-dark-muted mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
         </div>
       </section>
@@ -118,7 +118,7 @@ const Pricing = () => {
                   {tier.includes.map((item, i) => <li key={i} className="group-hover:text-[#111111] transition-colors duration-300">• {item}</li>)}
                 </ul>
                 <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: {tier.forText}</p>
-                <CTAButton to="/contact" className="w-full">Start my pilot →</CTAButton>
+                <CTAButton to="/contact" className="w-full">Start my <strong>30-day pilot</strong> →</CTAButton>
               </div>
             ))}
           </div>

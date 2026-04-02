@@ -1,17 +1,14 @@
 import { Link } from "react-router-dom";
 import CTAButton from "./CTAButton";
-import TrustMicroRow from "./TrustMicroRow";
-import { trackEvent } from "@/lib/analytics";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-dark-text" id="footer-cta">
+    <footer className="bg-dark text-dark-text">
       <div className="container-default section-padding text-center">
         <h2 className="text-h2 mb-6">See what the output looks like.</h2>
-        <CTAButton to="/contact" variant="primary-inverted" className="mb-4" onClick={() => trackEvent("cta_primary_click", { page: window.location.pathname, location: "footer" })}>
-          Start my{"\u00A0"}<strong>30-day pilot</strong> →
+        <CTAButton to="/contact" variant="primary-inverted" className="mb-4">
+          Start your 30-day pilot →
         </CTAButton>
-        <TrustMicroRow className="mt-4 [&_span]:border-dark-muted/30 [&_span]:bg-transparent [&_span]:text-dark-muted" />
         <p className="text-dark-muted text-sm mt-4">
           Prefer direct email:{" "}
           <a href="mailto:vanessa@output-marketing.com" className="underline hover:text-accent transition-colors">

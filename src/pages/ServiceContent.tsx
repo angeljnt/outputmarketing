@@ -3,11 +3,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import CTAButton from "@/components/CTAButton";
 import FAQItem from "@/components/FAQItem";
 import Footer from "@/components/Footer";
-import TrustMicroRow from "@/components/TrustMicroRow";
-import TransferabilityProof from "@/components/TransferabilityProof";
-import StickyMobileCTA from "@/components/StickyMobileCTA";
 import { Link } from "react-router-dom";
-import { trackEvent } from "@/lib/analytics";
 
 const faqs: { q: string; a: React.ReactNode }[] = [
   { q: "Who writes the content?", a: "We write it. You review and approve before anything goes live. Most clients do a light edit pass." },
@@ -24,24 +20,15 @@ const ServiceContent = () => (
       <meta name="description" content="SEO articles, content strategy, and LinkedIn ghostwriting for B2B SaaS companies that need organic pipeline, not just word count." />
     </Helmet>
 
-    <StickyMobileCTA />
-
-    {/* HERO */}
     <SectionWrapper>
-      <div className="container-default" id="hero-section">
+      <div className="container-default">
         <h1 className="text-display mb-4">Content that sounds like a person wrote it. Because one did.</h1>
         <p className="text-body-lg text-muted-foreground mb-6">SEO articles, LinkedIn ghostwriting, and content strategy for B2B SaaS teams that need organic pipeline, not just word count.</p>
-        <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/services/content-marketing", location: "hero" })}>
-          Start my{"\u00A0"}<strong>30-day pilot</strong> →
-        </CTAButton>
-        <TrustMicroRow className="mt-4 justify-start" />
-        <p className="mt-3">
-          <Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link>
-        </p>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+        <p className="text-caption mt-3"><strong>No retainer. No long contract.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
       </div>
     </SectionWrapper>
 
-    {/* WHO IT'S FOR */}
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">Is this for you?</h2>
@@ -59,44 +46,29 @@ const ServiceContent = () => (
             <h3 className="text-h3 mb-3 group-hover:text-[#111111]">SaaS companies with content but no pipeline</h3>
             <ul className="space-y-2 text-body text-muted-foreground">
               <li className="group-hover:text-[#111111] transition-colors duration-300">• You have a blog. You post on LinkedIn. Nothing is converting.</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• You're ranking for informational keywords but not for buyer-intent terms</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your content sounds like everyone else's</li>
-              <li className="group-hover:text-[#111111] transition-colors duration-300">• You need content that earns trust before a sales call</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You're ranking for informational keywords but not for the terms buyers use the day before they book a demo.</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• Your content sounds like everyone else's. No point of view. No original data.</li>
+              <li className="group-hover:text-[#111111] transition-colors duration-300">• You need content that earns trust before a sales call, not content that fills a calendar.</li>
             </ul>
           </div>
         </div>
+        <p className="text-body text-muted-foreground mt-8">Sound like you? That's who we built this for.</p>
       </div>
     </SectionWrapper>
 
-    {/* WHAT SHIPS */}
     <SectionWrapper className="bg-surface-alt">
       <div className="container-default">
-        <h2 className="text-h2 mb-8">What ships.</h2>
-        <ul className="space-y-3 text-body text-muted-foreground">
-          <li>• <strong className="text-foreground">4 to 6 SEO articles/month</strong> optimized for search and buyer intent</li>
-          <li>• <strong className="text-foreground">LinkedIn ghostwriting:</strong> Founder or brand voice</li>
-          <li>• <strong className="text-foreground">Content strategy document:</strong> what to write, why, for whom, in what order</li>
-          <li>• <strong className="text-foreground">AEO:</strong> Content structured for ChatGPT, Perplexity, and AI Overviews</li>
-          <li>• <strong className="text-foreground">Monthly KPI report:</strong> traffic, rankings, engagement rate, leads attributed</li>
+        <h2 className="text-h2 mb-8">What the program looks like.</h2>
+        <ul className="space-y-4 text-body text-muted-foreground">
+          <li><strong className="text-foreground">SEO articles:</strong> Written by humans, optimized for search, structured to answer the questions your ICP is actively looking for.</li>
+          <li><strong className="text-foreground">LinkedIn ghostwriting:</strong> Founder or brand voice. We write it, you post it, it sounds like you.</li>
+          <li><strong className="text-foreground">Content strategy:</strong> A document that tells you what to write, why, for whom, and in what order.</li>
+          <li><strong className="text-foreground">AEO:</strong> Making sure your content answers the questions being asked in ChatGPT, Perplexity, and Google's AI overviews.</li>
+          <li><strong className="text-foreground">Monthly KPI reporting:</strong> Traffic, rankings, engagement rate, leads attributed. Actual numbers with context.</li>
         </ul>
       </div>
     </SectionWrapper>
 
-    {/* WHAT THIS SHOULD CHANGE */}
-    <SectionWrapper>
-      <div className="container-default">
-        <h2 className="text-h2 mb-6">What this should change.</h2>
-        <ul className="space-y-2 text-body text-muted-foreground">
-          <li>• Organic traffic from buyer-intent keywords, not just informational queries</li>
-          <li>• Inbound demo requests attributed to content</li>
-          <li>• A content system that runs on a calendar, not inspiration</li>
-          <li>• Trust signals established before the first sales conversation</li>
-          <li>• Visibility in AI search results alongside traditional rankings</li>
-        </ul>
-      </div>
-    </SectionWrapper>
-
-    {/* PROOF */}
     <SectionWrapper>
       <div className="container-default">
         <p className="overline mb-6">From the work</p>
@@ -112,11 +84,9 @@ const ServiceContent = () => (
             <Link to="/work/archive-product-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors">Read case study →</Link>
           </div>
         </div>
-        <p className="text-body text-muted-foreground mt-6">Public examples are concentrated in one account, but the operating model is channel-agnostic and repeatable.</p>
       </div>
     </SectionWrapper>
 
-    {/* PROCESS */}
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-8">How it works.</h2>
@@ -140,34 +110,22 @@ const ServiceContent = () => (
       </div>
     </SectionWrapper>
 
-    {/* FAQ */}
+    <SectionWrapper className="bg-surface-alt">
+      <div className="container-narrow text-center">
+        <h3 className="text-h3 mb-1">Engine tier</h3>
+        <p className="text-h2 mb-4">$3,500 to $5,000 / month</p>
+        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
+        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
+      </div>
+    </SectionWrapper>
+
     <SectionWrapper>
       <div className="container-default">
         <h2 className="text-h2 mb-10">Questions you probably have.</h2>
         <div className="max-w-3xl">
           {faqs.map((f, i) => <FAQItem key={i} question={f.q} answer={f.a} />)}
         </div>
-      </div>
-    </SectionWrapper>
-
-    {/* TRANSFERABILITY */}
-    <SectionWrapper>
-      <div className="container-default">
-        <TransferabilityProof />
-      </div>
-    </SectionWrapper>
-
-    {/* FINAL CTA */}
-    <SectionWrapper className="bg-surface-alt">
-      <div className="container-narrow text-center">
-        <h3 className="text-h3 mb-1">Engine tier</h3>
-        <p className="text-h2 mb-4">$3,500 to $5,000 / month</p>
-        <p className="text-body text-muted-foreground mb-6">Or start with the pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
-        <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/services/content-marketing", location: "footer_cta" })}>
-          Start my{"\u00A0"}<strong>30-day pilot</strong> →
-        </CTAButton>
-        <p className="mt-3"><Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors">See full pricing →</Link></p>
-        <TrustMicroRow className="mt-4" />
       </div>
     </SectionWrapper>
 

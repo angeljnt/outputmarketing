@@ -2,8 +2,6 @@ import { Helmet } from "react-helmet-async";
 import SectionWrapper from "@/components/SectionWrapper";
 import CTAButton from "@/components/CTAButton";
 import Footer from "@/components/Footer";
-import TrustMicroRow from "@/components/TrustMicroRow";
-import StickyMobileCTA from "@/components/StickyMobileCTA";
 import { Link } from "react-router-dom";
 import vanessaAbout from "@/assets/vanessa-about.jpg";
 import angelPhoto from "@/assets/angel-photo.jpeg";
@@ -13,7 +11,7 @@ import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.png";
 import badgeCannes from "@/assets/badge-cannes.png";
 import badgeIE from "@/assets/badge-ie.png";
-import { trackEvent } from "@/lib/analytics";
+
 
 const About = () => {
   return (
@@ -23,11 +21,9 @@ const About = () => {
         <meta name="description" content="A boutique B2B SaaS marketing team. We do founder LinkedIn ghostwriting, content, and SEO. You talk directly to whoever is doing the work." />
       </Helmet>
 
-      <StickyMobileCTA />
-
       {/* HERO */}
       <SectionWrapper>
-        <div className="container-narrow text-center" id="hero-section">
+        <div className="container-narrow text-center">
           <h1 className="text-display mb-4">A handful of people who do things really well.</h1>
         </div>
       </SectionWrapper>
@@ -47,10 +43,18 @@ const About = () => {
               <p className="overline mb-4">The founder</p>
               <div className="space-y-4 text-body text-muted-foreground">
                 <p><strong>39 creators.</strong> <strong>855,000 impressions.</strong> <strong>3.40% engagement.</strong> That was the Fireflies.ai campaign Vanessa ran as Influencer Marketing Manager before starting Output Marketing. Before that, Marketing Manager at Archive — a B2B SaaS platform for DTC brands — where the four case studies on the Work page were built.</p>
-                <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers.</p>
+                <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, ran the full content machine, and managed product launches. All of it measurable.</p>
                 <p>The <strong>Webby Award</strong> and the <strong>Cannes Lions shortlist</strong> came from that work.</p>
               </div>
-              <a href="https://www.linkedin.com/in/vanessasemprun/" target="_blank" rel="noopener noreferrer" aria-label="Vanessa Semprun on LinkedIn" className="text-sm font-medium text-foreground hover:text-accent transition-colors mt-4 inline-block">LinkedIn →</a>
+              <a
+                href="https://www.linkedin.com/in/vanessasemprun/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Vanessa Semprun on LinkedIn"
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors mt-4 inline-block"
+              >
+                LinkedIn →
+              </a>
             </div>
             <div className="flex justify-center">
               <div className="w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden">
@@ -65,7 +69,7 @@ const About = () => {
       <SectionWrapper className="bg-surface-alt">
         <div className="container-narrow text-center">
           <p className="text-body-lg mb-4">Ready to start? <strong>30-day pilot</strong>, no retainer.</p>
-          <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/about", location: "mini_cta" })}>Start my{"\u00A0"}<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
           <p className="text-caption mt-3"><strong>No retainer. No contract.</strong></p>
         </div>
       </SectionWrapper>
@@ -80,7 +84,15 @@ const About = () => {
                 <p>Emmily runs the operational side of every engagement. Before Output Marketing, she was Executive Operations at Archive, coordinating campaigns across designers, content creators, and client stakeholders. She knows how our work gets built because she was part of building it.</p>
                 <p>Law degree from Universidad Rafael Urdaneta. Director of Project Monitoring and Execution at Harvard National Model United Nations 2020. She brings the same legal and operational discipline to client projects that she brought to Archive.</p>
               </div>
-              <a href="https://www.linkedin.com/in/emmilysalazarp/" target="_blank" rel="noopener noreferrer" aria-label="Emmily Salazar on LinkedIn" className="text-sm font-medium text-foreground hover:text-accent transition-colors mt-4 inline-block">LinkedIn →</a>
+              <a
+                href="https://www.linkedin.com/in/emmilysalazarp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Emmily Salazar on LinkedIn"
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors mt-4 inline-block"
+              >
+                LinkedIn →
+              </a>
             </div>
             <div className="flex justify-center">
               <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden">
@@ -106,33 +118,17 @@ const About = () => {
                 <p>Angel handles strategy, operations, and the technical side of execution. Landing pages, written content, systems that keep things running.</p>
                 <p>He doesn't touch video or paid ads. He doesn't have to. What he builds generates pipeline without burning budget.</p>
               </div>
-              <a href="https://www.linkedin.com/in/angeljnt/" target="_blank" rel="noopener noreferrer" aria-label="Angel on LinkedIn" className="inline-flex items-center gap-2 mt-4 text-[#111111] hover:text-accent transition-colors duration-200">LinkedIn →</a>
+              <a
+                href="https://www.linkedin.com/in/angeljnt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Angel on LinkedIn"
+                className="inline-flex items-center gap-2 mt-4 text-[#111111] hover:text-accent transition-colors duration-200"
+              >
+                LinkedIn →
+              </a>
             </div>
           </div>
-        </div>
-      </SectionWrapper>
-
-      {/* WHO WE ARE BEST FOR */}
-      <SectionWrapper className="bg-surface-alt">
-        <div className="container-default">
-          <h2 className="text-h2 mb-6">Who we are best for</h2>
-          <ul className="space-y-3 text-body text-muted-foreground">
-            <li>• B2B SaaS founders who need content to generate pipeline, not vanity metrics.</li>
-            <li>• Small marketing teams that need senior execution without a full agency org chart.</li>
-            <li>• Teams that value direct communication and measurable output over volume.</li>
-          </ul>
-        </div>
-      </SectionWrapper>
-
-      {/* HOW WE WORK */}
-      <SectionWrapper>
-        <div className="container-default">
-          <h2 className="text-h2 mb-6">How we work with clients</h2>
-          <ul className="space-y-3 text-body text-muted-foreground">
-            <li>• Direct access to the people doing the work.</li>
-            <li>• Clear execution scope every month.</li>
-            <li>• Reporting focused on pipeline signals, not noise.</li>
-          </ul>
         </div>
       </SectionWrapper>
 
@@ -140,10 +136,10 @@ const About = () => {
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow">
           <h2 className="text-h2 mb-6">Why we stay narrow.</h2>
-          <div className="space-y-4 text-body-lg text-dark-muted">
-            <p>Most agencies spread thin. They take every client, every channel, every ask. The work suffers.</p>
-            <p>We do <strong>founder LinkedIn ghostwriting, content marketing, and SEO</strong>. We do those things at a level most agencies can't match because we're not also doing paid ads, video, PR, and event marketing.</p>
-            <p><strong>You talk directly to whoever is doing the work. Every time.</strong></p>
+          <div className="space-y-6 text-body-lg text-dark-muted">
+            <p>Most agencies spread thin. They take every client, every channel, every ask. The work suffers. The client notices. The relationship ends.</p>
+            <p>We do <strong>founder LinkedIn ghostwriting, content marketing, and SEO</strong>. We do those things at a level most agencies can't match because we're not also doing paid ads, video, PR, and event marketing at the same time.</p>
+            <p><strong>You talk directly to whoever is doing the work. Every time.</strong> No account managers. No weekly updates from someone who wasn't in the meeting.</p>
           </div>
         </div>
       </section>
@@ -187,13 +183,8 @@ const About = () => {
       <SectionWrapper>
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-6">Work with people who have done this before.</h2>
-          <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/about", location: "bottom_cta" })}>Start my{"\u00A0"}<strong>30-day pilot</strong> →</CTAButton>
-          <p className="mt-3">
-            <Link to="/pricing" className="text-sm text-muted-foreground hover:text-accent transition-colors" onClick={() => trackEvent("cta_secondary_click", { label: "See full pricing" })}>
-              See full pricing →
-            </Link>
-          </p>
-          <TrustMicroRow className="mt-4" />
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+          <p className="text-caption mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
         </div>
       </SectionWrapper>
 

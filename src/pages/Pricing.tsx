@@ -3,11 +3,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import CTAButton from "@/components/CTAButton";
 import FAQItem from "@/components/FAQItem";
 import Footer from "@/components/Footer";
-import TrustMicroRow from "@/components/TrustMicroRow";
-import TransferabilityProof from "@/components/TransferabilityProof";
-import StickyMobileCTA from "@/components/StickyMobileCTA";
 import { Link } from "react-router-dom";
-import { trackEvent } from "@/lib/analytics";
 
 const tiers = [
   {
@@ -16,7 +12,6 @@ const tiers = [
     desc: "A founder LinkedIn presence and content foundation. Built for the stage where you don't have a marketing team yet.",
     includes: ["12 ghostwritten LinkedIn posts/month", "2 SEO articles/month", "Content calendar", "Monthly performance report", "1 strategy call/month"],
     forText: "Seed-stage B2B SaaS founders with no marketing hire.",
-    outcome: "Consistent founder presence that generates inbound interest.",
     badge: null,
   },
   {
@@ -24,8 +19,7 @@ const tiers = [
     price: "$3,500 / month",
     desc: "A content system that builds organic pipeline. Founder brand plus company SEO, working together.",
     includes: ["Founder LinkedIn ghostwriting (3x/week + 2 carousels/month)", "Brand page management (3x/week)", "4 to 6 SEO articles/month", "Monthly KPI report", "Quarterly strategy session"],
-    forText: "Series A B2B SaaS founders and their teams that need leads from content, not just presence.",
-    outcome: "Pipeline from content within 90 days.",
+    forText: "Series A B2B SaaS companies that need leads from content, not just presence.",
     badge: "Most popular",
   },
   {
@@ -33,8 +27,7 @@ const tiers = [
     price: "$6,000 / month",
     desc: "The complete content machine. Founder brand, SEO, distribution, and attribution.",
     includes: ["Everything in Engine", "8 articles/month", "Technical SEO audit + ongoing optimization", "Distribution layer (email repurposing + carousel adaptation)", "Attribution setup (GA4 + CRM)", "1 original research asset/quarter"],
-    forText: "Series A/B founders and their teams ready to treat content as a growth engine.",
-    outcome: "Provable content-to-pipeline with board-level reporting.",
+    forText: "Series A/B companies ready to treat content as a growth engine.",
     badge: null,
   },
 ];
@@ -80,17 +73,11 @@ const Pricing = () => {
         <meta name="description" content="See exactly what you'd get. Every engagement starts with a 30-day pilot. $1,500 to $2,000." />
       </Helmet>
 
-      <StickyMobileCTA />
-
       {/* HERO */}
       <SectionWrapper>
-        <div className="container-narrow text-center" id="hero-section">
+        <div className="container-narrow text-center">
           <h1 className="text-display mb-4">See exactly what you'd get.</h1>
-          <p className="text-body-lg text-muted-foreground mb-6">Every engagement starts with a <strong>30-day pilot</strong>. <strong>$1,500 to $2,000</strong>. You see the quality. We learn your business. Then you decide.</p>
-          <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/pricing", location: "hero" })}>
-            Start my{"\u00A0"}<strong>30-day pilot</strong> →
-          </CTAButton>
-          <TrustMicroRow className="mt-4" />
+          <p className="text-body-lg text-muted-foreground">Every engagement starts with a <strong>30-day pilot</strong>. <strong>$1,500 to $2,000</strong>. You see the quality. We learn your business. Then you decide.</p>
         </div>
       </SectionWrapper>
 
@@ -110,9 +97,7 @@ const Pricing = () => {
               <li>• End-of-pilot debrief with recommendations</li>
             </ul>
           </div>
-          <CTAButton to="/contact" variant="primary-inverted" onClick={() => trackEvent("cta_primary_click", { page: "/pricing", location: "pilot_block" })}>
-            Start my{"\u00A0"}<strong>30-day pilot</strong> →
-          </CTAButton>
+          <CTAButton to="/contact" variant="primary-inverted">Start my pilot →</CTAButton>
           <p className="text-sm text-dark-muted mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
         </div>
       </section>
@@ -132,11 +117,8 @@ const Pricing = () => {
                 <ul className="space-y-2 text-sm text-muted-foreground mb-4 flex-1">
                   {tier.includes.map((item, i) => <li key={i} className="group-hover:text-[#111111] transition-colors duration-300">• {item}</li>)}
                 </ul>
-                <p className="text-body text-muted-foreground mb-2 group-hover:text-[#111111] transition-colors duration-300"><strong>Expected outcome:</strong> {tier.outcome}</p>
                 <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: {tier.forText}</p>
-                <CTAButton to="/contact" className="w-full" onClick={() => trackEvent("pricing_tier_cta_click", { tier: tier.name })}>
-                  Start my{"\u00A0"}<strong>30-day pilot</strong> →
-                </CTAButton>
+                <CTAButton to="/contact" className="w-full">Start my pilot →</CTAButton>
               </div>
             ))}
           </div>
@@ -198,45 +180,6 @@ const Pricing = () => {
         </div>
       </SectionWrapper>
 
-      {/* DECISION HELPER */}
-      <SectionWrapper className="bg-surface-alt">
-        <div className="container-default">
-          <h2 className="text-h2 mb-4">Not sure which tier fits?</h2>
-          <p className="text-body text-muted-foreground mb-8">Answer these three questions and start with the most likely fit. We can adjust after the pilot based on what the data shows.</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 border border-neutral-200 bg-background">
-              <p className="text-h3 mb-3">What stage are you in today?</p>
-              <ul className="space-y-2 text-body text-muted-foreground">
-                <li>• <strong>Pre-seed / Seed:</strong> Foundation</li>
-                <li>• <strong>Series A:</strong> Engine</li>
-                <li>• <strong>Series A/B:</strong> Full Stack</li>
-              </ul>
-            </div>
-            <div className="p-6 border border-neutral-200 bg-background">
-              <p className="text-h3 mb-3">How consistent is your current content engine?</p>
-              <ul className="space-y-2 text-body text-muted-foreground">
-                <li>• <strong>No system yet:</strong> Foundation</li>
-                <li>• <strong>Sporadic posting:</strong> Engine</li>
-                <li>• <strong>Active but not converting:</strong> Full Stack</li>
-              </ul>
-            </div>
-            <div className="p-6 border border-neutral-200 bg-background">
-              <p className="text-h3 mb-3">How much internal bandwidth do you have for execution?</p>
-              <ul className="space-y-2 text-body text-muted-foreground">
-                <li>• <strong>None:</strong> Foundation or Engine</li>
-                <li>• <strong>Some marketing hire:</strong> Engine</li>
-                <li>• <strong>Small team:</strong> Full Stack</li>
-              </ul>
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/pricing", location: "decision_helper" })}>
-              Start my{"\u00A0"}<strong>30-day pilot</strong> →
-            </CTAButton>
-          </div>
-        </div>
-      </SectionWrapper>
-
       {/* FAQ */}
       <SectionWrapper>
         <div className="container-default">
@@ -247,22 +190,13 @@ const Pricing = () => {
         </div>
       </SectionWrapper>
 
-      {/* TRANSFERABILITY PROOF */}
-      <SectionWrapper>
-        <div className="container-default">
-          <TransferabilityProof />
-        </div>
-      </SectionWrapper>
-
-      {/* FOOTER CTA */}
+      {/* FOOTER CTA — converted to light section */}
       <section className="bg-surface border-t border-b border-border section-padding">
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-4"><strong>No long contracts.</strong> Start with <strong>30 days</strong>.</h2>
           <p className="text-body text-muted-foreground mb-6">Or reach us at <a href="mailto:vanessa@output-marketing.com" className="underline hover:text-accent transition-colors">vanessa@output-marketing.com</a></p>
-          <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/pricing", location: "footer_cta" })}>
-            Start my{"\u00A0"}<strong>30-day pilot</strong> →
-          </CTAButton>
-          <TrustMicroRow className="mt-4" />
+          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+          <p className="text-sm text-muted-foreground mt-3"><strong>We reply within 24 hours.</strong></p>
         </div>
       </section>
 

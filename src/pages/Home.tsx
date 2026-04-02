@@ -147,7 +147,7 @@ const Home = () => {
               <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Every time your ICP searches, reads, or asks around, your competitor's name is the one that comes up.</p>
             </div>
           </div>
-          <p className="text-h3 font-semibold text-foreground text-center mt-10">This is a solvable problem. Most agencies just aren't solving it.</p>
+          
         </div>
       </SectionWrapper>
 

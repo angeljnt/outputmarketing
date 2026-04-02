@@ -258,8 +258,8 @@ const Home = () => {
               <CaseStudyCard key={cs.link} {...cs} />
             ))}
           </div>
+          <p className="text-body text-muted-foreground mt-8">Most detailed public examples are from Archive. The operating system behind them is what we apply to every engagement.</p>
         </div>
-      </SectionWrapper>
 
       {/* CREDENTIALS */}
       <SectionWrapper>

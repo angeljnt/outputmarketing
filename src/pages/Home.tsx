@@ -5,6 +5,9 @@ import GhostButton from "@/components/GhostButton";
 import FAQItem from "@/components/FAQItem";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
+import TrustMicroRow from "@/components/TrustMicroRow";
+import TransferabilityProof from "@/components/TransferabilityProof";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 import { Link } from "react-router-dom";
 import vanessaHero from "@/assets/vanessa-hero.jpeg";
 import logoFireflies from "@/assets/logo-fireflies.svg";
@@ -13,7 +16,7 @@ import logoArchive from "@/assets/logo-archive.svg";
 import badgeWebby from "@/assets/badge-webby.svg";
 import badgeCannes from "@/assets/badge-cannes.svg";
 import badgeIE from "@/assets/badge-ie.svg";
-
+import { trackEvent } from "@/lib/analytics";
 
 const caseStudies = [
   {
@@ -69,23 +72,29 @@ const Home = () => {
         <meta name="description" content="Pipeline from content. Founder LinkedIn ghostwriting, content marketing, and SEO for B2B SaaS companies. 30-day pilot, no retainer." />
       </Helmet>
 
+      <StickyMobileCTA />
+
       {/* HERO */}
-      <section className="section-padding">
+      <section className="section-padding" id="hero-section">
         <div className="container-default">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div>
+              <p className="overline mb-3">B2B SaaS Content & SEO Agency</p>
               <h1 className="text-display mb-4">
                 Pipeline from content.{" "}
                 <span className="block">Built for B2B SaaS founders and their teams.</span>
               </h1>
               <p className="text-body-lg text-muted-foreground mb-6">
-                Founder LinkedIn ghostwriting, content marketing, and SEO. No paid ads. No retainer.
+                Founder LinkedIn ghostwriting, content marketing, and organic SEO. No paid ads. <strong>No retainer.</strong>
               </p>
-              <CTAButton to="/contact" className="mb-3">Start my <strong>30-day pilot</strong> →</CTAButton>
-              <p className="text-caption"><strong>No retainer commitment. No long contracts.</strong> <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
-              <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors mt-2 inline-block">
-                See what the output looks like →
+              <CTAButton to="/contact" className="mb-3" onClick={() => trackEvent("cta_primary_click", { page: "/", location: "hero" })}>
+                Start my{"\u00A0"}<strong>30-day pilot</strong> →
+              </CTAButton>
+              <TrustMicroRow className="mb-3 justify-start" />
+              <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors inline-block" onClick={() => trackEvent("cta_secondary_click", { label: "See case studies" })}>
+                See case studies →
               </Link>
+              <p className="text-caption mt-3">Best fit: Seed to Series B B2B SaaS teams that need pipeline from content in the next 90-180 days.</p>
             </div>
             <div className="flex justify-center md:justify-end">
               <div className="w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden">
@@ -96,8 +105,18 @@ const Home = () => {
         </div>
       </section>
 
+      {/* QUICK-JUMP ANCHORS */}
+      <div className="border-y border-border py-3">
+        <div className="container-default flex flex-wrap items-center justify-center gap-6 text-sm font-medium">
+          <a href="#how-we-work" className="text-foreground hover:text-accent transition-colors">How we work</a>
+          <a href="#proof" className="text-foreground hover:text-accent transition-colors">Proof</a>
+          <a href="#pricing-section" className="text-foreground hover:text-accent transition-colors">Pricing</a>
+          <a href="#faq" className="text-foreground hover:text-accent transition-colors">FAQ</a>
+        </div>
+      </div>
+
       {/* LOGO BAR */}
-      <SectionWrapper className="!py-8 border-y border-border">
+      <SectionWrapper className="!py-8 border-b border-border">
         <div className="container-default">
           <p className="overline text-center mb-6">B2B SaaS companies we've worked with</p>
           <div className="flex items-center justify-center gap-10 md:gap-16 overflow-x-auto">
@@ -122,9 +141,9 @@ const Home = () => {
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow">
           <h2 className="text-h2 mb-8">The real problem isn't your product.</h2>
-          <div className="space-y-6 text-body-lg text-dark-muted">
-            <p>You're spending on content. You're spending on influencers. But when you pull the metrics, the investment doesn't justify the return. If there's even any return.</p>
-            <p>Meanwhile your competitor, the one with the worse product and half your budget, is getting all the engagement. Their content is everywhere. Their name comes up in every conversation.</p>
+          <div className="space-y-4 text-body-lg text-dark-muted">
+            <p>You're spending on content. But when you pull the metrics, the investment doesn't justify the return.</p>
+            <p>Meanwhile your competitor, the one with the worse product and half your budget, is getting all the engagement. Their name comes up in every conversation.</p>
             <p>That's not a product problem. That's a marketing problem.</p>
           </div>
         </div>
@@ -140,11 +159,11 @@ const Home = () => {
             </div>
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <h3 className="text-h3 mb-3 group-hover:text-[#111111]">Better product. <strong>Less visibility.</strong></h3>
-              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Your roadmap is stronger. Your pricing is tighter. But no one outside your current users knows you exist.</p>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Your roadmap is stronger. But no one outside your current users knows you exist.</p>
             </div>
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <h3 className="text-h3 mb-3 group-hover:text-[#111111]"><strong>Their name. Not yours.</strong></h3>
-              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Every time your ICP searches, reads, or asks around, your competitor's name is the one that comes up.</p>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">Every time your ICP searches, reads, or asks around, your competitor's name comes up.</p>
             </div>
           </div>
           <p className="text-h3 font-semibold text-foreground text-center mt-10">This is a solvable problem. Most agencies just aren't solving it.</p>
@@ -171,7 +190,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* SERVICES */}
-      <SectionWrapper>
+      <SectionWrapper id="pricing-section">
         <div className="container-default">
           <h2 className="text-h2 mb-3">Three ways we work with you.</h2>
           <p className="text-body-lg text-muted-foreground text-center max-w-2xl mx-auto mb-4">We build the founder's personal brand and the company's content machine. At Seed to Series A, you need both.</p>
@@ -181,7 +200,14 @@ const Home = () => {
             <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Foundation</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$1,800/month</p>
-              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A founder LinkedIn presence and content foundation, built for the stage where you don't have a marketing team yet. 12 ghostwritten LinkedIn posts/month. 2 SEO articles/month. Content calendar. Monthly performance report.</p>
+              <p className="text-body text-muted-foreground mb-2 group-hover:text-[#111111] transition-colors duration-300">A founder LinkedIn presence and content foundation.</p>
+              <ul className="space-y-1 text-sm text-muted-foreground mb-4 flex-1">
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• 12 ghostwritten LinkedIn posts/month</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• 2 SEO articles/month</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Content calendar</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Monthly performance report</li>
+              </ul>
+              <p className="text-body text-muted-foreground mb-2 group-hover:text-[#111111] transition-colors duration-300"><strong>Expected outcome:</strong> Consistent founder presence that generates inbound interest.</p>
               <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Seed-stage B2B SaaS founders with no marketing hire.</p>
               <Link to="/services/founder-linkedin" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
@@ -189,14 +215,28 @@ const Home = () => {
               <span className="absolute top-4 right-4 bg-foreground text-background text-xs font-semibold px-3 py-1">Most popular</span>
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Engine</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$3,500/month</p>
-              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">A content system that builds organic pipeline. Founder brand plus company SEO, working together. Founder LinkedIn ghostwriting (3x/week + 2 carousels/month). Brand page management. 4 to 6 SEO articles/month. Monthly KPI report. Quarterly strategy session.</p>
+              <p className="text-body text-muted-foreground mb-2 group-hover:text-[#111111] transition-colors duration-300">A content system that builds organic pipeline.</p>
+              <ul className="space-y-1 text-sm text-muted-foreground mb-4 flex-1">
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Founder LinkedIn ghostwriting (3x/week + 2 carousels)</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Brand page management</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• 4 to 6 SEO articles/month</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Monthly KPI report + quarterly strategy session</li>
+              </ul>
+              <p className="text-body text-muted-foreground mb-2 group-hover:text-[#111111] transition-colors duration-300"><strong>Expected outcome:</strong> Pipeline from content within 90 days.</p>
               <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A B2B SaaS founders and their teams that need leads from content, not just presence.</p>
               <Link to="/services/content-marketing" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
             <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <h3 className="text-h3 mb-1 group-hover:text-[#111111]">Full Stack</h3>
               <p className="text-body font-semibold mb-3 group-hover:text-[#111111]">$6,000/month</p>
-              <p className="text-body text-muted-foreground mb-4 group-hover:text-[#111111] transition-colors duration-300">The complete content machine. Founder brand, company SEO, distribution, and attribution so you can prove what's working. Everything in Engine plus technical SEO, distribution layer (email + carousel repurposing), attribution setup, and one original research asset per quarter.</p>
+              <p className="text-body text-muted-foreground mb-2 group-hover:text-[#111111] transition-colors duration-300">The complete content machine with attribution.</p>
+              <ul className="space-y-1 text-sm text-muted-foreground mb-4 flex-1">
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Everything in Engine</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Technical SEO + distribution layer</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• Attribution setup (GA4 + CRM)</li>
+                <li className="group-hover:text-[#111111] transition-colors duration-300">• 1 original research asset/quarter</li>
+              </ul>
+              <p className="text-body text-muted-foreground mb-2 group-hover:text-[#111111] transition-colors duration-300"><strong>Expected outcome:</strong> Provable content-to-pipeline with board-level reporting.</p>
               <p className="text-caption mb-4 group-hover:text-[#111111] transition-colors duration-300">For: Series A/B founders and their teams ready to treat content as a growth engine, not a line item.</p>
               <Link to="/services/organic-seo" className="text-sm font-medium group-hover:text-[#111111] hover:text-accent transition-colors mt-auto">Learn more →</Link>
             </div>
@@ -204,7 +244,7 @@ const Home = () => {
 
           <p className="text-body text-muted-foreground text-left mt-8">
             Need a content audit, a technical SEO review, or pSEO for your product? We do those too.{" "}
-            <Link to="/pricing" className="font-medium text-foreground hover:text-accent transition-colors">See pricing →</Link>
+            <Link to="/pricing" className="font-medium text-foreground hover:text-accent transition-colors">See full pricing →</Link>
           </p>
         </div>
       </SectionWrapper>
@@ -213,8 +253,8 @@ const Home = () => {
       <SectionWrapper className="bg-surface-alt">
         <div className="container-narrow">
           <h2 className="text-h2 mb-6">No paid ads. No video. No junior teams.</h2>
-          <div className="space-y-6 text-body-lg text-muted-foreground">
-            <p>We don't run paid ads. We don't produce video. We don't have a floor of junior coordinators managing your account while the senior team stays busy winning new clients.</p>
+          <div className="space-y-4 text-body-lg text-muted-foreground">
+            <p>We don't run paid ads. We don't produce video. We don't have a floor of junior coordinators managing your account.</p>
             <p>What we do: <strong>founder LinkedIn ghostwriting, content strategy, SEO</strong>. We do it at a level most agencies can't match precisely because we're not spread thin.</p>
             <p>We're a handful of people who do things really well. <strong>You talk directly to whoever is doing the work. Every time.</strong></p>
           </div>
@@ -222,7 +262,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* PROCESS */}
-      <SectionWrapper>
+      <SectionWrapper id="how-we-work">
         <div className="container-default">
           <h2 className="text-h2 mb-10">How it works.</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -234,7 +274,7 @@ const Home = () => {
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 2</p>
               <h3 className="text-h3 mb-3 group-hover:text-[#111111]">The Strategy</h3>
-              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">If we continue, we build the full program: content calendar, creator roster, or both. Strategy first, execution second. No guessing.</p>
+              <p className="text-body text-muted-foreground group-hover:text-[#111111] transition-colors duration-300">If we continue, we build the full program: content calendar, keyword targets, and voice guide. Strategy first, execution second.</p>
             </div>
             <div className="group p-6 border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
               <p className="overline mb-3 group-hover:text-[#111111] transition-colors duration-300">Step 3</p>
@@ -247,7 +287,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* CASE STUDIES */}
-      <SectionWrapper>
+      <SectionWrapper id="proof">
         <div className="container-default">
           <p className="text-body text-muted-foreground mb-2">Most of our client relationships start with the pilot. Most of them don't stop there.</p>
           <div className="border-t border-border mt-8 pt-6">
@@ -257,6 +297,23 @@ const Home = () => {
             {caseStudies.map((cs) => (
               <CaseStudyCard key={cs.link} {...cs} />
             ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* TRANSFERABILITY PROOF */}
+      <SectionWrapper>
+        <div className="container-default">
+          <TransferabilityProof />
+          <div className="text-center mt-8">
+            <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: "/", location: "proof_section" })}>
+              Start my{"\u00A0"}<strong>30-day pilot</strong> →
+            </CTAButton>
+            <p className="mt-3">
+              <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors" onClick={() => trackEvent("cta_secondary_click", { label: "See case studies" })}>
+                See case studies →
+              </Link>
+            </p>
           </div>
         </div>
       </SectionWrapper>
@@ -274,7 +331,7 @@ const Home = () => {
               <h2 className="text-h2 mb-6">Why Vanessa.</h2>
               <div className="space-y-4 text-body text-muted-foreground mb-8">
                 <p>Before Output Marketing, Vanessa was Influencer Marketing Manager at Fireflies.ai, where she ran a B2B SaaS influencer campaign for their Series A product push: 39 creators, 855,000 impressions, 3.40% engagement. Before that, Marketing Manager at Archive, a B2B SaaS platform for DTC brands.</p>
-                <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers. She built influencer programs from scratch, managed creator rosters, launched products, and ran the full content machine.</p>
+                <p>She's been on the client side. She knows what it feels like to hire an agency that doesn't understand your product, your sales cycle, or your buyers.</p>
                 <p>The <strong>Webby Award</strong> and the <strong>Cannes Lions shortlist</strong> came from that work.</p>
                 <p className="text-caption">IE Business School. CDMP certified.</p>
               </div>
@@ -306,16 +363,20 @@ const Home = () => {
       <section className="bg-dark text-dark-text section-padding">
         <div className="container-narrow text-center">
           <h2 className="text-h2 mb-6">Start with <strong>30 days</strong>.</h2>
-          <p className="text-body-lg text-dark-muted mb-8"><strong>$1,500 to $2,000</strong>. Full audit of your current presence. A strategic roadmap. Two to three weeks of live execution so you can see exactly what working with us looks like.</p>
+          <p className="text-body-lg text-dark-muted mb-6"><strong>$1,500 to $2,000</strong>. Full audit of your current presence. A strategic roadmap. Two to three weeks of live execution.</p>
           <p className="text-body text-dark-muted mb-8"><strong>No retainer. No contract.</strong> No commitment beyond the month.</p>
-          <CTAButton to="/contact" variant="primary-inverted" className="mb-4">Start my <strong>30-day pilot</strong> →</CTAButton>
-          <p className="text-sm text-dark-muted mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
-          <Link to="/pricing" className="text-sm text-dark-muted hover:text-accent transition-colors mt-2 inline-block">See full pricing →</Link>
+          <CTAButton to="/contact" variant="primary-inverted" className="mb-4" onClick={() => trackEvent("cta_primary_click", { page: "/", location: "pilot_offer" })}>
+            Start my{"\u00A0"}<strong>30-day pilot</strong> →
+          </CTAButton>
+          <TrustMicroRow className="mt-4 [&_span]:border-dark-muted/30 [&_span]:bg-transparent [&_span]:text-dark-muted" />
+          <Link to="/pricing" className="text-sm text-dark-muted hover:text-accent transition-colors mt-4 inline-block" onClick={() => trackEvent("cta_secondary_click", { label: "See full pricing" })}>
+            See full pricing →
+          </Link>
         </div>
       </section>
 
       {/* FAQ */}
-      <SectionWrapper>
+      <SectionWrapper id="faq">
         <div className="container-default">
           <h2 className="text-h2 mb-10">Common questions.</h2>
           <div className="max-w-3xl">

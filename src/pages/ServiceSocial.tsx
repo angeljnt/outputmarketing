@@ -140,10 +140,10 @@ const ServiceOrganicSEO = () => (
       </div>
     </SectionWrapper>
 
-    {/* PRICING */}
+    {/* TRANSFERABILITY + PRICING */}
     <SectionWrapper className="bg-surface-alt">
       <div className="container-narrow text-center">
-        <p className="text-body text-muted-foreground mb-4">Organic SEO pairs with content marketing in the Engine and Full Stack tiers. Start with the pilot to see what the opportunity looks like for your specific domain.</p>
+        <p className="text-body text-muted-foreground mb-4">Most detailed public examples are from Archive. The operating system behind them is what we apply to every engagement.</p>
         <p className="text-body text-muted-foreground mb-2">Pilot: <strong>$1,500 to $2,000</strong> for <strong>30 days</strong>.</p>
         <p className="text-body text-muted-foreground mb-6">Full Stack tier (includes technical SEO + GEO): $6,000/month.</p>
         <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>

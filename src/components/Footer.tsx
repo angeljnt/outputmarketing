@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container-default section-padding text-center">
         <h2 className="text-h2 mb-6">See what the output looks like.</h2>
         <CTAButton to="/contact" variant="primary-inverted" className="mb-4">
-          Start your 30-day pilot →
+          Start my <strong>30-day pilot</strong> →
         </CTAButton>
         <p className="text-dark-muted text-sm mt-4">
           Prefer direct email:{" "}

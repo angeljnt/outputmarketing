@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
-import GhostButton from "./GhostButton";
+import CTAButton from "./CTAButton";
 import logo from "@/assets/output-marketing-logo.svg";
+import { trackEvent } from "@/lib/analytics";
 
 const services = [
   { label: "Founder LinkedIn", to: "/services/founder-linkedin" },
@@ -33,6 +34,16 @@ const Nav = () => {
     setMobileOpen(false);
     setServicesOpen(false);
   }, [location.pathname]);
+
+  // Body scroll lock for mobile menu
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
 
   return (
     <nav
@@ -80,27 +91,30 @@ const Nav = () => {
               </Link>
             )
           )}
-          <GhostButton to="/contact">Start a pilot →</GhostButton>
+          <CTAButton to="/contact" onClick={() => trackEvent("cta_primary_click", { page: location.pathname, location: "nav" })}>
+            Start my{"\u00A0"}<strong>30-day pilot</strong> →
+          </CTAButton>
         </div>
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+          className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 z-[60]"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
+      {/* Mobile full-screen overlay */}
       {mobileOpen && (
-        <div className="md:hidden bg-background border-t border-border">
-          <div className="container-wide py-4 flex flex-col gap-2">
+        <div className="md:hidden fixed inset-0 top-16 bg-background z-50 flex flex-col">
+          <div className="container-wide py-6 flex flex-col gap-2 flex-1">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.label}>
                   <button
                     onClick={() => setServicesOpen(!servicesOpen)}
-                    className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 min-h-[44px] w-full"
+                    className="px-3 py-3 rounded-sm text-base font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 min-h-[48px] w-full"
                   >
                     {link.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
@@ -108,7 +122,7 @@ const Nav = () => {
                   {servicesOpen && (
                     <div className="pl-4 flex flex-col gap-1 mt-1">
                       {services.map((s) => (
-                        <Link key={s.to} to={s.to} className="px-3 py-2 rounded-sm text-sm text-muted-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[44px] flex items-center">
+                        <Link key={s.to} to={s.to} className="px-3 py-3 rounded-sm text-base text-muted-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[48px] flex items-center">
                           {s.label}
                         </Link>
                       ))}
@@ -119,13 +133,17 @@ const Nav = () => {
                 <Link
                   key={link.label}
                   to={link.to}
-                  className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[44px] flex items-center"
+                  className="px-3 py-3 rounded-sm text-base font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[48px] flex items-center"
                 >
                   {link.label}
                 </Link>
               )
             )}
-            <GhostButton to="/contact" className="w-full mt-2">Start a pilot →</GhostButton>
+            <div className="mt-4">
+              <CTAButton to="/contact" className="w-full" onClick={() => trackEvent("cta_primary_click", { page: location.pathname, location: "mobile_menu" })}>
+                Start my{"\u00A0"}<strong>30-day pilot</strong> →
+              </CTAButton>
+            </div>
           </div>
         </div>
       )}

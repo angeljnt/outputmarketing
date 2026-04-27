@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
@@ -18,6 +18,8 @@ import CaseStudyProductMarketing from "./pages/CaseStudyProductMarketing";
 import ServiceInfluencer from "./pages/ServiceInfluencer";
 import ServiceContent from "./pages/ServiceContent";
 import ServiceSocial from "./pages/ServiceSocial";
+import Services from "./pages/Services";
+import ServiceLaunch from "./pages/ServiceLaunch";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,13 +40,18 @@ const App = () => (
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/work" element={<Work />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/work/archive-radar-launch" element={<CaseStudyRadar />} />
               <Route path="/work/archive-ai-newsletter" element={<CaseStudyNewsletter />} />
               <Route path="/work/archive-linkedin-strategy" element={<CaseStudyLinkedIn />} />
               <Route path="/work/archive-product-marketing" element={<CaseStudyProductMarketing />} />
-              <Route path="/services/founder-linkedin" element={<ServiceInfluencer />} />
               <Route path="/services/content-marketing" element={<ServiceContent />} />
-              <Route path="/services/organic-seo" element={<ServiceSocial />} />
+              <Route path="/services/seo-content" element={<ServiceSocial />} />
+              <Route path="/services/social-linkedin-execution" element={<ServiceInfluencer />} />
+              <Route path="/services/product-launch-marketing" element={<ServiceLaunch />} />
+              <Route path="/services/measurement-reporting" element={<Navigate to="/pricing" replace />} />
+              <Route path="/services/founder-linkedin" element={<Navigate to="/services/social-linkedin-execution" replace />} />
+              <Route path="/services/organic-seo" element={<Navigate to="/services/seo-content" replace />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

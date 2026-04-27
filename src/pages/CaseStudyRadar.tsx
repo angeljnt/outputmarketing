@@ -41,7 +41,7 @@ const CaseStudyRadar = () => (
           <li>• Value-first positioning: Radar was framed as early access with VIP advantage, not just another feature announcement.</li>
           <li>• Tiered customer messaging: different content for existing customers (Slack community), prospects (LinkedIn), and investors.</li>
           <li>• Community activation: announced in Archive's existing Slack community to warm the list before going broader.</li>
-          <li>• Lead generation mechanic: $250 early-access investment as a qualifying signal.</li>
+          <li>• Lead generation mechanic: $250 early-access investment as a qualifying sign of demand.</li>
           <li>• Multi-channel coordination: LinkedIn content, email, Slack, and direct outreach running in sequence.</li>
         </ul>
       </div>
@@ -76,7 +76,7 @@ const CaseStudyRadar = () => (
       <div className="container-narrow text-center">
         <p className="text-body text-muted-foreground mb-2">If your next product launch matters, this is the playbook.</p>
         <h2 className="text-h2 mb-6">Building a product launch? Start with a pilot.</h2>
-        <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
+        <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
         <p className="text-caption mt-3"><strong>No retainer.</strong></p>
         <p className="mt-4">
           <Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link>

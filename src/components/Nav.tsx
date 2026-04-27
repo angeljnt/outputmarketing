@@ -3,12 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import GhostButton from "./GhostButton";
 import logo from "@/assets/output-marketing-logo.svg";
-
-const services = [
-  { label: "Founder LinkedIn", to: "/services/founder-linkedin" },
-  { label: "Content Marketing", to: "/services/content-marketing" },
-  { label: "Organic SEO", to: "/services/organic-seo" },
-];
+import { servicesNav } from "@/content/siteContent";
 
 const navLinks = [
   { label: "Work", to: "/work" },
@@ -60,14 +55,14 @@ const Nav = () => {
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                  className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                    className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                 >
                   {link.label}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
                 </button>
                 {servicesOpen && (
                   <div className="absolute top-full mt-2 left-0 bg-background border border-border shadow-md py-2 min-w-[200px]">
-                    {services.map((s) => (
+                    {servicesNav.map((s) => (
                       <Link
                         key={s.to}
                         to={s.to}
@@ -89,7 +84,7 @@ const Nav = () => {
               </Link>
             )
           )}
-          <GhostButton to="/contact">Start my <strong>30-day pilot</strong> →</GhostButton>
+          <GhostButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</GhostButton>
         </div>
 
         <button
@@ -116,7 +111,7 @@ const Nav = () => {
                   </button>
                   {servicesOpen && (
                     <div className="pl-4 flex flex-col gap-1 mt-1">
-                      {services.map((s) => (
+                      {servicesNav.map((s) => (
                         <Link key={s.to} to={s.to} className="px-3 py-2 rounded-sm text-sm text-muted-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[44px] flex items-center">
                           {s.label}
                         </Link>
@@ -134,7 +129,7 @@ const Nav = () => {
                 </Link>
               )
             )}
-            <GhostButton to="/contact" className="w-full mt-2">Start my <strong>30-day pilot</strong> →</GhostButton>
+            <GhostButton to="/contact" className="w-full mt-2">Start my{" "}<strong>30-day pilot</strong> →</GhostButton>
           </div>
         </div>
       )}

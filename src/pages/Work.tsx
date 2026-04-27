@@ -2,40 +2,56 @@ import { Helmet } from "react-helmet-async";
 import SectionWrapper from "@/components/SectionWrapper";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import CTAButton from "@/components/CTAButton";
-import GhostButton from "@/components/GhostButton";
 import Footer from "@/components/Footer";
+import { clientList, proofCategories } from "@/content/siteContent";
 
 const caseStudies = [
   {
     title: "Archive: Radar Feature Launch",
     client: "Archive",
-    type: "Product Launch Marketing",
-    date: "Feb 2025",
-    metrics: [<><strong>7 brands</strong> added to waitlist</>, <><strong>2.45%</strong> engagement rate</>, <><strong>1</strong> upsell opportunity identified</>],
+    type: "Product and Launch Marketing",
+    date: "2025",
+    metrics: [
+      <>Launch support extended beyond a single announcement</>,
+      <>Audience interest turned into clearer waitlist demand</>,
+      <>Product value translated more cleanly to the market</>,
+    ],
     link: "/work/archive-radar-launch",
   },
   {
     title: "Archive: AI Insider Newsletter",
     client: "Archive",
-    type: "Product Launch & Customer Retention",
+    type: "Content System and Retention Support",
     date: "2025",
-    metrics: [<>Recurring revenue stream established</>, <><strong>3</strong>-tier customer segmentation executed</>, <>Retention improved through value-driven content</>],
+    metrics: [
+      <>Recurring value-delivery channel created</>,
+      <>Segmentation and editorial logic built into the program</>,
+      <>Newsletter work tied back to broader product priorities</>,
+    ],
     link: "/work/archive-ai-newsletter",
   },
   {
     title: "Archive: LinkedIn Content Strategy",
     client: "Archive",
-    type: "Thought Leadership",
+    type: "Founder and Brand Visibility",
     date: "Ongoing",
-    metrics: [<><strong>114</strong> reactions + <strong>68</strong> comments</>, <><strong>7,363</strong> impressions</>, <><strong>1.21%</strong> engagement rate maintained</>],
+    metrics: [
+      <>Founder presence turned into a repeatable operating rhythm</>,
+      <>Messaging became more consistent in-market</>,
+      <>Thought leadership moved from sporadic to structured</>,
+    ],
     link: "/work/archive-linkedin-strategy",
   },
   {
     title: "Archive: Product Marketing Campaign",
     client: "Archive",
-    type: "Product Marketing",
+    type: "Execution Systems",
     date: "Ongoing",
-    metrics: [<>Full campaign dashboard built</>, <>AI Assistant + Gifting campaigns managed</>, <>DTC brand pipeline tracked</>],
+    metrics: [
+      <>Campaigns tied more closely to product priorities</>,
+      <>Reporting and execution structure became easier to manage</>,
+      <>Cross-functional marketing work gained more follow-through</>,
+    ],
     link: "/work/archive-product-marketing",
   },
 ];
@@ -44,28 +60,55 @@ const Work = () => {
   return (
     <>
       <Helmet>
-        <title>Work: Output Marketing</title>
-        <meta name="description" content="Results, not promises. Four campaigns. One client. One year. Different problems, same standard." />
+        <title>Work | Output Marketing</title>
+        <meta
+          name="description"
+          content="See how Output Marketing helps lean B2B SaaS teams with content, launches, visibility, and follow-through."
+        />
       </Helmet>
 
       <SectionWrapper>
         <div className="container-default">
-          <h1 className="text-display mb-4">Results, not promises.</h1>
-          <p className="text-body-lg text-muted-foreground mb-2"><strong>Four campaigns.</strong> <strong>One client.</strong> <strong>One year.</strong> Different problems, same standard.</p>
-          <div className="flex flex-wrap gap-4 mb-6">
-            <GhostButton to="/contact">Start my <strong>30-day pilot</strong> →</GhostButton>
-            <p className="text-caption self-center"><strong>No retainer.</strong> See what we'd do for you first.</p>
+          <p className="overline mb-4">Work and proof</p>
+          <h1 className="text-display mb-4">
+            Proof from real B2B SaaS execution.
+          </h1>
+          <p className="text-body-lg text-muted-foreground max-w-3xl">
+            Most of our public proof comes from Archive. That is okay. It shows how the same system worked across launches, content, visibility, and follow-through.
+          </p>
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper className="bg-surface-alt">
+        <div className="container-default">
+          <div className="max-w-3xl mb-10">
+            <p className="overline mb-3">What this work proves</p>
+            <h2 className="text-h2 mb-4">More than one tactic.</h2>
+          </div>
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {proofCategories.map((category) => (
+              <div key={category.title} className="border border-border bg-background p-6">
+                <h3 className="text-h3 mb-3">{category.title}</h3>
+                <p className="text-body text-muted-foreground">
+                  {category.summary}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </SectionWrapper>
 
-      {/* ARCHIVE CALLOUT */}
       <SectionWrapper>
         <div className="container-default">
-          <div className="bg-surface border border-neutral-200 border-l-4 border-l-foreground p-6 max-w-2xl mx-auto my-10">
-            <h3 className="text-h3 font-semibold text-foreground">These are all Archive's numbers.</h3>
-            <p className="text-body text-muted-foreground mt-2"><strong>Four campaigns.</strong> <strong>One client.</strong> <strong>One year.</strong> Different problems, same commitment.</p>
-            <p className="text-body text-muted-foreground mt-2">We chose depth over breadth from day one. You'll get the same.</p>
+          <div className="bg-surface border border-neutral-200 border-l-4 border-l-foreground p-6 md:p-8 max-w-3xl">
+            <p className="overline mb-3">Important context</p>
+            <h2 className="text-h3 mb-3">Yes, most of the public proof is from Archive.</h2>
+            <p className="text-body text-muted-foreground mb-4">
+              That is intentional. We would rather show deep work from one real client than random wins from ten.
+            </p>
+            <p className="text-body text-muted-foreground">
+              The point is simple: the same team handled launches, visibility, content, and follow-through inside one account.
+            </p>
           </div>
         </div>
       </SectionWrapper>
@@ -73,16 +116,40 @@ const Work = () => {
       <SectionWrapper>
         <div className="container-default">
           <div className="grid md:grid-cols-2 gap-6">
-            {caseStudies.map((cs) => <CaseStudyCard key={cs.link} {...cs} />)}
+            {caseStudies.map((cs) => (
+              <CaseStudyCard key={cs.link} {...cs} />
+            ))}
           </div>
         </div>
       </SectionWrapper>
 
-      <SectionWrapper>
+      <SectionWrapper className="border-y border-border">
+        <div className="container-default">
+          <p className="overline text-center mb-6">Other clients we've supported</p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {clientList.map((client) => (
+              <span
+                key={client}
+                className="px-4 py-2 border border-border text-small text-muted-foreground bg-background"
+              >
+                {client}
+              </span>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper className="bg-dark text-dark-text">
         <div className="container-narrow text-center">
-          <h2 className="text-h2 mb-6">Your brand could have numbers like these.</h2>
-          <CTAButton to="/contact">Start my <strong>30-day pilot</strong> →</CTAButton>
-          <p className="text-caption mt-3"><strong>No retainer. No contract.</strong> <strong>We reply within 24 hours.</strong></p>
+          <h2 className="text-h2 mb-4">
+            If your team needs better marketing follow-through, this is the kind of work we do.
+          </h2>
+          <p className="text-body-lg text-dark-muted mb-6">
+            Start with the pilot. We will show you the best next step from there.
+          </p>
+          <CTAButton to="/contact" variant="primary-inverted">
+            Start my{" "}<strong>30-day pilot</strong> →
+          </CTAButton>
         </div>
       </SectionWrapper>
 

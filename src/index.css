@@ -78,7 +78,7 @@
 
 @layer components {
   .section-padding {
-    @apply py-14 md:py-20;
+    @apply py-12 md:py-16;
   }
 
   .container-default {
@@ -107,5 +107,23 @@
 
   .dark-section {
     @apply bg-dark text-dark-text;
+  }
+
+  .logo-marquee-track {
+    animation: logo-marquee 36s linear infinite;
+  }
+
+  .logo-marquee:hover .logo-marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }

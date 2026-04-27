@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import CTAButton from "@/components/CTAButton";
 
 interface FitAssessmentChecklistProps {
   requirements: string[];
@@ -128,14 +129,26 @@ const FitAssessmentChecklist = ({
           </div>
 
           <div className="mt-6 border-t border-border pt-6">
-            <p className="overline mb-3">Usually not a fit if...</p>
-            <div className="space-y-3">
-              {notFitItems.map((item) => (
-                <p key={item} className="text-body text-muted-foreground">
-                  • {item}
+            {checkedCount >= 3 ? (
+              <div className="flex flex-col items-center justify-center text-center">
+                <p className="overline mb-3">Ready to start?</p>
+                <p className="text-body text-muted-foreground mb-5 max-w-xs">
+                  This already looks like a good fit. Start with the pilot and we can get moving.
                 </p>
-              ))}
-            </div>
+                <CTAButton to="/contact">Start my 30-day pilot now →</CTAButton>
+              </div>
+            ) : (
+              <>
+                <p className="overline mb-3">Usually not a fit if...</p>
+                <div className="space-y-3">
+                  {notFitItems.map((item) => (
+                    <p key={item} className="text-body text-muted-foreground">
+                      • {item}
+                    </p>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

@@ -283,14 +283,14 @@ const Home = () => {
         </div>
       </section>
 
-      <SectionWrapper className="!py-6 md:!py-7 border-y border-border">
+      <SectionWrapper className="!py-6 md:!py-7 border-y border-border bg-surface">
         <div className="container-default">
           <p className="overline text-center mb-6">Clients we've supported</p>
           <LogoMarquee items={clientBrands} />
         </div>
       </SectionWrapper>
 
-      <SectionWrapper>
+      <SectionWrapper className="bg-background">
         <div className="container-default">
           <div className="max-w-3xl mb-6 md:mb-8">
             <p className="overline mb-3">Before / after</p>
@@ -311,7 +311,7 @@ const Home = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper>
+      <SectionWrapper className="bg-surface-alt">
         <div className="container-default">
           <div className="max-w-3xl mb-6 md:mb-8">
             <p className="overline mb-3">What we do</p>
@@ -358,7 +358,7 @@ const Home = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper>
+      <SectionWrapper className="bg-background">
         <div className="container-default">
           <div className="max-w-3xl mb-6 md:mb-8">
             <p className="overline mb-3">Proof from real work</p>
@@ -443,7 +443,7 @@ const Home = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper>
+      <SectionWrapper className="bg-background">
         <div className="container-default">
           <div className="max-w-3xl mb-8">
             <p className="overline mb-3">Packages</p>
@@ -459,6 +459,15 @@ const Home = () => {
             <p className="text-body text-dark-muted max-w-2xl">
               We look at what is going on, work on the channel that matters most, and tell you what to do next.
             </p>
+            <div className="mt-5">
+              <CTAButton
+                to="/contact"
+                variant="primary-inverted"
+                className="w-full justify-center text-base shadow-[0_12px_30px_rgba(255,255,255,0.12)] sm:w-auto sm:px-8 sm:py-4"
+              >
+                Start my 30-day pilot →
+              </CTAButton>
+            </div>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {publicPackages.map((pkg) => (
@@ -497,7 +506,7 @@ const Home = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper className="bg-surface-alt">
+      <SectionWrapper className="bg-surface">
         <div className="container-default">
           <div className="max-w-3xl mb-8">
             <p className="overline mb-3">How the pilot works</p>
@@ -507,10 +516,21 @@ const Home = () => {
             </p>
           </div>
           <PilotFocusDiagram />
+          <div className="mt-8 border border-border bg-dark px-6 py-8 md:px-8">
+            <div className="flex justify-center">
+              <CTAButton
+                to="/contact"
+                variant="primary-inverted"
+                className="w-full justify-center text-base sm:w-auto sm:px-8 sm:py-4"
+              >
+                Start my 30-day pilot →
+              </CTAButton>
+            </div>
+          </div>
         </div>
       </SectionWrapper>
 
-      <SectionWrapper>
+      <SectionWrapper className="bg-background">
         <div className="container-default">
           <h2 className="text-h2 mb-8">Common questions.</h2>
           <div className="max-w-3xl">

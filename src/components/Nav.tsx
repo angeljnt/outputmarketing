@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
-import GhostButton from "./GhostButton";
+import CTAButton from "./CTAButton";
 import logo from "@/assets/output-marketing-logo.svg";
 import { servicesNav } from "@/content/siteContent";
 
@@ -84,7 +84,7 @@ const Nav = () => {
               </Link>
             )
           )}
-          <GhostButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</GhostButton>
+          <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
         </div>
 
         <button
@@ -129,7 +129,7 @@ const Nav = () => {
                 </Link>
               )
             )}
-            <GhostButton to="/contact" className="w-full mt-2">Start my{" "}<strong>30-day pilot</strong> →</GhostButton>
+            <CTAButton to="/contact" className="w-full mt-2">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
           </div>
         </div>
       )}

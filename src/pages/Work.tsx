@@ -152,49 +152,23 @@ const Work = () => {
       <SectionWrapper className="bg-surface-alt">
         <div className="container-default">
           <div className="max-w-3xl mb-10">
-            <p className="overline mb-3">The brands</p>
-            <h2 className="text-h2 mb-4">Five B2B SaaS campaigns, in detail.</h2>
+            <p className="overline mb-3">The work</p>
+            <h2 className="text-h2 mb-4">One case study per brand.</h2>
             <p className="text-body text-muted-foreground">
-              Per-brand breakdown of reach, output, and budget. Detailed case studies are
-              rolling out per company.
+              Click any brand to read the full case study.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {brands.map((b) => (
-              <div
+              <CaseStudyCard
                 key={b.name}
-                className="bg-background border border-neutral-200 p-6 flex flex-col"
-              >
-                <p className="overline mb-3">{b.focus}</p>
-                <h3 className="text-h3 mb-4">{b.name}</h3>
-                <ul className="space-y-1 mb-4">
-                  {b.stats.map((s) => (
-                    <li key={s} className="text-body flex items-start gap-2">
-                      <span className="text-foreground">•</span>
-                      <span>{s}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-caption text-muted-foreground mt-auto">{b.note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </SectionWrapper>
-
-      <SectionWrapper>
-        <div className="container-default">
-          <div className="max-w-3xl mb-10">
-            <p className="overline mb-3">Deep case studies</p>
-            <h2 className="text-h2 mb-4">Archive: one client, four disciplines.</h2>
-            <p className="text-body text-muted-foreground">
-              Four programs built inside the same account: launches, retention content,
-              founder visibility, and product marketing execution.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {caseStudies.map((cs) => (
-              <CaseStudyCard key={cs.link} {...cs} />
+                title={b.name}
+                client={b.name}
+                type={b.type}
+                date={b.date}
+                metrics={b.metrics}
+                link={b.link}
+              />
             ))}
           </div>
         </div>

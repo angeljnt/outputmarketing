@@ -14,7 +14,7 @@ const sourceTracks = [
     endTop: 28,
     strokeWidth: 8,
     endStrokeWidth: 10,
-    color: "#C72C48",
+    color: "#111111",
     keep: true,
     focusLabel: "SEO content",
   },

@@ -23,7 +23,7 @@ const brands: Brand[] = [
       <>11 viral posts (100K+ views)</>,
       <>$764K budget · $18.62 blended CPM</>,
     ],
-    link: "/work/apollo",
+    link: "/case-studies/apollo",
   },
   {
     name: "Airwallex",
@@ -34,7 +34,7 @@ const brands: Brand[] = [
       <>7 viral posts (100K+ views)</>,
       <>$332K budget · multi-phase rollout</>,
     ],
-    link: "/work/airwallex",
+    link: "/case-studies/airwallex",
   },
   {
     name: "Monday",
@@ -51,7 +51,7 @@ const brands: Brand[] = [
       <>20K+ views (early)</>,
       <>$79K budget</>,
     ],
-    link: "/work/monday",
+    link: "/case-studies/monday",
   },
   {
     name: "Tavus",
@@ -62,7 +62,7 @@ const brands: Brand[] = [
       <>3 viral posts (100K+ views)</>,
       <>$36K budget</>,
     ],
-    link: "/work/tavus",
+    link: "/case-studies/tavus",
   },
   {
     name: "Beanstack",
@@ -73,7 +73,7 @@ const brands: Brand[] = [
       <>7.14% engagement rate (3 to 5x platform avg)</>,
       <>$39K budget</>,
     ],
-    link: "/work/beanstack",
+    link: "/case-studies/beanstack",
   },
   {
     name: "Archive",
@@ -84,7 +84,7 @@ const brands: Brand[] = [
       <>Founder LinkedIn content strategy</>,
       <>Product marketing campaign execution</>,
     ],
-    link: "/work/archive-radar-launch",
+    link: "/case-studies/archive-radar-launch",
   },
 ];
 

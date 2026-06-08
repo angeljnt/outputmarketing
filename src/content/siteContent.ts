@@ -547,12 +547,12 @@ export const serviceContent: ServiceContent[] = [
       {
         title: "Archive LinkedIn Content Strategy",
         meta: "Content that kept the brand visible and more trusted.",
-        link: "/work/archive-linkedin-strategy",
+        link: "/case-studies/archive-linkedin-strategy",
       },
       {
         title: "Archive Product Marketing Campaign",
         meta: "Content support tied to real product priorities.",
-        link: "/work/archive-product-marketing",
+        link: "/case-studies/archive-product-marketing",
       },
     ],
     faqs: [
@@ -639,12 +639,12 @@ export const serviceContent: ServiceContent[] = [
       {
         title: "Archive Product Marketing Campaign",
         meta: "Content work tied to product goals.",
-        link: "/work/archive-product-marketing",
+        link: "/case-studies/archive-product-marketing",
       },
       {
         title: "Archive AI Insider Newsletter",
         meta: "Proof of steady content work, not random posts.",
-        link: "/work/archive-ai-newsletter",
+        link: "/case-studies/archive-ai-newsletter",
       },
     ],
     faqs: [
@@ -732,12 +732,12 @@ export const serviceContent: ServiceContent[] = [
       {
         title: "Archive LinkedIn Content Strategy",
         meta: "Founder content with steady visibility.",
-        link: "/work/archive-linkedin-strategy",
+        link: "/case-studies/archive-linkedin-strategy",
       },
       {
         title: "Archive Radar Feature Launch",
         meta: "Launch support with stronger market visibility.",
-        link: "/work/archive-radar-launch",
+        link: "/case-studies/archive-radar-launch",
       },
     ],
     faqs: [
@@ -824,12 +824,12 @@ export const serviceContent: ServiceContent[] = [
       {
         title: "Archive Radar Feature Launch",
         meta: "Launch support with clearer messaging and better follow-through.",
-        link: "/work/archive-radar-launch",
+        link: "/case-studies/archive-radar-launch",
       },
       {
         title: "Archive Product Marketing Campaign",
         meta: "Launch and campaign support tied to product goals.",
-        link: "/work/archive-product-marketing",
+        link: "/case-studies/archive-product-marketing",
       },
     ],
     faqs: [

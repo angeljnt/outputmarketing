@@ -6,7 +6,7 @@ import logo from "@/assets/output-marketing-logo.svg";
 import { servicesNav } from "@/content/siteContent";
 
 const navLinks = [
-  { label: "Case studies", to: "/work" },
+  { label: "Case studies", to: "/case-studies" },
   { label: "Services", to: "#", dropdown: true },
   { label: "Pricing", to: "/pricing" },
   { label: "About", to: "/about" },

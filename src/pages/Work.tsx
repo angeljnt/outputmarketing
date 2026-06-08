@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 type Brand = {
   name: string;
   type: string;
-  date: string;
+  date?: string;
   metrics: ReactNode[];
   link: string;
   badge?: ReactNode;

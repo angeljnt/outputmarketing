@@ -54,26 +54,36 @@ const caseStudies = [
   },
 ];
 
-const companies = [
+const brands = [
   {
     name: "Apollo",
-    focus: "Content and SEO support",
-    summary: "Helped scale content output tied to pipeline-relevant search intent.",
+    focus: "Creator campaign · 2025",
+    stats: ["4.83M views", "260 content pieces", "11 viral posts (100K+)", "$764K budget"],
+    note: "Blended CPM $18.62 — well below the $50–$90 LinkedIn industry average.",
   },
   {
     name: "Airwallex",
-    focus: "B2B content strategy",
-    summary: "Worked on positioning and content programs for a global fintech audience.",
+    focus: "Creator campaign · 3 phases",
+    stats: ["2.65M views", "88 content pieces", "7 viral posts (100K+)", "$332K budget"],
+    note: "Multi-phase rollout including a dedicated TikTok motion.",
   },
   {
-    name: "Beanstack",
-    focus: "Lifecycle and content",
-    summary: "Supported content programs aimed at retention and customer activation.",
+    name: "Monday.com",
+    focus: "AI Agents campaign · in progress",
+    stats: ["23 creators", "11 live posts (so far)", "20K+ views (early)", "$79K budget"],
+    note: "Campaign still rolling — metrics climbing as posts go live.",
   },
   {
     name: "Tavus",
-    focus: "Launch and visibility",
-    summary: "Contributed to launch motion and founder visibility in a fast-moving AI category.",
+    focus: "Creator campaign · 2 phases",
+    stats: ["793K views", "16 content pieces", "3 viral posts (100K+)", "$36K budget"],
+    note: "Lean, high-leverage campaign in a fast-moving AI category.",
+  },
+  {
+    name: "Beanstack",
+    focus: "Creator campaign",
+    stats: ["742K views", "33 content pieces", "7.14% engagement rate", "$39K budget"],
+    note: "Best engagement rate across the portfolio — 3–5x platform average.",
   },
 ];
 
@@ -84,7 +94,7 @@ const Work = () => {
         <title>Case Studies | Output Marketing</title>
         <meta
           name="description"
-          content="A summary of Output Marketing's case studies with B2B SaaS teams: launches, content systems, founder visibility, and execution."
+          content="9M+ impressions, 400+ content pieces, 200+ creators activated, and $1.25M+ in campaign budgets managed across 5 B2B SaaS brands."
         />
       </Helmet>
 
@@ -92,31 +102,84 @@ const Work = () => {
         <div className="container-default">
           <p className="overline mb-4">Case studies</p>
           <h1 className="text-display mb-6">
-            5 B2B SaaS teams. 4 deep case studies. 1 repeatable system.
+            9M+ impressions. 200+ creators. 5 B2B SaaS brands. One operating system.
           </h1>
           <p className="text-body-lg text-muted-foreground max-w-3xl mb-10">
-            The work below spans product launches, content systems, founder visibility, and
-            retention. Most of the deep proof comes from Archive — that is intentional. It
-            shows how the same operating system handled four very different problems inside
-            one account.
+            Aggregate impact across creator-led campaigns for Apollo, Airwallex, Monday.com,
+            Tavus, and Beanstack — plus deep program work with Archive. Below: the headline
+            numbers, the brands, and the case studies.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 max-w-4xl">
             <div>
-              <p className="text-display font-semibold">5</p>
-              <p className="text-caption text-muted-foreground mt-1">B2B SaaS clients</p>
+              <p className="text-h1 font-semibold leading-none">9M+</p>
+              <p className="text-caption text-muted-foreground mt-2">Total impressions</p>
             </div>
             <div>
-              <p className="text-display font-semibold">4</p>
-              <p className="text-caption text-muted-foreground mt-1">Deep case studies</p>
+              <p className="text-h1 font-semibold leading-none">400+</p>
+              <p className="text-caption text-muted-foreground mt-2">Content pieces deployed</p>
             </div>
             <div>
-              <p className="text-display font-semibold">4</p>
-              <p className="text-caption text-muted-foreground mt-1">Disciplines covered</p>
+              <p className="text-h1 font-semibold leading-none">200+</p>
+              <p className="text-caption text-muted-foreground mt-2">Creators activated</p>
             </div>
             <div>
-              <p className="text-display font-semibold">1</p>
-              <p className="text-caption text-muted-foreground mt-1">Operating system</p>
+              <p className="text-h1 font-semibold leading-none">$1.25M+</p>
+              <p className="text-caption text-muted-foreground mt-2">Campaign budgets managed</p>
             </div>
+            <div>
+              <p className="text-h1 font-semibold leading-none">21</p>
+              <p className="text-caption text-muted-foreground mt-2">Viral posts (100K+ views)</p>
+            </div>
+            <div>
+              <p className="text-h1 font-semibold leading-none">6</p>
+              <p className="text-caption text-muted-foreground mt-2">Platforms covered</p>
+            </div>
+            <div>
+              <p className="text-h1 font-semibold leading-none">5</p>
+              <p className="text-caption text-muted-foreground mt-2">B2B SaaS brands</p>
+            </div>
+            <div>
+              <p className="text-h1 font-semibold leading-none">2.19%</p>
+              <p className="text-caption text-muted-foreground mt-2">Blended engagement rate</p>
+            </div>
+          </div>
+          <p className="text-caption text-muted-foreground mt-8 max-w-3xl">
+            Platforms: LinkedIn, TikTok, Instagram, YouTube, X, Threads. Brands: Apollo,
+            Airwallex, Monday.com, Tavus, Beanstack. B2B sponsored content engagement rate
+            averages 1–1.5%.
+          </p>
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper className="bg-surface-alt">
+        <div className="container-default">
+          <div className="max-w-3xl mb-10">
+            <p className="overline mb-3">The brands</p>
+            <h2 className="text-h2 mb-4">Five B2B SaaS campaigns, in detail.</h2>
+            <p className="text-body text-muted-foreground">
+              Per-brand breakdown of reach, output, and budget. Detailed case studies are
+              rolling out per company.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {brands.map((b) => (
+              <div
+                key={b.name}
+                className="bg-background border border-neutral-200 p-6 flex flex-col"
+              >
+                <p className="overline mb-3">{b.focus}</p>
+                <h3 className="text-h3 mb-4">{b.name}</h3>
+                <ul className="space-y-1 mb-4">
+                  {b.stats.map((s) => (
+                    <li key={s} className="text-body flex items-start gap-2">
+                      <span className="text-foreground">•</span>
+                      <span>{s}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-caption text-muted-foreground mt-auto">{b.note}</p>
+              </div>
+            ))}
           </div>
         </div>
       </SectionWrapper>
@@ -134,30 +197,6 @@ const Work = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {caseStudies.map((cs) => (
               <CaseStudyCard key={cs.link} {...cs} />
-            ))}
-          </div>
-        </div>
-      </SectionWrapper>
-
-      <SectionWrapper className="bg-surface-alt">
-        <div className="container-default">
-          <div className="max-w-3xl mb-10">
-            <p className="overline mb-3">Other companies</p>
-            <h2 className="text-h2 mb-4">Where the system has also been applied.</h2>
-            <p className="text-body text-muted-foreground">
-              Shorter engagements and supporting work across other B2B SaaS teams.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {companies.map((c) => (
-              <div
-                key={c.name}
-                className="bg-background border border-neutral-200 p-6 flex flex-col"
-              >
-                <p className="overline mb-3">{c.focus}</p>
-                <h3 className="text-h3 mb-3">{c.name}</h3>
-                <p className="text-body text-muted-foreground">{c.summary}</p>
-              </div>
             ))}
           </div>
         </div>

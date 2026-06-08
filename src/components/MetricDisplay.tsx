@@ -12,7 +12,7 @@ const MetricDisplay = ({ value, label, className = "" }: MetricDisplayProps) => 
       <motion.div
         className="text-display group-hover:!text-[#111111] transition-colors duration-300"
         initial={{ color: "#6B6B6B" }}
-        whileInView={{ color: "#D4A853" }}
+        whileInView={{ color: "#C72C48" }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >

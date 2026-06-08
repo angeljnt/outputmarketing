@@ -262,7 +262,7 @@ const Home = () => {
               </p>
               <div className="flex flex-wrap gap-4 mb-4">
                 <CTAButton to="/contact">
-                  Start my{" "}<strong>30-day pilot</strong> →
+                  Start my 30-day pilot
                 </CTAButton>
                 <GhostButton to="/services">Explore services →</GhostButton>
               </div>

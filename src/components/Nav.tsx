@@ -84,7 +84,7 @@ const Nav = () => {
               </Link>
             )
           )}
-          <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact">Start my 30-day pilot</CTAButton>
         </div>
 
         <button
@@ -129,7 +129,7 @@ const Nav = () => {
                 </Link>
               )
             )}
-            <CTAButton to="/contact" className="w-full mt-2">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+            <CTAButton to="/contact" className="w-full mt-2">Start my 30-day pilot</CTAButton>
           </div>
         </div>
       )}

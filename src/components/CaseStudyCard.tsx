@@ -46,7 +46,7 @@ const CaseStudyCard = ({
       </ul>
       <Link
         to={link}
-        className="text-sm font-medium text-foreground group-hover:text-[#111111] transition-colors"
+        className="mt-auto text-sm font-medium text-foreground group-hover:text-[#111111] transition-colors"
       >
         Read case study →
       </Link>

@@ -22,7 +22,7 @@ const CaseStudyCard = ({
   badge,
 }: CaseStudyCardProps) => {
   return (
-    <div className="group bg-surface p-6 md:p-8 flex flex-col justify-between border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+    <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
       {badge ? <div className="mb-4">{badge}</div> : null}
       {clientLogo ? (
         <img

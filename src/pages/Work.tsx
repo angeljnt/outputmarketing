@@ -29,9 +29,15 @@ const brands = [
     link: "/work/airwallex",
   },
   {
-    name: "Monday.com",
+    name: "Monday",
     type: "AI Agents campaign",
     date: "In progress",
+    badge: (
+      <span className="inline-flex items-center gap-1.5 text-caption uppercase tracking-wider text-accent">
+        <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+        In progress
+      </span>
+    ),
     metrics: [
       <>23 creators activated</>,
       <>11 live posts (so far)</>,

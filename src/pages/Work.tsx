@@ -102,19 +102,37 @@ const Work = () => {
         <div className="container-default">
           <p className="overline mb-4">Case studies</p>
           <div className="grid lg:grid-cols-2 gap-6 items-stretch">
-            <div className="bg-surface border border-neutral-200 p-8 md:p-10 flex flex-col justify-center">
-              <h1 className="text-h1 mb-5">
-                9M+ impressions. 200+ creators. 5 B2B SaaS brands. One operating system.
-              </h1>
-              <p className="text-body text-muted-foreground mb-4">
-                Aggregate impact across creator-led campaigns for Apollo, Airwallex,
-                Monday.com, Tavus, and Beanstack, plus deep program work with Archive.
-              </p>
-              <p className="text-body text-muted-foreground">
-                Platforms covered: LinkedIn, TikTok, Instagram, YouTube, X, Threads.
-                Below: the headline numbers, the brands, and the case studies.
-              </p>
+            <div className="bg-surface border border-neutral-200 p-8 md:p-10 flex flex-col justify-between gap-10">
+              <div>
+                <p className="overline mb-6" style={{ color: "#D4A853" }}>
+                  Aggregate impact
+                </p>
+                <h1 className="text-h1 leading-tight">
+                  One operating system, run across five B2B SaaS brands.
+                </h1>
+              </div>
+
+              <div>
+                <p className="overline mb-3">Brands</p>
+                <div className="flex flex-wrap gap-x-5 gap-y-2 text-body text-foreground">
+                  <span>Apollo</span>
+                  <span className="text-muted-foreground">·</span>
+                  <span>Airwallex</span>
+                  <span className="text-muted-foreground">·</span>
+                  <span>Monday.com</span>
+                  <span className="text-muted-foreground">·</span>
+                  <span>Tavus</span>
+                  <span className="text-muted-foreground">·</span>
+                  <span>Beanstack</span>
+                  <span className="text-muted-foreground">·</span>
+                  <span>Archive</span>
+                </div>
+                <p className="text-caption text-muted-foreground mt-6">
+                  Six platforms: LinkedIn, TikTok, Instagram, YouTube, X, Threads.
+                </p>
+              </div>
             </div>
+
 
             <div className="bg-surface border border-neutral-200 p-8 md:p-10">
               <div className="grid grid-cols-2 gap-x-6 gap-y-6">

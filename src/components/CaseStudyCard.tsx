@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 interface CaseStudyCardProps {
   title: string;
   type: string;
-  date: string;
+  date?: string;
   metrics: React.ReactNode[];
   link: string;
   client?: string;

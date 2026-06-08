@@ -22,7 +22,7 @@ const CaseStudyCard = ({
   badge,
 }: CaseStudyCardProps) => {
   return (
-    <div className="group bg-surface p-6 md:p-8 flex flex-col justify-between border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
+    <div className="group bg-surface p-6 md:p-8 flex flex-col border border-neutral-200 hover:bg-accent hover:border-accent transition-colors duration-300">
       {badge ? <div className="mb-4">{badge}</div> : null}
       {clientLogo ? (
         <img
@@ -46,7 +46,7 @@ const CaseStudyCard = ({
       </ul>
       <Link
         to={link}
-        className="text-sm font-medium text-foreground group-hover:text-[#111111] transition-colors"
+        className="mt-auto text-sm font-medium text-foreground group-hover:text-[#111111] transition-colors"
       >
         Read case study →
       </Link>

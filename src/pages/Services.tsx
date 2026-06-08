@@ -47,7 +47,7 @@ const Services = () => {
                   </p>
                   <Link
                     to={service.path}
-                    className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                    className="text-sm font-medium text-foreground hover:font-semibold transition-[font-weight]"
                   >
                     Full details →
                   </Link>

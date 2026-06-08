@@ -68,7 +68,7 @@ const CaseStudyLinkedIn = () => (
         <p className="text-body text-muted-foreground mb-2">If your ICP is on LinkedIn and you're not showing up, this is what consistent looks like.</p>
         <h2 className="text-h2 mb-6">Need LinkedIn content that actually gets engagement?</h2>
         <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
-        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
+        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:font-semibold transition-[font-weight]">See all case studies →</Link></p>
       </div>
     </SectionWrapper>
 

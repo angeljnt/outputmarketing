@@ -139,7 +139,7 @@ const About = () => {
                       href={person.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                      className="text-sm font-medium text-foreground hover:font-semibold transition-[font-weight]"
                     >
                       LinkedIn →
                     </a>

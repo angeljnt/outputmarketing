@@ -138,8 +138,8 @@ const Work = () => {
                   <p className="text-caption text-muted-foreground mt-2">Viral posts (100K+ views)</p>
                 </div>
                 <div>
-                  <p className="text-h1 font-semibold leading-none">2.19%</p>
-                  <p className="text-caption text-muted-foreground mt-2">Average engagement rate</p>
+                  <p className="text-h1 font-semibold leading-none">197K+</p>
+                  <p className="text-caption text-muted-foreground mt-2">Total engagements</p>
                 </div>
                 <div>
                   <p className="text-h1 font-semibold leading-none">$39.02</p>

@@ -131,7 +131,7 @@ const Work = () => {
                 </div>
                 <div>
                   <p className="text-h1 font-semibold leading-none">$1.25M+</p>
-                  <p className="text-caption text-muted-foreground mt-2">Campaign budgets managed</p>
+                  <p className="text-caption text-muted-foreground mt-2">Budget managed</p>
                 </div>
                 <div>
                   <p className="text-h1 font-semibold leading-none">21</p>

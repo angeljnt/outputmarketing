@@ -59,7 +59,7 @@ const brands = [
     name: "Apollo",
     focus: "Creator campaign · 2025",
     stats: ["4.83M views", "260 content pieces", "11 viral posts (100K+)", "$764K budget"],
-    note: "Blended CPM $18.62 — well below the $50–$90 LinkedIn industry average.",
+    note: "Blended CPM $18.62, well below the $50 to $90 LinkedIn industry average.",
   },
   {
     name: "Airwallex",
@@ -71,7 +71,7 @@ const brands = [
     name: "Monday.com",
     focus: "AI Agents campaign · in progress",
     stats: ["23 creators", "11 live posts (so far)", "20K+ views (early)", "$79K budget"],
-    note: "Campaign still rolling — metrics climbing as posts go live.",
+    note: "Campaign still rolling, metrics climbing as posts go live.",
   },
   {
     name: "Tavus",
@@ -83,7 +83,7 @@ const brands = [
     name: "Beanstack",
     focus: "Creator campaign",
     stats: ["742K views", "33 content pieces", "7.14% engagement rate", "$39K budget"],
-    note: "Best engagement rate across the portfolio — 3–5x platform average.",
+    note: "Best engagement rate across the portfolio: 3 to 5x platform average.",
   },
 ];
 
@@ -191,7 +191,7 @@ const Work = () => {
             <p className="overline mb-3">Deep case studies</p>
             <h2 className="text-h2 mb-4">Archive: one client, four disciplines.</h2>
             <p className="text-body text-muted-foreground">
-              Four programs built inside the same account — launches, retention content,
+              Four programs built inside the same account: launches, retention content,
               founder visibility, and product marketing execution.
             </p>
           </div>

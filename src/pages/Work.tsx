@@ -60,7 +60,7 @@ const Work = () => {
   return (
     <>
       <Helmet>
-        <title>Work | Output Marketing</title>
+        <title>Case Studies | Output Marketing</title>
         <meta
           name="description"
           content="See how Output Marketing helps lean B2B SaaS teams with content, launches, visibility, and follow-through."
@@ -69,7 +69,7 @@ const Work = () => {
 
       <SectionWrapper>
         <div className="container-default">
-          <p className="overline mb-4">Work and proof</p>
+          <p className="overline mb-4">Case studies and proof</p>
           <h1 className="text-display mb-4">
             Proof from real B2B SaaS execution.
           </h1>

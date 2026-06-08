@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 type Brand = {
   name: string;
   type: string;
-  date: string;
+  date?: string;
   metrics: ReactNode[];
   link: string;
   badge?: ReactNode;
@@ -17,7 +17,6 @@ const brands: Brand[] = [
   {
     name: "Apollo",
     type: "Creator campaign",
-    date: "2025",
     metrics: [
       <>4.83M views</>,
       <>260 content pieces</>,
@@ -29,7 +28,6 @@ const brands: Brand[] = [
   {
     name: "Airwallex",
     type: "Creator campaign · 3 phases",
-    date: "2025",
     metrics: [
       <>2.65M views</>,
       <>88 content pieces</>,
@@ -41,7 +39,6 @@ const brands: Brand[] = [
   {
     name: "Monday",
     type: "AI Agents campaign",
-    date: "In progress",
     badge: (
       <span className="inline-flex items-center gap-1.5 text-caption uppercase tracking-wider text-accent">
         <span className="h-1.5 w-1.5 rounded-full bg-accent" />
@@ -59,7 +56,6 @@ const brands: Brand[] = [
   {
     name: "Tavus",
     type: "Creator campaign · 2 phases",
-    date: "2025",
     metrics: [
       <>793K views</>,
       <>16 content pieces</>,
@@ -71,7 +67,6 @@ const brands: Brand[] = [
   {
     name: "Beanstack",
     type: "Creator campaign",
-    date: "2025",
     metrics: [
       <>742K views</>,
       <>33 content pieces</>,
@@ -83,7 +78,6 @@ const brands: Brand[] = [
   {
     name: "Archive",
     type: "Launch, retention, founder, product marketing",
-    date: "Ongoing",
     metrics: [
       <>Radar feature launch program</>,
       <>AI Insider newsletter and retention system</>,

@@ -3,87 +3,78 @@ import SectionWrapper from "@/components/SectionWrapper";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
 
-const caseStudies = [
-  {
-    title: "Archive: Radar Feature Launch",
-    client: "Archive",
-    type: "Product and Launch Marketing",
-    date: "2025",
-    metrics: [
-      <>Launch support extended beyond a single announcement</>,
-      <>Audience interest turned into clearer waitlist demand</>,
-      <>Product value translated more cleanly to the market</>,
-    ],
-    link: "/work/archive-radar-launch",
-  },
-  {
-    title: "Archive: AI Insider Newsletter",
-    client: "Archive",
-    type: "Content System and Retention Support",
-    date: "2025",
-    metrics: [
-      <>Recurring value-delivery channel created</>,
-      <>Segmentation and editorial logic built into the program</>,
-      <>Newsletter work tied back to broader product priorities</>,
-    ],
-    link: "/work/archive-ai-newsletter",
-  },
-  {
-    title: "Archive: LinkedIn Content Strategy",
-    client: "Archive",
-    type: "Founder and Brand Visibility",
-    date: "Ongoing",
-    metrics: [
-      <>Founder presence turned into a repeatable operating rhythm</>,
-      <>Messaging became more consistent in-market</>,
-      <>Thought leadership moved from sporadic to structured</>,
-    ],
-    link: "/work/archive-linkedin-strategy",
-  },
-  {
-    title: "Archive: Product Marketing Campaign",
-    client: "Archive",
-    type: "Execution Systems",
-    date: "Ongoing",
-    metrics: [
-      <>Campaigns tied more closely to product priorities</>,
-      <>Reporting and execution structure became easier to manage</>,
-      <>Cross-functional marketing work gained more follow-through</>,
-    ],
-    link: "/work/archive-product-marketing",
-  },
-];
-
 const brands = [
   {
     name: "Apollo",
-    focus: "Creator campaign · 2025",
-    stats: ["4.83M views", "260 content pieces", "11 viral posts (100K+)", "$764K budget"],
-    note: "Blended CPM $18.62, well below the $50 to $90 LinkedIn industry average.",
+    type: "Creator campaign",
+    date: "2025",
+    metrics: [
+      <>4.83M views</>,
+      <>260 content pieces</>,
+      <>11 viral posts (100K+ views)</>,
+      <>$764K budget · $18.62 blended CPM</>,
+    ],
+    link: "/work/apollo",
   },
   {
     name: "Airwallex",
-    focus: "Creator campaign · 3 phases",
-    stats: ["2.65M views", "88 content pieces", "7 viral posts (100K+)", "$332K budget"],
-    note: "Multi-phase rollout including a dedicated TikTok motion.",
+    type: "Creator campaign · 3 phases",
+    date: "2025",
+    metrics: [
+      <>2.65M views</>,
+      <>88 content pieces</>,
+      <>7 viral posts (100K+ views)</>,
+      <>$332K budget · multi-phase rollout</>,
+    ],
+    link: "/work/airwallex",
   },
   {
     name: "Monday.com",
-    focus: "AI Agents campaign · in progress",
-    stats: ["23 creators", "11 live posts (so far)", "20K+ views (early)", "$79K budget"],
-    note: "Campaign still rolling, metrics climbing as posts go live.",
+    type: "AI Agents campaign",
+    date: "In progress",
+    metrics: [
+      <>23 creators activated</>,
+      <>11 live posts (so far)</>,
+      <>20K+ views (early)</>,
+      <>$79K budget</>,
+    ],
+    link: "/work/monday",
   },
   {
     name: "Tavus",
-    focus: "Creator campaign · 2 phases",
-    stats: ["793K views", "16 content pieces", "3 viral posts (100K+)", "$36K budget"],
-    note: "Lean, high-leverage campaign in a fast-moving AI category.",
+    type: "Creator campaign · 2 phases",
+    date: "2025",
+    metrics: [
+      <>793K views</>,
+      <>16 content pieces</>,
+      <>3 viral posts (100K+ views)</>,
+      <>$36K budget</>,
+    ],
+    link: "/work/tavus",
   },
   {
     name: "Beanstack",
-    focus: "Creator campaign",
-    stats: ["742K views", "33 content pieces", "7.14% engagement rate", "$39K budget"],
-    note: "Best engagement rate across the portfolio: 3 to 5x platform average.",
+    type: "Creator campaign",
+    date: "2025",
+    metrics: [
+      <>742K views</>,
+      <>33 content pieces</>,
+      <>7.14% engagement rate (3 to 5x platform avg)</>,
+      <>$39K budget</>,
+    ],
+    link: "/work/beanstack",
+  },
+  {
+    name: "Archive",
+    type: "Launch, retention, founder, product marketing",
+    date: "Ongoing",
+    metrics: [
+      <>Radar feature launch program</>,
+      <>AI Insider newsletter and retention system</>,
+      <>Founder LinkedIn content strategy</>,
+      <>Product marketing campaign execution</>,
+    ],
+    link: "/work/archive-radar-launch",
   },
 ];
 

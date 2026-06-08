@@ -179,12 +179,11 @@ const Work = () => {
               <CaseStudyCard
                 key={b.name}
                 title={b.name}
-                client={b.name}
                 type={b.type}
                 date={b.date}
                 metrics={b.metrics}
                 link={b.link}
-                badge={(b as { badge?: JSX.Element }).badge}
+                badge={b.badge}
               />
             ))}
           </div>

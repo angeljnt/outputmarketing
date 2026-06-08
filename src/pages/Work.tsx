@@ -174,7 +174,7 @@ const Work = () => {
                 date={b.date}
                 metrics={b.metrics}
                 link={b.link}
-                badge={"badge" in b ? (b as { badge: React.ReactNode }).badge : undefined}
+                badge={(b as { badge?: JSX.Element }).badge}
               />
             ))}
           </div>

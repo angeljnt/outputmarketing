@@ -160,11 +160,17 @@ const Work = () => {
                   <p className="text-h1 font-semibold leading-none">2.19%</p>
                   <p className="text-caption text-muted-foreground mt-2">Blended engagement rate</p>
                 </div>
+                <div>
+                  <p className="text-h1 font-semibold leading-none">$18.62</p>
+                  <p className="text-caption text-muted-foreground mt-2">Blended CPM (Apollo)</p>
+                </div>
+                <div>
+                  <p className="text-h1 font-semibold leading-none">$1.57</p>
+                  <p className="text-caption text-muted-foreground mt-2">Best CPM (Apollo on X)</p>
+                </div>
               </div>
-              <p className="text-caption text-muted-foreground mt-6 pt-6 border-t border-neutral-200">
-                B2B sponsored content engagement averages 1 to 1.5%.
-              </p>
             </div>
+
           </div>
         </div>
       </SectionWrapper>

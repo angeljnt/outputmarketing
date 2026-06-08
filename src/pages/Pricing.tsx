@@ -28,9 +28,7 @@ const Pricing = () => {
           <p className="text-body-lg text-muted-foreground mb-8">
             Pilot first. Then the right monthly scope.
           </p>
-          <CTAButton to="/contact">
-            Start my <strong>30-day pilot</strong> →
-          </CTAButton>
+            <CTAButton to="/contact">Start my 30-day pilot</CTAButton>
         </div>
       </SectionWrapper>
 

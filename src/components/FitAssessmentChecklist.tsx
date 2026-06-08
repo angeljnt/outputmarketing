@@ -135,7 +135,7 @@ const FitAssessmentChecklist = ({
                 <p className="text-body text-muted-foreground mb-5 max-w-xs">
                   This already looks like a good fit. Start with the pilot and we can get moving.
                 </p>
-                <CTAButton to="/contact">Start my 30-day pilot now →</CTAButton>
+                <CTAButton to="/contact">Start my 30-day pilot now</CTAButton>
               </div>
             ) : (
               <>

@@ -465,7 +465,7 @@ const Home = () => {
                 variant="primary-inverted"
                 className="w-full justify-center text-base shadow-[0_12px_30px_rgba(255,255,255,0.12)] sm:w-auto sm:px-8 sm:py-4"
               >
-                Start my 30-day pilot →
+                Start my 30-day pilot
               </CTAButton>
             </div>
           </div>
@@ -523,7 +523,7 @@ const Home = () => {
                 variant="primary-inverted"
                 className="w-full justify-center text-base sm:w-auto sm:px-8 sm:py-4"
               >
-                Start my 30-day pilot →
+                Start my 30-day pilot
               </CTAButton>
             </div>
           </div>

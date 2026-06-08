@@ -1,9 +1,19 @@
+import type { ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
 import SectionWrapper from "@/components/SectionWrapper";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import Footer from "@/components/Footer";
 
-const brands = [
+type Brand = {
+  name: string;
+  type: string;
+  date: string;
+  metrics: ReactNode[];
+  link: string;
+  badge?: ReactNode;
+};
+
+const brands: Brand[] = [
   {
     name: "Apollo",
     type: "Creator campaign",

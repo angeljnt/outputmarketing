@@ -6,7 +6,7 @@ import logo from "@/assets/output-marketing-logo.svg";
 import { servicesNav } from "@/content/siteContent";
 
 const navLinks = [
-  { label: "Case studies", to: "/work" },
+  { label: "Case studies", to: "/case-studies" },
   { label: "Services", to: "#", dropdown: true },
   { label: "Pricing", to: "/pricing" },
   { label: "About", to: "/about" },
@@ -84,7 +84,7 @@ const Nav = () => {
               </Link>
             )
           )}
-          <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact">Start my 30-day pilot</CTAButton>
         </div>
 
         <button
@@ -129,7 +129,7 @@ const Nav = () => {
                 </Link>
               )
             )}
-            <CTAButton to="/contact" className="w-full mt-2">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+            <CTAButton to="/contact" className="w-full mt-2">Start my 30-day pilot</CTAButton>
           </div>
         </div>
       )}

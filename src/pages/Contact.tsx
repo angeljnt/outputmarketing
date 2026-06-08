@@ -264,7 +264,7 @@ const Contact = () => {
                   </div>
 
                   <CTAButton type="submit">
-                    Start my{" "}<strong>30-day pilot</strong> →
+                    Start my 30-day pilot
                   </CTAButton>
                   <p className="text-caption">
                     <strong>Pilot first.</strong> We reply within 24 hours.

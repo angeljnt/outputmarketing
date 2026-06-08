@@ -166,7 +166,7 @@ const caseStudies = [
       <>Waitlist interest collected from the right audience</>,
       <>Launch support carried beyond the first announcement</>,
     ],
-    link: "/work/archive-radar-launch",
+    link: "/case-studies/archive-radar-launch",
     clientLogo: logoArchive,
   },
   {
@@ -179,7 +179,7 @@ const caseStudies = [
       <>Segmentation and content structure built around value delivery</>,
       <>A stronger content rhythm supporting retention</>,
     ],
-    link: "/work/archive-ai-newsletter",
+    link: "/case-studies/archive-ai-newsletter",
     clientLogo: logoArchive,
   },
   {
@@ -192,7 +192,7 @@ const caseStudies = [
       <>Content cadence stayed consistent instead of reactive</>,
       <>Market-facing voice became sharper and more recognizable</>,
     ],
-    link: "/work/archive-linkedin-strategy",
+    link: "/case-studies/archive-linkedin-strategy",
     clientLogo: logoArchive,
   },
   {
@@ -205,7 +205,7 @@ const caseStudies = [
       <>Performance readouts made priorities easier to read</>,
       <>Marketing work became easier to coordinate across initiatives</>,
     ],
-    link: "/work/archive-product-marketing",
+    link: "/case-studies/archive-product-marketing",
     clientLogo: logoArchive,
   },
 ];
@@ -262,7 +262,7 @@ const Home = () => {
               </p>
               <div className="flex flex-wrap gap-4 mb-4">
                 <CTAButton to="/contact">
-                  Start my{" "}<strong>30-day pilot</strong> →
+                  Start my 30-day pilot
                 </CTAButton>
                 <GhostButton to="/services">Explore services →</GhostButton>
               </div>
@@ -386,7 +386,7 @@ const Home = () => {
           <p className="mt-6 text-body text-muted-foreground">
             If you want the full story, go here.{" "}
             <Link
-              to="/work"
+              to="/case-studies"
               className="font-medium text-foreground hover:font-semibold transition-[font-weight]"
             >
               See all case studies →
@@ -465,7 +465,7 @@ const Home = () => {
                 variant="primary-inverted"
                 className="w-full justify-center text-base shadow-[0_12px_30px_rgba(255,255,255,0.12)] sm:w-auto sm:px-8 sm:py-4"
               >
-                Start my 30-day pilot →
+                Start my 30-day pilot
               </CTAButton>
             </div>
           </div>
@@ -523,7 +523,7 @@ const Home = () => {
                 variant="primary-inverted"
                 className="w-full justify-center text-base sm:w-auto sm:px-8 sm:py-4"
               >
-                Start my 30-day pilot →
+                Start my 30-day pilot
               </CTAButton>
             </div>
           </div>

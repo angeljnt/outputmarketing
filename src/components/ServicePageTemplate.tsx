@@ -26,7 +26,7 @@ const ServicePageTemplate = ({ service }: ServicePageTemplateProps) => {
           <p className="overline mb-4">{service.title}</p>
           <h1 className="text-display mb-4">{service.heroTitle}</h1>
           <p className="text-body-lg text-muted-foreground mb-6 max-w-3xl">{service.heroDescription}</p>
-          <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
+          <CTAButton to="/contact">Start my 30-day pilot</CTAButton>
           <p className="text-caption mt-3"><strong>Pilot first.</strong> <strong>Month-to-month if we continue.</strong></p>
         </div>
       </SectionWrapper>

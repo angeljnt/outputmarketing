@@ -11,22 +11,22 @@ const Footer = () => {
         </CTAButton>
         <p className="text-dark-muted text-sm mt-4">
           Prefer direct email:{" "}
-          <a href="mailto:contact@output-marketing.com" className="underline hover:text-accent transition-colors">
+          <a href="mailto:contact@output-marketing.com" className="underline hover:font-semibold transition-[font-weight]">
             contact@output-marketing.com
           </a>
         </p>
 
         <div className="mt-12 pt-8 border-t border-dark-muted/20">
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm text-dark-muted mb-4">
-            <Link to="/work" className="hover:text-accent transition-colors">Case studies</Link>
+            <Link to="/work" className="hover:font-semibold transition-[font-weight]">Case studies</Link>
             <span>·</span>
-            <Link to="/services" className="hover:text-accent transition-colors">Services</Link>
+            <Link to="/services" className="hover:font-semibold transition-[font-weight]">Services</Link>
             <span>·</span>
-            <Link to="/pricing" className="hover:text-accent transition-colors">Pricing</Link>
+            <Link to="/pricing" className="hover:font-semibold transition-[font-weight]">Pricing</Link>
             <span>·</span>
-            <Link to="/about" className="hover:text-accent transition-colors">About</Link>
+            <Link to="/about" className="hover:font-semibold transition-[font-weight]">About</Link>
             <span>·</span>
-            <Link to="/contact" className="hover:text-accent transition-colors">Contact</Link>
+            <Link to="/contact" className="hover:font-semibold transition-[font-weight]">Contact</Link>
           </div>
           <p className="text-micro text-dark-muted">© 2026 Output Marketing</p>
         </div>

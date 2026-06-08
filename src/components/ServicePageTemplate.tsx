@@ -56,7 +56,7 @@ const ServicePageTemplate = ({ service }: ServicePageTemplateProps) => {
                   </p>
                   <Link
                     to={service.proof[0].link}
-                    className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                    className="text-sm font-medium text-foreground hover:font-semibold transition-[font-weight]"
                   >
                     Read case study →
                   </Link>

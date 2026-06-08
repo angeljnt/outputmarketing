@@ -40,8 +40,8 @@ const brands: Brand[] = [
     name: "Monday",
     type: "AI Agents campaign",
     badge: (
-      <span className="inline-flex items-center gap-1.5 text-caption uppercase tracking-wider text-accent">
-        <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+      <span className="inline-flex items-center gap-1.5 text-caption uppercase tracking-wider text-foreground font-semibold">
+        <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
         In progress
       </span>
     ),

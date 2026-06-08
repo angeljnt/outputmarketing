@@ -374,7 +374,7 @@ const Home = () => {
                 {...cs}
                 badge={
                   index === 0 ? (
-                    <span className="inline-flex items-center gap-2 rounded-r-full rounded-l-sm border border-border bg-accent/45 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground shadow-sm">
+                    <span className="inline-flex items-center gap-2 rounded-r-full rounded-l-sm border border-border bg-neutral-100 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground shadow-sm">
                       <Bookmark className="h-3.5 w-3.5 fill-current" />
                       Featured case
                     </span>
@@ -387,7 +387,7 @@ const Home = () => {
             If you want the full story, go here.{" "}
             <Link
               to="/work"
-              className="font-medium text-foreground hover:text-accent transition-colors"
+              className="font-medium text-foreground hover:font-semibold transition-[font-weight]"
             >
               See all case studies →
             </Link>
@@ -477,7 +477,7 @@ const Home = () => {
               >
                 {pkg.badge && (
                   <div className="mb-4">
-                    <span className="inline-flex items-center gap-2 rounded-r-full rounded-l-sm border border-border bg-accent/45 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground shadow-sm transition-colors duration-300 group-hover:border-[#111111]/20 group-hover:bg-[#111111] group-hover:text-background">
+                    <span className="inline-flex items-center gap-2 rounded-r-full rounded-l-sm border border-border bg-neutral-100 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground shadow-sm transition-colors duration-300 group-hover:border-[#111111]/20 group-hover:bg-[#111111] group-hover:text-background">
                       <Bookmark className="h-3.5 w-3.5 fill-current" />
                       {pkg.badge}
                     </span>
@@ -501,7 +501,7 @@ const Home = () => {
           <p className="text-body text-muted-foreground mt-8">
             Need white-label support or a project sprint instead? Those lanes
             exist too. They just stay secondary to the core B2B SaaS package
-            ladder. <Link to="/pricing" className="font-medium text-foreground hover:text-accent transition-colors">See the full structure →</Link>
+            ladder. <Link to="/pricing" className="font-medium text-foreground hover:font-semibold transition-[font-weight]">See the full structure →</Link>
           </p>
         </div>
       </SectionWrapper>

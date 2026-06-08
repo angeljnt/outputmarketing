@@ -43,9 +43,9 @@ export default {
         },
         success: "hsl(var(--success))",
         accent: {
-          DEFAULT: '#C72C48',
-          dark: '#9B2335',
-          tint: '#FCE8EC',
+          DEFAULT: '#F5F3EE',
+          dark: '#111111',
+          tint: '#F5F3EE',
           foreground: "hsl(var(--accent-foreground))",
         },
         primary: {

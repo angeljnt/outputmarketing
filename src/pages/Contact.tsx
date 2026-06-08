@@ -114,7 +114,7 @@ const Contact = () => {
                 If you want to add context in the meantime, email us directly at{" "}
                 <a
                   href="mailto:contact@output-marketing.com"
-                  className="underline hover:text-accent transition-colors"
+                  className="underline hover:font-semibold transition-[font-weight]"
                 >
                   contact@output-marketing.com
                 </a>
@@ -138,7 +138,7 @@ const Contact = () => {
                         required
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
-                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
+                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
                       />
                     </div>
                     <div>
@@ -151,7 +151,7 @@ const Contact = () => {
                         placeholder="Company name"
                         value={form.company}
                         onChange={(e) => setForm({ ...form, company: e.target.value })}
-                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
+                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
                       />
                     </div>
                   </div>
@@ -178,7 +178,7 @@ const Contact = () => {
                               ? "border-destructive focus-visible:ring-destructive"
                               : emailValid === true
                                 ? "border-success focus-visible:ring-success"
-                                : "border-border focus-visible:ring-accent"
+                                : "border-border focus-visible:ring-foreground"
                           }`}
                         />
                         {emailValid === true && (
@@ -204,7 +204,7 @@ const Contact = () => {
                         placeholder="https://yourcompany.com"
                         value={form.website}
                         onChange={(e) => setForm({ ...form, website: e.target.value })}
-                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
+                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
                       />
                     </div>
                   </div>
@@ -218,7 +218,7 @@ const Contact = () => {
                         id="service"
                         value={form.service}
                         onChange={(e) => setForm({ ...form, service: e.target.value })}
-                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
+                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
                       >
                         <option value="">Not sure yet</option>
                         {serviceContent.map((service) => (
@@ -236,7 +236,7 @@ const Contact = () => {
                         id="packageName"
                         value={form.packageName}
                         onChange={(e) => setForm({ ...form, packageName: e.target.value })}
-                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
+                        className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus:outline-none min-h-[44px]"
                       >
                         <option value="">Not sure yet</option>
                         {packageContent.map((pkg) => (
@@ -259,7 +259,7 @@ const Contact = () => {
                       rows={6}
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus:outline-none min-h-[140px] resize-y"
+                      className="w-full border border-border bg-background px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus:outline-none min-h-[140px] resize-y"
                     />
                   </div>
 
@@ -284,7 +284,7 @@ const Contact = () => {
                   Prefer email? Reach us directly at{" "}
                   <a
                     href="mailto:contact@output-marketing.com"
-                    className="font-medium text-foreground hover:text-accent transition-colors"
+                    className="font-medium text-foreground hover:font-semibold transition-[font-weight]"
                   >
                     contact@output-marketing.com
                   </a>

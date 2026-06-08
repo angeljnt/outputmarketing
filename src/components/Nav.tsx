@@ -45,7 +45,7 @@ const Nav = () => {
       }`}
     >
       <div className="container-wide flex items-center justify-between h-16">
-        <Link to="/" className="shrink-0 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
+        <Link to="/" className="shrink-0 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2">
           <img src={logo} alt="Output Marketing" className="h-7" />
         </Link>
 
@@ -55,7 +55,7 @@ const Nav = () => {
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                    className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                    className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:font-semibold transition-colors duration-200 flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
                 >
                   {link.label}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
@@ -66,7 +66,7 @@ const Nav = () => {
                       <Link
                         key={s.to}
                         to={s.to}
-                        className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200"
+                        className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:font-semibold transition-colors duration-200"
                       >
                         {s.label}
                       </Link>
@@ -78,7 +78,7 @@ const Nav = () => {
               <Link
                 key={link.label}
                 to={link.to}
-                className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                className="px-3 py-1.5 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:font-semibold transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
               >
                 {link.label}
               </Link>
@@ -89,7 +89,7 @@ const Nav = () => {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+          className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -104,7 +104,7 @@ const Nav = () => {
                 <div key={link.label}>
                   <button
                     onClick={() => setServicesOpen(!servicesOpen)}
-                    className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 flex items-center gap-1 min-h-[44px] w-full"
+                    className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:font-semibold transition-colors duration-200 flex items-center gap-1 min-h-[44px] w-full"
                   >
                     {link.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
@@ -112,7 +112,7 @@ const Nav = () => {
                   {servicesOpen && (
                     <div className="pl-4 flex flex-col gap-1 mt-1">
                       {servicesNav.map((s) => (
-                        <Link key={s.to} to={s.to} className="px-3 py-2 rounded-sm text-sm text-muted-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[44px] flex items-center">
+                        <Link key={s.to} to={s.to} className="px-3 py-2 rounded-sm text-sm text-muted-foreground hover:bg-accent hover:font-semibold transition-colors duration-200 min-h-[44px] flex items-center">
                           {s.label}
                         </Link>
                       ))}
@@ -123,7 +123,7 @@ const Nav = () => {
                 <Link
                   key={link.label}
                   to={link.to}
-                  className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:text-[#111111] transition-colors duration-200 min-h-[44px] flex items-center"
+                  className="px-3 py-2 rounded-sm text-sm font-medium text-foreground hover:bg-accent hover:font-semibold transition-colors duration-200 min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </Link>

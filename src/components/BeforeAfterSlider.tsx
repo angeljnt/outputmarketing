@@ -388,7 +388,7 @@ const BeforeAfterSlider = ({
             </div>
             <div className="flex items-center gap-3 px-1">
               <div className="h-px flex-1 bg-border" />
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border bg-accent/45">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border bg-neutral-100">
                 <ArrowRight className="h-3.5 w-3.5 text-foreground" />
               </span>
               <div className="h-px flex-1 bg-border" />

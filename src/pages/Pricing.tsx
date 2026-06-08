@@ -117,7 +117,7 @@ const Pricing = () => {
             {recurringPackages.map((pkg) => (
               <div key={pkg.name} className="border border-border bg-surface p-6 md:p-8">
                 {pkg.badge && (
-                  <span className="mb-4 inline-flex rounded-r-full rounded-l-sm border border-border bg-accent/45 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground">
+                  <span className="mb-4 inline-flex rounded-r-full rounded-l-sm border border-border bg-neutral-100 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-foreground">
                     {pkg.badge}
                   </span>
                 )}

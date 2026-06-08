@@ -10,19 +10,21 @@ interface CTAButtonProps {
 }
 
 const CTAButton = ({ to, children, variant = "primary", className = "", type = "button", onClick }: CTAButtonProps) => {
-  const base = "inline-flex items-center justify-center text-sm font-semibold px-6 py-3 tracking-wide transition-colors duration-300 min-h-[44px] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 [&_strong]:ml-1";
+  const base = "group inline-flex items-center gap-2 text-sm font-semibold py-3 tracking-wide min-h-[44px] underline underline-offset-[6px] decoration-1 hover:decoration-2 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 [&_strong]:ml-1";
   const variants = {
-    primary: "bg-primary text-primary-foreground hover:bg-accent hover:text-[#111111]",
-    "primary-inverted": "bg-primary-foreground text-primary hover:bg-accent hover:text-[#111111]",
+    primary: "text-foreground decoration-foreground",
+    "primary-inverted": "text-primary-foreground decoration-primary-foreground",
   };
+
+  const arrow = <span aria-hidden="true" className="no-underline inline-block transition-transform duration-200 group-hover:translate-x-0.5">→</span>;
 
   const cls = `${base} ${variants[variant]} ${className}`;
 
   if (to) {
-    return <Link to={to} className={cls}>{children}</Link>;
+    return <Link to={to} className={cls}>{children}{arrow}</Link>;
   }
 
-  return <button type={type} onClick={onClick} className={cls}>{children}</button>;
+  return <button type={type} onClick={onClick} className={cls}>{children}{arrow}</button>;
 };
 
 export default CTAButton;

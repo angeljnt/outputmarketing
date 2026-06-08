@@ -55,7 +55,7 @@ const CaseStudyNewsletter = () => (
         <p className="text-body text-muted-foreground mb-2">If your customers go quiet between purchases, this is where to start.</p>
         <h2 className="text-h2 mb-6">Building a retention program? Start with a pilot.</h2>
         <CTAButton to="/contact">Start my{" "}<strong>30-day pilot</strong> →</CTAButton>
-        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:text-accent transition-colors">See all case studies →</Link></p>
+        <p className="mt-4"><Link to="/work" className="text-sm text-muted-foreground hover:font-semibold transition-[font-weight]">See all case studies →</Link></p>
       </div>
     </SectionWrapper>
 

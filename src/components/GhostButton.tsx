@@ -8,13 +8,15 @@ interface GhostButtonProps {
 }
 
 const GhostButton = ({ to, children, className = "", onClick }: GhostButtonProps) => {
-  const cls = `inline-flex items-center justify-center text-sm font-semibold px-6 py-3 tracking-wide border border-primary text-primary bg-transparent hover:bg-accent hover:border-accent hover:text-[#111111] transition-colors duration-300 min-h-[44px] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 [&_strong]:ml-1 ${className}`;
+  const cls = `group inline-flex items-center gap-2 text-sm font-semibold py-3 tracking-wide min-h-[44px] text-foreground underline underline-offset-[6px] decoration-1 decoration-foreground hover:decoration-2 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 [&_strong]:ml-1 ${className}`;
+
+  const arrow = <span aria-hidden="true" className="no-underline inline-block transition-transform duration-200 group-hover:translate-x-0.5">→</span>;
 
   if (to) {
-    return <Link to={to} className={cls}>{children}</Link>;
+    return <Link to={to} className={cls}>{children}{arrow}</Link>;
   }
 
-  return <button onClick={onClick} className={cls}>{children}</button>;
+  return <button onClick={onClick} className={cls}>{children}{arrow}</button>;
 };
 
 export default GhostButton;

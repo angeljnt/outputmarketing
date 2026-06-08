@@ -14,7 +14,7 @@ const sourceTracks = [
     endTop: 28,
     strokeWidth: 8,
     endStrokeWidth: 10,
-    color: "#C72C48",
+    color: "#111111",
     keep: true,
     focusLabel: "SEO content",
   },
@@ -24,7 +24,7 @@ const sourceTracks = [
     endTop: 48,
     strokeWidth: 6,
     endStrokeWidth: 7,
-    color: "#58738A",
+    color: "#444444",
     keep: true,
     focusLabel: "Founder-led content",
   },
@@ -34,7 +34,7 @@ const sourceTracks = [
     endTop: 68,
     strokeWidth: 7,
     endStrokeWidth: 8,
-    color: "#BC7D54",
+    color: "#777777",
     keep: true,
     focusLabel: "Launch content",
   },
@@ -60,7 +60,7 @@ const PilotFocusDiagram = () => {
         <span className="text-right">Keep the best ones</span>
       </div>
 
-      <div className="relative min-h-[360px] bg-[linear-gradient(180deg,rgba(212,168,83,0.08),rgba(255,255,255,0))] px-4 py-8 md:min-h-[420px] md:px-6">
+      <div className="relative min-h-[360px] bg-surface px-4 py-8 md:min-h-[420px] md:px-6">
         <svg
           className="absolute inset-0 h-full w-full"
           viewBox="0 0 1000 420"

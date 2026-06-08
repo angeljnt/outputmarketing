@@ -60,7 +60,7 @@ const PilotFocusDiagram = () => {
         <span className="text-right">Keep the best ones</span>
       </div>
 
-      <div className="relative min-h-[360px] bg-[linear-gradient(180deg,rgba(212,168,83,0.08),rgba(255,255,255,0))] px-4 py-8 md:min-h-[420px] md:px-6">
+      <div className="relative min-h-[360px] bg-surface px-4 py-8 md:min-h-[420px] md:px-6">
         <svg
           className="absolute inset-0 h-full w-full"
           viewBox="0 0 1000 420"

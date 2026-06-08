@@ -59,7 +59,7 @@ const brands = [
     name: "Apollo",
     focus: "Creator campaign · 2025",
     stats: ["4.83M views", "260 content pieces", "11 viral posts (100K+)", "$764K budget"],
-    note: "Blended CPM $18.62 — well below the $50–$90 LinkedIn industry average.",
+    note: "Blended CPM $18.62, well below the $50 to $90 LinkedIn industry average.",
   },
   {
     name: "Airwallex",
@@ -71,7 +71,7 @@ const brands = [
     name: "Monday.com",
     focus: "AI Agents campaign · in progress",
     stats: ["23 creators", "11 live posts (so far)", "20K+ views (early)", "$79K budget"],
-    note: "Campaign still rolling — metrics climbing as posts go live.",
+    note: "Campaign still rolling, metrics climbing as posts go live.",
   },
   {
     name: "Tavus",
@@ -83,7 +83,7 @@ const brands = [
     name: "Beanstack",
     focus: "Creator campaign",
     stats: ["742K views", "33 content pieces", "7.14% engagement rate", "$39K budget"],
-    note: "Best engagement rate across the portfolio — 3–5x platform average.",
+    note: "Best engagement rate across the portfolio: 3 to 5x platform average.",
   },
 ];
 
@@ -101,55 +101,56 @@ const Work = () => {
       <SectionWrapper>
         <div className="container-default">
           <p className="overline mb-4">Case studies</p>
-          <h1 className="text-display mb-6">
-            9M+ impressions. 200+ creators. 5 B2B SaaS brands. One operating system.
-          </h1>
-          <p className="text-body-lg text-muted-foreground max-w-3xl mb-10">
-            Aggregate impact across creator-led campaigns for Apollo, Airwallex, Monday.com,
-            Tavus, and Beanstack — plus deep program work with Archive. Below: the headline
-            numbers, the brands, and the case studies.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 max-w-4xl">
-            <div>
-              <p className="text-h1 font-semibold leading-none">9M+</p>
-              <p className="text-caption text-muted-foreground mt-2">Total impressions</p>
+          <div className="grid lg:grid-cols-2 gap-6 items-stretch">
+            <div className="bg-surface border border-neutral-200 p-8 md:p-10 flex flex-col justify-center">
+              <h1 className="text-h1 mb-5">
+                9M+ impressions. 200+ creators. 5 B2B SaaS brands. One operating system.
+              </h1>
+              <p className="text-body text-muted-foreground mb-4">
+                Aggregate impact across creator-led campaigns for Apollo, Airwallex,
+                Monday.com, Tavus, and Beanstack, plus deep program work with Archive.
+              </p>
+              <p className="text-body text-muted-foreground">
+                Platforms covered: LinkedIn, TikTok, Instagram, YouTube, X, Threads.
+                Below: the headline numbers, the brands, and the case studies.
+              </p>
             </div>
-            <div>
-              <p className="text-h1 font-semibold leading-none">400+</p>
-              <p className="text-caption text-muted-foreground mt-2">Content pieces deployed</p>
-            </div>
-            <div>
-              <p className="text-h1 font-semibold leading-none">200+</p>
-              <p className="text-caption text-muted-foreground mt-2">Creators activated</p>
-            </div>
-            <div>
-              <p className="text-h1 font-semibold leading-none">$1.25M+</p>
-              <p className="text-caption text-muted-foreground mt-2">Campaign budgets managed</p>
-            </div>
-            <div>
-              <p className="text-h1 font-semibold leading-none">21</p>
-              <p className="text-caption text-muted-foreground mt-2">Viral posts (100K+ views)</p>
-            </div>
-            <div>
-              <p className="text-h1 font-semibold leading-none">6</p>
-              <p className="text-caption text-muted-foreground mt-2">Platforms covered</p>
-            </div>
-            <div>
-              <p className="text-h1 font-semibold leading-none">5</p>
-              <p className="text-caption text-muted-foreground mt-2">B2B SaaS brands</p>
-            </div>
-            <div>
-              <p className="text-h1 font-semibold leading-none">2.19%</p>
-              <p className="text-caption text-muted-foreground mt-2">Blended engagement rate</p>
+
+            <div className="bg-surface border border-neutral-200 p-8 md:p-10">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-6">
+                <div>
+                  <p className="text-h1 font-semibold leading-none">9M+</p>
+                  <p className="text-caption text-muted-foreground mt-2">Total impressions</p>
+                </div>
+                <div>
+                  <p className="text-h1 font-semibold leading-none">400+</p>
+                  <p className="text-caption text-muted-foreground mt-2">Content pieces deployed</p>
+                </div>
+                <div>
+                  <p className="text-h1 font-semibold leading-none">200+</p>
+                  <p className="text-caption text-muted-foreground mt-2">Creators activated</p>
+                </div>
+                <div>
+                  <p className="text-h1 font-semibold leading-none">$1.25M+</p>
+                  <p className="text-caption text-muted-foreground mt-2">Campaign budgets managed</p>
+                </div>
+                <div>
+                  <p className="text-h1 font-semibold leading-none">21</p>
+                  <p className="text-caption text-muted-foreground mt-2">Viral posts (100K+ views)</p>
+                </div>
+                <div>
+                  <p className="text-h1 font-semibold leading-none">2.19%</p>
+                  <p className="text-caption text-muted-foreground mt-2">Blended engagement rate</p>
+                </div>
+              </div>
+              <p className="text-caption text-muted-foreground mt-6 pt-6 border-t border-neutral-200">
+                B2B sponsored content engagement averages 1 to 1.5%.
+              </p>
             </div>
           </div>
-          <p className="text-caption text-muted-foreground mt-8 max-w-3xl">
-            Platforms: LinkedIn, TikTok, Instagram, YouTube, X, Threads. Brands: Apollo,
-            Airwallex, Monday.com, Tavus, Beanstack. B2B sponsored content engagement rate
-            averages 1–1.5%.
-          </p>
         </div>
       </SectionWrapper>
+
 
       <SectionWrapper className="bg-surface-alt">
         <div className="container-default">
@@ -190,7 +191,7 @@ const Work = () => {
             <p className="overline mb-3">Deep case studies</p>
             <h2 className="text-h2 mb-4">Archive: one client, four disciplines.</h2>
             <p className="text-body text-muted-foreground">
-              Four programs built inside the same account — launches, retention content,
+              Four programs built inside the same account: launches, retention content,
               founder visibility, and product marketing execution.
             </p>
           </div>
